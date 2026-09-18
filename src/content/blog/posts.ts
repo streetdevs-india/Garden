@@ -15,7 +15,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "landscaping-company-delhi",
     title: "Landscaping Company Guide in Delhi (2026)",
-    description: "Landscaping Company Guide for homes and commercial properties in Delhi. Practical landscaping advice from Greenly.",
+    description: "Landscaping Company Guide for homes and commercial properties in Delhi. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-01",
     readingMinutes: 6,
@@ -23,14 +23,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi",
     faqs: [
       { q: "Who should read this guide on landscaping company guide?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Landscaping Company Guide in Delhi (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches landscaping company guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches landscaping company guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -42,7 +42,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For landscaping company guide, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -53,7 +53,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "garden-design-ideas-delhi",
     title: "Garden Design Ideas in Delhi (2026)",
-    description: "Garden Design Ideas for homes and commercial properties in Delhi. Practical landscaping advice from Greenly.",
+    description: "Garden Design Ideas for homes and commercial properties in Delhi. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-02",
     readingMinutes: 6,
@@ -61,14 +61,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi",
     faqs: [
       { q: "Who should read this guide on garden design ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Garden Design Ideas in Delhi (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches garden design ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches garden design ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -80,7 +80,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For garden design ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -91,7 +91,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "lawn-care-tips-delhi",
     title: "Lawn Care Tips in Delhi (2026)",
-    description: "Lawn Care Tips for homes and commercial properties in Delhi. Practical landscaping advice from Greenly.",
+    description: "Lawn Care Tips for homes and commercial properties in Delhi. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-03",
     readingMinutes: 6,
@@ -99,14 +99,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi",
     faqs: [
       { q: "Who should read this guide on lawn care tips?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Lawn Care Tips in Delhi (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches lawn care tips with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches lawn care tips with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -118,7 +118,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For lawn care tips, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -129,7 +129,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "terrace-garden-ideas-delhi",
     title: "Terrace Garden Ideas in Delhi (2026)",
-    description: "Terrace Garden Ideas for homes and commercial properties in Delhi. Practical landscaping advice from Greenly.",
+    description: "Terrace Garden Ideas for homes and commercial properties in Delhi. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-04",
     readingMinutes: 6,
@@ -137,14 +137,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi",
     faqs: [
       { q: "Who should read this guide on terrace garden ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Terrace Garden Ideas in Delhi (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches terrace garden ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches terrace garden ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -156,7 +156,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For terrace garden ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -167,7 +167,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "irrigation-cost-delhi",
     title: "Irrigation Cost Guide in Delhi (2026)",
-    description: "Irrigation Cost Guide for homes and commercial properties in Delhi. Practical landscaping advice from Greenly.",
+    description: "Irrigation Cost Guide for homes and commercial properties in Delhi. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-05",
     readingMinutes: 6,
@@ -175,14 +175,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi",
     faqs: [
       { q: "Who should read this guide on irrigation cost guide?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Irrigation Cost Guide in Delhi (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches irrigation cost guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches irrigation cost guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -194,7 +194,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For irrigation cost guide, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -205,7 +205,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "farmhouse-landscaping-delhi",
     title: "Farmhouse Landscaping in Delhi (2026)",
-    description: "Farmhouse Landscaping for homes and commercial properties in Delhi. Practical landscaping advice from Greenly.",
+    description: "Farmhouse Landscaping for homes and commercial properties in Delhi. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-06",
     readingMinutes: 6,
@@ -213,14 +213,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi",
     faqs: [
       { q: "Who should read this guide on farmhouse landscaping?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Farmhouse Landscaping in Delhi (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches farmhouse landscaping with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches farmhouse landscaping with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -232,7 +232,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For farmhouse landscaping, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -243,7 +243,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "outdoor-lighting-ideas-delhi",
     title: "Outdoor Lighting Ideas in Delhi (2026)",
-    description: "Outdoor Lighting Ideas for homes and commercial properties in Delhi. Practical landscaping advice from Greenly.",
+    description: "Outdoor Lighting Ideas for homes and commercial properties in Delhi. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-07",
     readingMinutes: 6,
@@ -251,14 +251,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi",
     faqs: [
       { q: "Who should read this guide on outdoor lighting ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Outdoor Lighting Ideas in Delhi (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches outdoor lighting ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches outdoor lighting ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -270,7 +270,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For outdoor lighting ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -281,7 +281,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "garden-maintenance-amc-delhi",
     title: "Garden Maintenance AMC in Delhi (2026)",
-    description: "Garden Maintenance AMC for homes and commercial properties in Delhi. Practical landscaping advice from Greenly.",
+    description: "Garden Maintenance AMC for homes and commercial properties in Delhi. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-08",
     readingMinutes: 6,
@@ -289,14 +289,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi",
     faqs: [
       { q: "Who should read this guide on garden maintenance amc?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Garden Maintenance AMC in Delhi (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches garden maintenance amc with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches garden maintenance amc with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -308,7 +308,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For garden maintenance amc, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -319,7 +319,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "landscaping-company-gurugram",
     title: "Landscaping Company Guide in Gurugram (2026)",
-    description: "Landscaping Company Guide for homes and commercial properties in Gurugram. Practical landscaping advice from Greenly.",
+    description: "Landscaping Company Guide for homes and commercial properties in Gurugram. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-09",
     readingMinutes: 6,
@@ -327,14 +327,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "gurugram",
     faqs: [
       { q: "Who should read this guide on landscaping company guide?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Landscaping Company Guide in Gurugram (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches landscaping company guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches landscaping company guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -346,7 +346,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For landscaping company guide, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -357,7 +357,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "garden-design-ideas-gurugram",
     title: "Garden Design Ideas in Gurugram (2026)",
-    description: "Garden Design Ideas for homes and commercial properties in Gurugram. Practical landscaping advice from Greenly.",
+    description: "Garden Design Ideas for homes and commercial properties in Gurugram. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-10",
     readingMinutes: 6,
@@ -365,14 +365,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "gurugram",
     faqs: [
       { q: "Who should read this guide on garden design ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Garden Design Ideas in Gurugram (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches garden design ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches garden design ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -384,7 +384,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For garden design ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -395,7 +395,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "lawn-care-tips-gurugram",
     title: "Lawn Care Tips in Gurugram (2026)",
-    description: "Lawn Care Tips for homes and commercial properties in Gurugram. Practical landscaping advice from Greenly.",
+    description: "Lawn Care Tips for homes and commercial properties in Gurugram. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-11",
     readingMinutes: 6,
@@ -403,14 +403,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "gurugram",
     faqs: [
       { q: "Who should read this guide on lawn care tips?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Lawn Care Tips in Gurugram (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches lawn care tips with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches lawn care tips with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -422,7 +422,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For lawn care tips, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -433,7 +433,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "terrace-garden-ideas-gurugram",
     title: "Terrace Garden Ideas in Gurugram (2026)",
-    description: "Terrace Garden Ideas for homes and commercial properties in Gurugram. Practical landscaping advice from Greenly.",
+    description: "Terrace Garden Ideas for homes and commercial properties in Gurugram. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-12",
     readingMinutes: 6,
@@ -441,14 +441,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "gurugram",
     faqs: [
       { q: "Who should read this guide on terrace garden ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Terrace Garden Ideas in Gurugram (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches terrace garden ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches terrace garden ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -460,7 +460,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For terrace garden ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -471,7 +471,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "irrigation-cost-gurugram",
     title: "Irrigation Cost Guide in Gurugram (2026)",
-    description: "Irrigation Cost Guide for homes and commercial properties in Gurugram. Practical landscaping advice from Greenly.",
+    description: "Irrigation Cost Guide for homes and commercial properties in Gurugram. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-13",
     readingMinutes: 6,
@@ -479,14 +479,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "gurugram",
     faqs: [
       { q: "Who should read this guide on irrigation cost guide?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Irrigation Cost Guide in Gurugram (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches irrigation cost guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches irrigation cost guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -498,7 +498,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For irrigation cost guide, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -509,7 +509,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "farmhouse-landscaping-gurugram",
     title: "Farmhouse Landscaping in Gurugram (2026)",
-    description: "Farmhouse Landscaping for homes and commercial properties in Gurugram. Practical landscaping advice from Greenly.",
+    description: "Farmhouse Landscaping for homes and commercial properties in Gurugram. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-14",
     readingMinutes: 6,
@@ -517,14 +517,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "gurugram",
     faqs: [
       { q: "Who should read this guide on farmhouse landscaping?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Farmhouse Landscaping in Gurugram (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches farmhouse landscaping with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches farmhouse landscaping with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -536,7 +536,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For farmhouse landscaping, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -547,7 +547,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "outdoor-lighting-ideas-gurugram",
     title: "Outdoor Lighting Ideas in Gurugram (2026)",
-    description: "Outdoor Lighting Ideas for homes and commercial properties in Gurugram. Practical landscaping advice from Greenly.",
+    description: "Outdoor Lighting Ideas for homes and commercial properties in Gurugram. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-15",
     readingMinutes: 6,
@@ -555,14 +555,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "gurugram",
     faqs: [
       { q: "Who should read this guide on outdoor lighting ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Outdoor Lighting Ideas in Gurugram (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches outdoor lighting ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches outdoor lighting ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -574,7 +574,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For outdoor lighting ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -585,7 +585,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "garden-maintenance-amc-gurugram",
     title: "Garden Maintenance AMC in Gurugram (2026)",
-    description: "Garden Maintenance AMC for homes and commercial properties in Gurugram. Practical landscaping advice from Greenly.",
+    description: "Garden Maintenance AMC for homes and commercial properties in Gurugram. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-16",
     readingMinutes: 6,
@@ -593,14 +593,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "gurugram",
     faqs: [
       { q: "Who should read this guide on garden maintenance amc?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Garden Maintenance AMC in Gurugram (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches garden maintenance amc with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches garden maintenance amc with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -612,7 +612,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For garden maintenance amc, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -623,7 +623,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "landscaping-company-noida",
     title: "Landscaping Company Guide in Noida (2026)",
-    description: "Landscaping Company Guide for homes and commercial properties in Noida. Practical landscaping advice from Greenly.",
+    description: "Landscaping Company Guide for homes and commercial properties in Noida. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-17",
     readingMinutes: 6,
@@ -631,14 +631,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "noida",
     faqs: [
       { q: "Who should read this guide on landscaping company guide?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Landscaping Company Guide in Noida (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches landscaping company guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches landscaping company guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -650,7 +650,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For landscaping company guide, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -661,7 +661,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "garden-design-ideas-noida",
     title: "Garden Design Ideas in Noida (2026)",
-    description: "Garden Design Ideas for homes and commercial properties in Noida. Practical landscaping advice from Greenly.",
+    description: "Garden Design Ideas for homes and commercial properties in Noida. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-18",
     readingMinutes: 6,
@@ -669,14 +669,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "noida",
     faqs: [
       { q: "Who should read this guide on garden design ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Garden Design Ideas in Noida (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches garden design ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches garden design ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -688,7 +688,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For garden design ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -699,7 +699,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "lawn-care-tips-noida",
     title: "Lawn Care Tips in Noida (2026)",
-    description: "Lawn Care Tips for homes and commercial properties in Noida. Practical landscaping advice from Greenly.",
+    description: "Lawn Care Tips for homes and commercial properties in Noida. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-19",
     readingMinutes: 6,
@@ -707,14 +707,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "noida",
     faqs: [
       { q: "Who should read this guide on lawn care tips?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Lawn Care Tips in Noida (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches lawn care tips with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches lawn care tips with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -726,7 +726,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For lawn care tips, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -737,7 +737,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "terrace-garden-ideas-noida",
     title: "Terrace Garden Ideas in Noida (2026)",
-    description: "Terrace Garden Ideas for homes and commercial properties in Noida. Practical landscaping advice from Greenly.",
+    description: "Terrace Garden Ideas for homes and commercial properties in Noida. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-20",
     readingMinutes: 6,
@@ -745,14 +745,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "noida",
     faqs: [
       { q: "Who should read this guide on terrace garden ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Terrace Garden Ideas in Noida (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches terrace garden ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches terrace garden ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -764,7 +764,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For terrace garden ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -775,7 +775,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "irrigation-cost-noida",
     title: "Irrigation Cost Guide in Noida (2026)",
-    description: "Irrigation Cost Guide for homes and commercial properties in Noida. Practical landscaping advice from Greenly.",
+    description: "Irrigation Cost Guide for homes and commercial properties in Noida. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-21",
     readingMinutes: 6,
@@ -783,14 +783,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "noida",
     faqs: [
       { q: "Who should read this guide on irrigation cost guide?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Irrigation Cost Guide in Noida (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches irrigation cost guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches irrigation cost guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -802,7 +802,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For irrigation cost guide, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -813,7 +813,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "farmhouse-landscaping-noida",
     title: "Farmhouse Landscaping in Noida (2026)",
-    description: "Farmhouse Landscaping for homes and commercial properties in Noida. Practical landscaping advice from Greenly.",
+    description: "Farmhouse Landscaping for homes and commercial properties in Noida. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-22",
     readingMinutes: 6,
@@ -821,14 +821,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "noida",
     faqs: [
       { q: "Who should read this guide on farmhouse landscaping?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Farmhouse Landscaping in Noida (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches farmhouse landscaping with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches farmhouse landscaping with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -840,7 +840,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For farmhouse landscaping, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -851,7 +851,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "outdoor-lighting-ideas-noida",
     title: "Outdoor Lighting Ideas in Noida (2026)",
-    description: "Outdoor Lighting Ideas for homes and commercial properties in Noida. Practical landscaping advice from Greenly.",
+    description: "Outdoor Lighting Ideas for homes and commercial properties in Noida. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-23",
     readingMinutes: 6,
@@ -859,14 +859,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "noida",
     faqs: [
       { q: "Who should read this guide on outdoor lighting ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Outdoor Lighting Ideas in Noida (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches outdoor lighting ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches outdoor lighting ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -878,7 +878,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For outdoor lighting ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -889,7 +889,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "garden-maintenance-amc-noida",
     title: "Garden Maintenance AMC in Noida (2026)",
-    description: "Garden Maintenance AMC for homes and commercial properties in Noida. Practical landscaping advice from Greenly.",
+    description: "Garden Maintenance AMC for homes and commercial properties in Noida. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-24",
     readingMinutes: 6,
@@ -897,14 +897,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "noida",
     faqs: [
       { q: "Who should read this guide on garden maintenance amc?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Garden Maintenance AMC in Noida (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches garden maintenance amc with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches garden maintenance amc with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -916,7 +916,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For garden maintenance amc, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -927,7 +927,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "landscaping-company-faridabad",
     title: "Landscaping Company Guide in Faridabad (2026)",
-    description: "Landscaping Company Guide for homes and commercial properties in Faridabad. Practical landscaping advice from Greenly.",
+    description: "Landscaping Company Guide for homes and commercial properties in Faridabad. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-25",
     readingMinutes: 6,
@@ -935,14 +935,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "faridabad",
     faqs: [
       { q: "Who should read this guide on landscaping company guide?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Landscaping Company Guide in Faridabad (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches landscaping company guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches landscaping company guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -954,7 +954,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For landscaping company guide, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -965,7 +965,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "garden-design-ideas-faridabad",
     title: "Garden Design Ideas in Faridabad (2026)",
-    description: "Garden Design Ideas for homes and commercial properties in Faridabad. Practical landscaping advice from Greenly.",
+    description: "Garden Design Ideas for homes and commercial properties in Faridabad. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-26",
     readingMinutes: 6,
@@ -973,14 +973,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "faridabad",
     faqs: [
       { q: "Who should read this guide on garden design ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Garden Design Ideas in Faridabad (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches garden design ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches garden design ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -992,7 +992,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For garden design ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1003,7 +1003,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "lawn-care-tips-faridabad",
     title: "Lawn Care Tips in Faridabad (2026)",
-    description: "Lawn Care Tips for homes and commercial properties in Faridabad. Practical landscaping advice from Greenly.",
+    description: "Lawn Care Tips for homes and commercial properties in Faridabad. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-27",
     readingMinutes: 6,
@@ -1011,14 +1011,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "faridabad",
     faqs: [
       { q: "Who should read this guide on lawn care tips?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Lawn Care Tips in Faridabad (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches lawn care tips with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches lawn care tips with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1030,7 +1030,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For lawn care tips, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1041,7 +1041,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "terrace-garden-ideas-faridabad",
     title: "Terrace Garden Ideas in Faridabad (2026)",
-    description: "Terrace Garden Ideas for homes and commercial properties in Faridabad. Practical landscaping advice from Greenly.",
+    description: "Terrace Garden Ideas for homes and commercial properties in Faridabad. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-28",
     readingMinutes: 6,
@@ -1049,14 +1049,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "faridabad",
     faqs: [
       { q: "Who should read this guide on terrace garden ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Terrace Garden Ideas in Faridabad (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches terrace garden ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches terrace garden ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1068,7 +1068,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For terrace garden ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1079,7 +1079,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "irrigation-cost-faridabad",
     title: "Irrigation Cost Guide in Faridabad (2026)",
-    description: "Irrigation Cost Guide for homes and commercial properties in Faridabad. Practical landscaping advice from Greenly.",
+    description: "Irrigation Cost Guide for homes and commercial properties in Faridabad. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-29",
     readingMinutes: 6,
@@ -1087,14 +1087,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "faridabad",
     faqs: [
       { q: "Who should read this guide on irrigation cost guide?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Irrigation Cost Guide in Faridabad (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches irrigation cost guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches irrigation cost guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1106,7 +1106,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For irrigation cost guide, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1117,7 +1117,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "farmhouse-landscaping-faridabad",
     title: "Farmhouse Landscaping in Faridabad (2026)",
-    description: "Farmhouse Landscaping for homes and commercial properties in Faridabad. Practical landscaping advice from Greenly.",
+    description: "Farmhouse Landscaping for homes and commercial properties in Faridabad. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-30",
     readingMinutes: 6,
@@ -1125,14 +1125,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "faridabad",
     faqs: [
       { q: "Who should read this guide on farmhouse landscaping?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Farmhouse Landscaping in Faridabad (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches farmhouse landscaping with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches farmhouse landscaping with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1144,7 +1144,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For farmhouse landscaping, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1155,7 +1155,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "outdoor-lighting-ideas-faridabad",
     title: "Outdoor Lighting Ideas in Faridabad (2026)",
-    description: "Outdoor Lighting Ideas for homes and commercial properties in Faridabad. Practical landscaping advice from Greenly.",
+    description: "Outdoor Lighting Ideas for homes and commercial properties in Faridabad. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-31",
     readingMinutes: 6,
@@ -1163,14 +1163,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "faridabad",
     faqs: [
       { q: "Who should read this guide on outdoor lighting ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Outdoor Lighting Ideas in Faridabad (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches outdoor lighting ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches outdoor lighting ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1182,7 +1182,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For outdoor lighting ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1193,7 +1193,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "garden-maintenance-amc-faridabad",
     title: "Garden Maintenance AMC in Faridabad (2026)",
-    description: "Garden Maintenance AMC for homes and commercial properties in Faridabad. Practical landscaping advice from Greenly.",
+    description: "Garden Maintenance AMC for homes and commercial properties in Faridabad. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-02-01",
     readingMinutes: 6,
@@ -1201,14 +1201,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "faridabad",
     faqs: [
       { q: "Who should read this guide on garden maintenance amc?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Garden Maintenance AMC in Faridabad (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches garden maintenance amc with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches garden maintenance amc with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1220,7 +1220,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For garden maintenance amc, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1231,7 +1231,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "landscaping-company-delhi-ncr",
     title: "Landscaping Company Guide in Delhi NCR (2026)",
-    description: "Landscaping Company Guide for homes and commercial properties in Delhi NCR. Practical landscaping advice from Greenly.",
+    description: "Landscaping Company Guide for homes and commercial properties in Delhi NCR. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-02-02",
     readingMinutes: 6,
@@ -1239,14 +1239,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on landscaping company guide?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Landscaping Company Guide in Delhi NCR (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches landscaping company guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches landscaping company guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1258,7 +1258,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For landscaping company guide, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1269,7 +1269,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "garden-design-ideas-delhi-ncr",
     title: "Garden Design Ideas in Delhi NCR (2026)",
-    description: "Garden Design Ideas for homes and commercial properties in Delhi NCR. Practical landscaping advice from Greenly.",
+    description: "Garden Design Ideas for homes and commercial properties in Delhi NCR. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-02-03",
     readingMinutes: 6,
@@ -1277,14 +1277,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on garden design ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Garden Design Ideas in Delhi NCR (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches garden design ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches garden design ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1296,7 +1296,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For garden design ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1307,7 +1307,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "lawn-care-tips-delhi-ncr",
     title: "Lawn Care Tips in Delhi NCR (2026)",
-    description: "Lawn Care Tips for homes and commercial properties in Delhi NCR. Practical landscaping advice from Greenly.",
+    description: "Lawn Care Tips for homes and commercial properties in Delhi NCR. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-02-04",
     readingMinutes: 6,
@@ -1315,14 +1315,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on lawn care tips?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Lawn Care Tips in Delhi NCR (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches lawn care tips with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches lawn care tips with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1334,7 +1334,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For lawn care tips, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1345,7 +1345,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "terrace-garden-ideas-delhi-ncr",
     title: "Terrace Garden Ideas in Delhi NCR (2026)",
-    description: "Terrace Garden Ideas for homes and commercial properties in Delhi NCR. Practical landscaping advice from Greenly.",
+    description: "Terrace Garden Ideas for homes and commercial properties in Delhi NCR. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-02-05",
     readingMinutes: 6,
@@ -1353,14 +1353,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on terrace garden ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Terrace Garden Ideas in Delhi NCR (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches terrace garden ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches terrace garden ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1372,7 +1372,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For terrace garden ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1383,7 +1383,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "irrigation-cost-delhi-ncr",
     title: "Irrigation Cost Guide in Delhi NCR (2026)",
-    description: "Irrigation Cost Guide for homes and commercial properties in Delhi NCR. Practical landscaping advice from Greenly.",
+    description: "Irrigation Cost Guide for homes and commercial properties in Delhi NCR. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-02-06",
     readingMinutes: 6,
@@ -1391,14 +1391,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on irrigation cost guide?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Irrigation Cost Guide in Delhi NCR (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches irrigation cost guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches irrigation cost guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1410,7 +1410,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For irrigation cost guide, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1421,7 +1421,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "farmhouse-landscaping-delhi-ncr",
     title: "Farmhouse Landscaping in Delhi NCR (2026)",
-    description: "Farmhouse Landscaping for homes and commercial properties in Delhi NCR. Practical landscaping advice from Greenly.",
+    description: "Farmhouse Landscaping for homes and commercial properties in Delhi NCR. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-02-07",
     readingMinutes: 6,
@@ -1429,14 +1429,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on farmhouse landscaping?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Farmhouse Landscaping in Delhi NCR (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches farmhouse landscaping with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches farmhouse landscaping with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1448,7 +1448,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For farmhouse landscaping, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1459,7 +1459,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "outdoor-lighting-ideas-delhi-ncr",
     title: "Outdoor Lighting Ideas in Delhi NCR (2026)",
-    description: "Outdoor Lighting Ideas for homes and commercial properties in Delhi NCR. Practical landscaping advice from Greenly.",
+    description: "Outdoor Lighting Ideas for homes and commercial properties in Delhi NCR. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-02-08",
     readingMinutes: 6,
@@ -1467,14 +1467,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on outdoor lighting ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Outdoor Lighting Ideas in Delhi NCR (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches outdoor lighting ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches outdoor lighting ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1486,7 +1486,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For outdoor lighting ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1497,7 +1497,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "garden-maintenance-amc-delhi-ncr",
     title: "Garden Maintenance AMC in Delhi NCR (2026)",
-    description: "Garden Maintenance AMC for homes and commercial properties in Delhi NCR. Practical landscaping advice from Greenly.",
+    description: "Garden Maintenance AMC for homes and commercial properties in Delhi NCR. Practical landscaping advice from Hind Landscape Co..",
     category: "Delhi NCR Guides",
     publishedAt: "2026-02-09",
     readingMinutes: 6,
@@ -1505,14 +1505,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on garden maintenance amc?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Garden Maintenance AMC in Delhi NCR (2026) is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches garden maintenance amc with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches garden maintenance amc with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1524,7 +1524,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For garden maintenance amc, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1542,14 +1542,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "garden-design",
     faqs: [
       { q: "Who should read this guide on how to choose a landscape contractor in india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "How to Choose a Landscape Contractor in India is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches how to choose a landscape contractor in india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches how to choose a landscape contractor in india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1561,7 +1561,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For how to choose a landscape contractor in india, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1579,14 +1579,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "garden-design",
     faqs: [
       { q: "Who should read this guide on landscaping cost guide india 2026?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Landscaping Cost Guide India 2026 is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches landscaping cost guide india 2026 with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches landscaping cost guide india 2026 with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1598,7 +1598,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For landscaping cost guide india 2026, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1616,14 +1616,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "terrace-garden",
     faqs: [
       { q: "Who should read this guide on terrace garden ideas for indian apartments?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Terrace Garden Ideas for Indian Apartments is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches terrace garden ideas for indian apartments with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches terrace garden ideas for indian apartments with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1635,7 +1635,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For terrace garden ideas for indian apartments, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1653,14 +1653,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "vertical-garden",
     faqs: [
       { q: "Who should read this guide on vertical garden & green wall guide for india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Vertical Garden & Green Wall Guide for India is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches vertical garden & green wall guide for india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches vertical garden & green wall guide for india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1672,7 +1672,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For vertical garden & green wall guide for india, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1691,14 +1691,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on lawn care calendar for north india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Lawn Care Calendar for North India is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches lawn care calendar for north india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches lawn care calendar for north india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1710,7 +1710,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For lawn care calendar for north india, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1729,14 +1729,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on monsoon garden care checklist?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Monsoon Garden Care Checklist is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches monsoon garden care checklist with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches monsoon garden care checklist with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1748,7 +1748,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For monsoon garden care checklist, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1767,14 +1767,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on winter garden prep in delhi ncr?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Winter Garden Prep in Delhi NCR is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches winter garden prep in delhi ncr with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches winter garden prep in delhi ncr with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1786,7 +1786,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For winter garden prep in delhi ncr, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1804,14 +1804,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "irrigation",
     faqs: [
       { q: "Who should read this guide on summer-proof your garden in india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Summer-Proof Your Garden in India is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches summer-proof your garden in india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches summer-proof your garden in india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1823,7 +1823,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For summer-proof your garden in india, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1841,14 +1841,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "lighting",
     faqs: [
       { q: "Who should read this guide on outdoor lighting ideas for gardens?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Outdoor Lighting Ideas for Gardens is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches outdoor lighting ideas for gardens with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches outdoor lighting ideas for gardens with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1860,7 +1860,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For outdoor lighting ideas for gardens, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1878,14 +1878,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "hardscaping",
     faqs: [
       { q: "Who should read this guide on hardscaping materials for indian weather?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Hardscaping Materials for Indian Weather is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches hardscaping materials for indian weather with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches hardscaping materials for indian weather with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1897,7 +1897,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For hardscaping materials for indian weather, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1915,14 +1915,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "irrigation",
     faqs: [
       { q: "Who should read this guide on drip vs sprinkler irrigation in india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Drip vs Sprinkler Irrigation in India is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches drip vs sprinkler irrigation in india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches drip vs sprinkler irrigation in india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1934,7 +1934,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For drip vs sprinkler irrigation in india, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1952,14 +1952,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "garden-design",
     faqs: [
       { q: "Who should read this guide on hotel landscaping checklist for india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Hotel Landscaping Checklist for India is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches hotel landscaping checklist for india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches hotel landscaping checklist for india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -1971,7 +1971,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For hotel landscaping checklist for india, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -1989,14 +1989,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "landscape-maintenance-amc",
     faqs: [
       { q: "Who should read this guide on corporate campus landscaping in india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Corporate Campus Landscaping in India is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches corporate campus landscaping in india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches corporate campus landscaping in india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2008,7 +2008,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For corporate campus landscaping in india, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2026,14 +2026,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "lawn-care",
     faqs: [
       { q: "Who should read this guide on society common area landscaping?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Society Common Area Landscaping is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches society common area landscaping with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches society common area landscaping with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2045,7 +2045,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For society common area landscaping, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2064,14 +2064,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on farmhouse garden layout ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Farmhouse Garden Layout Ideas is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches farmhouse garden layout ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches farmhouse garden layout ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2083,7 +2083,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For farmhouse garden layout ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2102,14 +2102,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi",
     faqs: [
       { q: "Who should read this guide on best balcony garden plants for delhi?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Best Balcony Garden Plants for Delhi is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches best balcony garden plants for delhi with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches best balcony garden plants for delhi with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2121,7 +2121,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For best balcony garden plants for delhi, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2139,14 +2139,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "tree-care",
     faqs: [
       { q: "Who should read this guide on hedge & privacy screen plants for india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Hedge & Privacy Screen Plants for India is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches hedge & privacy screen plants for india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches hedge & privacy screen plants for india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2158,7 +2158,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For hedge & privacy screen plants for india, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2176,14 +2176,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "landscape-maintenance-amc",
     faqs: [
       { q: "Who should read this guide on what to include in a garden maintenance amc?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "What to Include in a Garden Maintenance AMC is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches what to include in a garden maintenance amc with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches what to include in a garden maintenance amc with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2195,7 +2195,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For what to include in a garden maintenance amc, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2213,14 +2213,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "garden-design",
     faqs: [
       { q: "Who should read this guide on how to compare landscaping quotations?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "How to Compare Landscaping Quotations is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches how to compare landscaping quotations with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches how to compare landscaping quotations with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2232,7 +2232,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For how to compare landscaping quotations, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2250,14 +2250,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "garden-design",
     faqs: [
       { q: "Who should read this guide on eco-friendly landscaping practices in india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Eco-Friendly Landscaping Practices in India is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches eco-friendly landscaping practices in india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches eco-friendly landscaping practices in india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2269,7 +2269,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For eco-friendly landscaping practices in india, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2287,14 +2287,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "hardscaping",
     faqs: [
       { q: "Who should read this guide on pool surround landscaping ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Pool Surround Landscaping Ideas is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches pool surround landscaping ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches pool surround landscaping ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2306,7 +2306,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For pool surround landscaping ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2324,14 +2324,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "hardscaping",
     faqs: [
       { q: "Who should read this guide on outdoor living patio design in india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Outdoor Living Patio Design in India is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches outdoor living patio design in india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches outdoor living patio design in india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2343,7 +2343,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For outdoor living patio design in india, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2361,14 +2361,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "tree-care",
     faqs: [
       { q: "Who should read this guide on tree pruning best practices in india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Tree Pruning Best Practices in India is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches tree pruning best practices in india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches tree pruning best practices in india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2380,7 +2380,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For tree pruning best practices in india, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2399,14 +2399,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on seasonal flower beds for north india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Seasonal Flower Beds for North India is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches seasonal flower beds for north india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches seasonal flower beds for north india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2418,7 +2418,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For seasonal flower beds for north india, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2436,14 +2436,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "irrigation",
     faqs: [
       { q: "Who should read this guide on irrigation controller basics for homeowners?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Irrigation Controller Basics for Homeowners is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches irrigation controller basics for homeowners with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches irrigation controller basics for homeowners with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2455,7 +2455,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For irrigation controller basics for homeowners, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2473,14 +2473,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "lighting",
     faqs: [
       { q: "Who should read this guide on landscape lighting safety tips?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Landscape Lighting Safety Tips is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches landscape lighting safety tips with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches landscape lighting safety tips with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2492,7 +2492,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For landscape lighting safety tips, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2511,14 +2511,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "gurugram",
     faqs: [
       { q: "Who should read this guide on gurugram podium garden tips?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Gurugram Podium Garden Tips is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches gurugram podium garden tips with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches gurugram podium garden tips with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2530,7 +2530,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For gurugram podium garden tips, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2549,14 +2549,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "noida",
     faqs: [
       { q: "Who should read this guide on noida villa garden ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Noida Villa Garden Ideas is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches noida villa garden ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches noida villa garden ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2568,7 +2568,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For noida villa garden ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2587,14 +2587,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "faridabad",
     faqs: [
       { q: "Who should read this guide on faridabad lawn care guide?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Faridabad Lawn Care Guide is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches faridabad lawn care guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches faridabad lawn care guide with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2606,7 +2606,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For faridabad lawn care guide, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2625,14 +2625,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi",
     faqs: [
       { q: "Who should read this guide on delhi farmhouse landscaping trends?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Delhi Farmhouse Landscaping Trends is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches delhi farmhouse landscaping trends with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches delhi farmhouse landscaping trends with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2644,7 +2644,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For delhi farmhouse landscaping trends, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2662,14 +2662,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "garden-design",
     faqs: [
       { q: "Who should read this guide on commercial vs residential landscaping?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Commercial vs Residential Landscaping is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches commercial vs residential landscaping with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches commercial vs residential landscaping with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2681,7 +2681,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For commercial vs residential landscaping, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2699,14 +2699,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "hardscaping",
     faqs: [
       { q: "Who should read this guide on water features and fountains care?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Water Features and Fountains Care is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches water features and fountains care with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches water features and fountains care with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2718,7 +2718,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For water features and fountains care, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2736,14 +2736,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "landscape-maintenance-amc",
     faqs: [
       { q: "Who should read this guide on mulching benefits for indian gardens?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Mulching Benefits for Indian Gardens is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches mulching benefits for indian gardens with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches mulching benefits for indian gardens with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2755,7 +2755,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For mulching benefits for indian gardens, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2773,14 +2773,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "lawn-care",
     faqs: [
       { q: "Who should read this guide on soil preparation before lawn install?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Soil Preparation Before Lawn Install is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches soil preparation before lawn install with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches soil preparation before lawn install with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2792,7 +2792,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For soil preparation before lawn install, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2811,14 +2811,14 @@ export const blogPosts: BlogPost[] = [
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on native & adaptive plants for delhi ncr?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Native & Adaptive Plants for Delhi NCR is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches native & adaptive plants for delhi ncr with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches native & adaptive plants for delhi ncr with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2830,7 +2830,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For native & adaptive plants for delhi ncr, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2848,14 +2848,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "garden-design",
     faqs: [
       { q: "Who should read this guide on kids-friendly garden design ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Kids-Friendly Garden Design Ideas is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches kids-friendly garden design ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches kids-friendly garden design ideas with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2867,7 +2867,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For kids-friendly garden design ideas, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2885,14 +2885,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "garden-design",
     faqs: [
       { q: "Who should read this guide on pet-friendly garden planting tips?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Pet-Friendly Garden Planting Tips is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches pet-friendly garden planting tips with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches pet-friendly garden planting tips with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2904,7 +2904,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For pet-friendly garden planting tips, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2922,14 +2922,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "garden-design",
     faqs: [
       { q: "Who should read this guide on entrance garden ideas for indian homes?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Entrance Garden Ideas for Indian Homes is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches entrance garden ideas for indian homes with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches entrance garden ideas for indian homes with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2941,7 +2941,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For entrance garden ideas for indian homes, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2959,14 +2959,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "vertical-garden",
     faqs: [
       { q: "Who should read this guide on compound wall climbers and screens?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Compound Wall Climbers and Screens is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches compound wall climbers and screens with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches compound wall climbers and screens with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -2978,7 +2978,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For compound wall climbers and screens, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -2996,14 +2996,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "landscape-maintenance-amc",
     faqs: [
       { q: "Who should read this guide on after handover garden care: first 90 days?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "After Handover Garden Care: First 90 Days is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches after handover garden care: first 90 days with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches after handover garden care: first 90 days with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -3015,7 +3015,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For after handover garden care: first 90 days, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -3033,14 +3033,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "garden-design",
     faqs: [
       { q: "Who should read this guide on landscape contractor red flags?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Landscape Contractor Red Flags is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches landscape contractor red flags with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches landscape contractor red flags with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -3052,7 +3052,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For landscape contractor red flags, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -3070,14 +3070,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "garden-design",
     faqs: [
       { q: "Who should read this guide on questions to ask before a garden renovation?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Questions to Ask Before a Garden Renovation is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches questions to ask before a garden renovation with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches questions to ask before a garden renovation with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -3089,7 +3089,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For questions to ask before a garden renovation, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -3107,14 +3107,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "garden-design",
     faqs: [
       { q: "Who should read this guide on small garden design tips for india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Small Garden Design Tips for India is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches small garden design tips for india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches small garden design tips for india with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -3126,7 +3126,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For small garden design tips for india, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -3144,14 +3144,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "tree-care",
     faqs: [
       { q: "Who should read this guide on shade garden ideas under trees?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Shade Garden Ideas Under Trees is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches shade garden ideas under trees with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches shade garden ideas under trees with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -3163,7 +3163,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For shade garden ideas under trees, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -3181,14 +3181,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "irrigation",
     faqs: [
       { q: "Who should read this guide on drought-tolerant garden design?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Drought-Tolerant Garden Design is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches drought-tolerant garden design with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches drought-tolerant garden design with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -3200,7 +3200,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For drought-tolerant garden design, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -3218,14 +3218,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "irrigation",
     faqs: [
       { q: "Who should read this guide on rainwater ideas for garden irrigation?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Rainwater Ideas for Garden Irrigation is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches rainwater ideas for garden irrigation with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches rainwater ideas for garden irrigation with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -3237,7 +3237,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For rainwater ideas for garden irrigation, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -3255,14 +3255,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "lighting",
     faqs: [
       { q: "Who should read this guide on hospitality landscape night look?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Hospitality Landscape Night Look is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches hospitality landscape night look with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches hospitality landscape night look with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -3274,7 +3274,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For hospitality landscape night look, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -3292,14 +3292,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "lawn-care",
     faqs: [
       { q: "Who should read this guide on school and campus softscape basics?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "School and Campus Softscape Basics is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches school and campus softscape basics with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches school and campus softscape basics with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -3311,7 +3311,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For school and campus softscape basics, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -3329,14 +3329,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "hardscaping",
     faqs: [
       { q: "Who should read this guide on retail plaza landscaping basics?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Retail Plaza Landscaping Basics is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches retail plaza landscaping basics with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches retail plaza landscaping basics with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -3348,7 +3348,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For retail plaza landscaping basics, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",
@@ -3366,14 +3366,14 @@ export const blogPosts: BlogPost[] = [
     serviceSlug: "garden-design",
     faqs: [
       { q: "Who should read this guide on why garden documentation matters?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
-      { q: "Can Greenly help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
+      { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
     ],
     sections: [
       {
         heading: "Why this matters",
         paragraphs: [
           "Why Garden Documentation Matters is a common search for homeowners and facility teams who want outdoor spaces that look finished and stay maintainable.",
-          "Greenly approaches why garden documentation matters with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
+          "Hind Landscape Co. approaches why garden documentation matters with climate-aware planting, clear irrigation thinking and maintenance reality \u2014 especially across Delhi NCR and India.",
         ],
       },
       {
@@ -3385,7 +3385,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What Greenly recommends",
+        heading: "What Hind Landscape Co. recommends",
         paragraphs: [
           "For why garden documentation matters, combine design clarity with install quality and an optional AMC so watering, pruning and seasonal resets stay on schedule.",
           "Ask for plant lists, irrigation zones and exclusions in writing so quotations are easy to compare.",

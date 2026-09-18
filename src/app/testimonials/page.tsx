@@ -3,7 +3,7 @@ import Link from "next/link";
 import { testimonials } from "@/lib/site";
 import { Arrow } from "@/components/Icons";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { FadeUp } from "@/components/Animate";
+import { FadeUp, Reveal, SplitText } from "@/components/Animate";
 import { MidCta } from "@/components/PageSections";
 import { ProofBand } from "@/components/ProofBand";
 import { buildMetadata } from "@/lib/seo";
@@ -11,38 +11,38 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Testimonials | Gardens People Stay In",
   description:
-    "Read Greenly client stories — homes, farmhouses and properties where design, lighting and maintenance still feel settled.",
+    "Read Hind Landscape Co. client stories — homes, farmhouses and properties where design, lighting and maintenance still feel settled.",
   path: "/testimonials",
 });
 
 const moreTestimonials = [
   {
     quote:
-      "Greenly designed the terrace garden for our penthouse in Gurugram. Before starting they confirmed load limits and drainage specs with our building's waterproofing team. The drip system, lightweight containers and planting all work without any intervention from us. Most visitors think it's a building feature.",
+      "Hind Landscape Co. designed the terrace garden for our penthouse in Gurugram. Before starting they confirmed load limits and drainage specs with our building's waterproofing team. The drip system, lightweight containers and planting all work without any intervention from us. Most visitors think it's a building feature.",
     name: "Kavitha Iyer",
     place: "Penthouse terrace, Sector 52, Gurugram",
   },
   {
     quote:
-      "We run a 32-room property in Noida. The entrance garden hadn't been touched properly since 2019. Greenly relaid the approach hardscape, added seasonal planting beds and installed low-glare LED path lights. Three guest reviews in the past 60 days have mentioned the garden by name.",
+      "We run a 32-room property in Noida. The entrance garden hadn't been touched properly since 2019. Hind Landscape Co. relaid the approach hardscape, added seasonal planting beds and installed low-glare LED path lights. Three guest reviews in the past 60 days have mentioned the garden by name.",
     name: "Ashutosh Verma",
     place: "Boutique hotel, Sector 62, Noida",
   },
   {
     quote:
-      "Our corporate campus irrigation was wasting water across the wrong zones. Greenly remapped four zones, replaced the controller and added a seasonal override. The groundwater bill dropped noticeably over the following summer and the lawn stayed green through May without extra watering.",
+      "Our corporate campus irrigation was wasting water across the wrong zones. Hind Landscape Co. remapped four zones, replaced the controller and added a seasonal override. The groundwater bill dropped noticeably over the following summer and the lawn stayed green through May without extra watering.",
     name: "Neetu Arora",
     place: "Corporate campus, Noida Expressway",
   },
   {
     quote:
-      "I was nervous about trusting anyone with the front garden — it's the first thing people see when they visit. Greenly sent a detailed plan with photos of exactly which plants would go where, and matched the finished result to the presentation. Haven't touched a weed in eight months.",
+      "I was nervous about trusting anyone with the front garden — it's the first thing people see when they visit. Hind Landscape Co. sent a detailed plan with photos of exactly which plants would go where, and matched the finished result to the presentation. Haven't touched a weed in eight months.",
     name: "Meera Bhatia",
     place: "Home garden, Defence Colony, Delhi",
   },
   {
     quote:
-      "The outdoor lighting Greenly installed changed the evenings at our home completely. We used to avoid the garden after dark. Now it's where we sit after dinner. The cable routing was clean, every fixture is sealed properly and they came back six months later to adjust one angle for free.",
+      "The outdoor lighting Hind Landscape Co. installed changed the evenings at our home completely. We used to avoid the garden after dark. Now it's where we sit after dinner. The cable routing was clean, every fixture is sealed properly and they came back six months later to adjust one angle for free.",
     name: "Sameer Johar",
     place: "Villa, DLF Phase 4, Gurugram",
   },
@@ -51,12 +51,16 @@ const moreTestimonials = [
 export default function TestimonialsPage() {
   return (
     <main>
-      <section className="page-hero">
+      <section className="page-hero" style={{ "--hero-img": "url('/images/work-hotel.jpg')" } as React.CSSProperties}>
         <div className="wrap">
           <Breadcrumbs items={[{ name: "Testimonials" }]} />
           <div className="eyebrow">Testimonials</div>
-          <h1>Gardens people stay in</h1>
+          <SplitText as="h1" text="Gardens people stay in" />
           <p>Notes from homes and properties we have planted, built and kept.</p>
+          <div className="hero-cta-row">
+            <Link href="/quote" className="btn btn-green btn-pulse">Start your garden <Arrow /></Link>
+            <Link href="/contact" className="btn btn-outline">Talk to the studio</Link>
+          </div>
         </div>
       </section>
 
@@ -69,13 +73,13 @@ export default function TestimonialsPage() {
           </FadeUp>
           <div className="t-grid">
             {[...testimonials.slice(1), ...moreTestimonials].map((item, i) => (
-              <FadeUp key={item.name} delay={i * 70}>
+              <Reveal key={item.name} delay={i * 70} variant="up">
                 <article className="t-card">
                   <p>&ldquo;{item.quote}&rdquo;</p>
                   <strong>{item.name}</strong>
                   <span>{item.place}</span>
                 </article>
-              </FadeUp>
+              </Reveal>
             ))}
           </div>
         </div>

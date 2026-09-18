@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+
 const csp = [
   "default-src 'self'",
   "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
@@ -12,7 +14,7 @@ const csp = [
   "frame-ancestors 'none'",
   "base-uri 'self'",
   "form-action 'self'",
-  "upgrade-insecure-requests",
+  ...(isProd ? ["upgrade-insecure-requests"] : []),
 ].join("; ");
 
 const securityHeaders = [
@@ -23,10 +25,9 @@ const securityHeaders = [
   { key: "Referrer-Policy",          value: "strict-origin-when-cross-origin"   },
   { key: "Permissions-Policy",       value: "camera=(), microphone=(), geolocation=(), payment=()" },
   { key: "Content-Security-Policy",  value: csp                                 },
-  {
-    key: "Strict-Transport-Security",
-    value: "max-age=63072000; includeSubDomains; preload",
-  },
+  ...(isProd
+    ? [{ key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" }]
+    : []),
 ];
 
 const nextConfig: NextConfig = {

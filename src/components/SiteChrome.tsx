@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { pages, services } from "@/lib/site";
 import { business } from "@/lib/business";
-import { Arrow, Chevron, LeafMark, MenuIcon, PlayIcon, SearchIcon } from "./Icons";
+import { Arrow, Chevron, MenuIcon, PhoneIcon, WhatsAppIcon, MailIcon, MapPinIcon, PlayIcon, SearchIcon } from "./Icons";
+import { BrandLogo } from "./BrandLogo";
 import { StickyAsk } from "./StickyAsk";
 export { QuoteForm } from "./QuoteForm";
 
@@ -20,11 +21,15 @@ export function SiteProvider({ children }: { children: React.ReactNode }) {
   const [search, setSearch] = useState(false);
   const [menu, setMenu] = useState(false);
   const [query, setQuery] = useState("");
+  const [openDrop, setOpenDrop] = useState<string | null>(null);
+  const [openAcc, setOpenAcc] = useState<string | null>(null);
   const pathname = usePathname();
 
   useEffect(() => {
     setMenu(false);
     setSearch(false);
+    setOpenDrop(null);
+    setOpenAcc(null);
   }, [pathname]);
 
   useEffect(() => {
@@ -49,10 +54,10 @@ export function SiteProvider({ children }: { children: React.ReactNode }) {
       .filter((s) => `${s.title} ${s.text}`.toLowerCase().includes(q))
       .map((s) => ({ href: `/services/${s.slug}`, title: s.title, text: s.text }));
     const extras = [
-      { href: "/locations", title: "Locations", text: "Delhi NCR & India" },
+      { href: "/blog", title: "Blogs", text: "Guides & city SEO" },
+      { href: "/locations", title: "Locations", text: "Cities & states India" },
       { href: "/faq", title: "FAQ", text: "Common questions" },
       { href: "/quote", title: "Get a Quote", text: "Free assessment" },
-      { href: "/blog", title: "Blog", text: "Guides & tips" },
     ].filter((item) => `${item.title} ${item.text}`.toLowerCase().includes(q));
     return [...pageHits, ...serviceHits, ...extras].slice(0, 8);
   }, [query]);
@@ -73,17 +78,29 @@ export function SiteProvider({ children }: { children: React.ReactNode }) {
     <VideoContext.Provider value={{ openVideo: () => setVideo(true) }}>
       <header className="header">
         <div className="header-inner">
-          <Link href="/" className="logo" aria-label="Greenly home">
-            <span className="logo-mark"><LeafMark /></span>
-            <span>
-              <strong>Greenly</strong>
-              <span>Landscaping & Gardening</span>
-            </span>
-          </Link>
+          <BrandLogo variant="header" />
           <nav className="nav" aria-label="Primary">
             <Link href="/" className={pathname === "/" ? "active" : ""}>Home</Link>
-            <div className="nav-drop">
-              <button type="button" aria-haspopup="true">Services <Chevron /></button>
+            <div className={`nav-drop${openDrop === "services" ? " is-open" : ""}`}>
+              <Link
+                href="/services"
+                className={`nav-drop-link${pathname.startsWith("/services") ? " active" : ""}`}
+              >
+                Services
+              </Link>
+              <button
+                type="button"
+                className="nav-drop-chev"
+                aria-label="Open services menu"
+                aria-expanded={openDrop === "services"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setOpenDrop((cur) => (cur === "services" ? null : "services"));
+                }}
+              >
+                <Chevron />
+              </button>
               <div className="nav-menu">
                 <Link href="/services" className="nav-all-services">
                   All Services <span>→</span>
@@ -96,7 +113,39 @@ export function SiteProvider({ children }: { children: React.ReactNode }) {
             </div>
             <Link href="/about" className={pathname === "/about" ? "active" : ""}>About Us</Link>
             <Link href="/gallery" className={pathname === "/gallery" ? "active" : ""}>Gallery</Link>
-            <Link href="/blog" className={pathname.startsWith("/blog") ? "active" : ""}>Blog</Link>
+            <div className={`nav-drop${openDrop === "blogs" ? " is-open" : ""}`}>
+              <Link
+                href="/blog"
+                className={`nav-drop-link${pathname.startsWith("/blog") ? " active" : ""}`}
+              >
+                Blogs
+              </Link>
+              <button
+                type="button"
+                className="nav-drop-chev"
+                aria-label="Open blogs menu"
+                aria-expanded={openDrop === "blogs"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setOpenDrop((cur) => (cur === "blogs" ? null : "blogs"));
+                }}
+              >
+                <Chevron />
+              </button>
+              <div className="nav-menu">
+                <Link href="/blog" className="nav-all-services">
+                  All Blogs <span>→</span>
+                </Link>
+                <div className="nav-menu-sep" />
+                <Link href="/blog#cat-delhi-ncr-guides">Delhi NCR Guides</Link>
+                <Link href="/blog#cat-cost-planning">Cost &amp; Planning</Link>
+                <Link href="/blog#cat-lawn-care">Lawn Care</Link>
+                <Link href="/blog#india-coverage">Cities &amp; States</Link>
+                <Link href="/locations">Browse by Location</Link>
+                <Link href="/landscaping-company-india">Pan-India Landscaping</Link>
+              </div>
+            </div>
             <Link href="/testimonials" className={pathname === "/testimonials" ? "active" : ""}>Testimonials</Link>
             <Link href="/contact" className={pathname === "/contact" ? "active" : ""}>Contact</Link>
           </nav>
@@ -120,9 +169,59 @@ export function SiteProvider({ children }: { children: React.ReactNode }) {
               <strong>Menu</strong>
               <button className="icon-btn" onClick={() => setMenu(false)} aria-label="Close menu">✕</button>
             </div>
-            {pages.map((p) => (
-              <Link key={p.href} href={p.href}>{p.label}</Link>
-            ))}
+            {pages.map((p) => {
+              if (p.href === "/services") {
+                return (
+                  <div key={p.href} className="drawer-acc">
+                    <div className="drawer-acc-row">
+                      <Link href="/services">{p.label}</Link>
+                      <button
+                        type="button"
+                        className="drawer-acc-tog"
+                        aria-expanded={openAcc === "services"}
+                        onClick={() => setOpenAcc((cur) => (cur === "services" ? null : "services"))}
+                      >
+                        <Chevron />
+                      </button>
+                    </div>
+                    {openAcc === "services" && (
+                      <div className="drawer-acc-panel">
+                        {services.slice(0, 7).map((s) => (
+                          <Link key={s.slug} href={`/services/${s.slug}`}>{s.title}</Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+              if (p.href === "/blog") {
+                return (
+                  <div key={p.href} className="drawer-acc">
+                    <div className="drawer-acc-row">
+                      <Link href="/blog">{p.label}</Link>
+                      <button
+                        type="button"
+                        className="drawer-acc-tog"
+                        aria-expanded={openAcc === "blogs"}
+                        onClick={() => setOpenAcc((cur) => (cur === "blogs" ? null : "blogs"))}
+                      >
+                        <Chevron />
+                      </button>
+                    </div>
+                    {openAcc === "blogs" && (
+                      <div className="drawer-acc-panel">
+                        <Link href="/blog#cat-delhi-ncr-guides">Delhi NCR Guides</Link>
+                        <Link href="/blog#cat-cost-planning">Cost &amp; Planning</Link>
+                        <Link href="/blog#cat-lawn-care">Lawn Care</Link>
+                        <Link href="/blog#india-coverage">Cities &amp; States</Link>
+                        <Link href="/locations">Browse by Location</Link>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+              return <Link key={p.href} href={p.href}>{p.label}</Link>;
+            })}
             <Link href="/quote" className="btn btn-green" style={{ marginTop: 12 }}>Get a Quote <Arrow /></Link>
           </aside>
         </>
@@ -132,7 +231,7 @@ export function SiteProvider({ children }: { children: React.ReactNode }) {
         <div className="overlay" onClick={() => setSearch(false)}>
           <div className="search-panel" onClick={(e) => e.stopPropagation()}>
             <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 10 }}>
-              <strong>Search Greenly</strong>
+              <strong>Search {business.name}</strong>
               <button className="close" onClick={() => setSearch(false)}>Close</button>
             </div>
             <input
@@ -171,7 +270,7 @@ function VideoModal({ onClose }: { onClose: () => void }) {
           <span>Watch our process</span>
           <button onClick={onClose}>Close</button>
         </div>
-        <video src="/videos/process.mp4" controls autoPlay playsInline poster="/images/video-cover.jpg" />
+        <video src={business.aboutVideo} controls autoPlay playsInline />
       </div>
     </div>
   );
@@ -199,10 +298,15 @@ export function VideoCard() {
       onClick={openVideo}
       aria-label="Play our process video"
     >
-      <img
+      <video
         className="video-card-media"
-        src="/images/video-cover.jpg"
-        alt="Greenly gardener on site"
+        src={business.aboutVideo}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        aria-hidden
       />
       <span className="video-play"><PlayIcon size={22} /></span>
       <span className="video-caption">
@@ -216,41 +320,108 @@ export function VideoCard() {
 function Footer() {
   return (
     <footer className="footer">
-      <div className="wrap footer-grid">
-        <div>
-          <Link href="/" className="logo">
-            <span className="logo-mark"><LeafMark /></span>
-            <span>
-              <strong>Greenly</strong>
-              <span>Landscaping & Gardening</span>
-            </span>
-          </Link>
-          <p>We design, build and maintain gardens that bring life, peace and value to homes and businesses.</p>
-          <p className="footer-person">
-            <strong>{business.contactName}</strong>
-            <a href={`tel:${business.phoneTel}`}>{business.phone}</a>
-          </p>
-        </div>
-        <div>
-          <h4>Explore</h4>
-          {pages.map((p) => <Link key={p.href} href={p.href}>{p.label}</Link>)}
-          <Link href="/locations">Locations</Link>
-          <Link href="/faq">FAQ</Link>
-        </div>
-        <div>
-          <h4>Services</h4>
-          {services.slice(0, 5).map((s) => (
-            <Link key={s.slug} href={`/services/${s.slug}`}>{s.title}</Link>
-          ))}
-        </div>
-        <div>
-          <h4>Start a project</h4>
-          <Link href="/quote">Get a free quote</Link>
-          <Link href="/contact">Contact the team</Link>
-          <Link href="/gallery">View the gallery</Link>
+      {/* ── CTA banner ── */}
+      <div className="footer-cta-banner">
+        <div className="wrap footer-cta-inner">
+          <div className="footer-cta-text">
+            <span className="footer-cta-eyebrow">Ready to begin?</span>
+            <h3>Let&apos;s design your outdoor space</h3>
+          </div>
+          <div className="footer-cta-actions">
+            <a href={`tel:${business.phoneTel}`} className="footer-cta-call">
+              <PhoneIcon size={16} /> Call Now
+            </a>
+            <Link href="/quote" className="footer-cta-quote">
+              Free Site Visit <Arrow />
+            </Link>
+          </div>
         </div>
       </div>
-      <div className="wrap footer-bottom">© {new Date().getFullYear()} Greenly. All rights reserved.</div>
+
+      {/* ── Main grid ── */}
+      <div className="wrap footer-grid">
+        {/* Brand col */}
+        <div className="footer-brand-col">
+          <BrandLogo variant="footer" className="footer-logo" />
+          <p className="footer-tagline">
+            Landscape architects crafting master plans for homes, campuses and cities across Delhi NCR &amp; India.
+          </p>
+
+          {/* Contact list — elegant vertical */}
+          <ul className="footer-contact-list">
+            <li>
+              <a href={`tel:${business.phoneTel}`}>
+                <span className="footer-contact-ico"><PhoneIcon size={18} solid /></span>
+                <span className="footer-contact-text">
+                  <em>Call us</em>
+                  <b>{business.phone}</b>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href={`https://wa.me/${business.whatsapp}`} target="_blank" rel="noopener noreferrer">
+                <span className="footer-contact-ico footer-contact-ico-wa"><WhatsAppIcon size={18} /></span>
+                <span className="footer-contact-text">
+                  <em>WhatsApp</em>
+                  <b>Message us anytime</b>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href={`mailto:${business.email}`}>
+                <span className="footer-contact-ico footer-contact-ico-mail"><MailIcon size={18} solid /></span>
+                <span className="footer-contact-text">
+                  <em>Email</em>
+                  <b>{business.email}</b>
+                </span>
+              </a>
+            </li>
+            <li>
+              <div className="footer-contact-static">
+                <span className="footer-contact-ico footer-contact-ico-pin"><MapPinIcon size={18} solid /></span>
+                <span className="footer-contact-text">
+                  <em>Studio</em>
+                  <b>{business.addressLine}</b>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        {/* Link columns */}
+        <div className="footer-links-wrap">
+          <div className="footer-link-col">
+            <h4>Explore</h4>
+            {pages.map((p) => <Link key={p.href} href={p.href}>{p.label}</Link>)}
+            <Link href="/locations">Locations</Link>
+            <Link href="/faq">FAQ</Link>
+          </div>
+
+          <div className="footer-link-col">
+            <h4>Services</h4>
+            {services.slice(0, 6).map((s) => (
+              <Link key={s.slug} href={`/services/${s.slug}`}>{s.title}</Link>
+            ))}
+          </div>
+
+          <div className="footer-link-col">
+            <h4>Start a project</h4>
+            <Link href="/quote">Free site visit</Link>
+            <Link href="/contact">Contact us</Link>
+            <Link href="/gallery">View gallery</Link>
+            <Link href="/testimonials">Testimonials</Link>
+            <Link href="/blog">Guides &amp; blogs</Link>
+          </div>
+        </div>
+      </div>
+
+      {/* ── Bottom bar ── */}
+      <div className="footer-bottom-wrap">
+        <div className="wrap footer-bottom">
+          <span>© {new Date().getFullYear()} {business.legalName}. All rights reserved.</span>
+          <span className="footer-bottom-right">Delhi NCR · Pan-India</span>
+        </div>
+      </div>
     </footer>
   );
 }

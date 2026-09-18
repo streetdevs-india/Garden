@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Hind Landscape Co.">
+  <defs>
+    <linearGradient id="hlg" x1="12" y1="8" x2="52" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#27a348"/>
+      <stop offset="1" stop-color="#0e3d1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="url(#hlg)"/>
+  <path d="M18 44V20h5.2v9.4H30V20H35.2v24H30v-9.8h-6.8V44H18Z" fill="#fff"/>
+  <path d="M42.2 18.5c.7 3.2-.1 5.7-2 7.8 2.8.1 4.8 1.3 6.1 3.8-2.7-.7-4.5-.1-6 1.5-.4-2.5.1-4.7 1.2-6.9-1.9.7-3.3 2.1-4.2 4 1-3.4 2.9-7.3 4.9-10.2Z" fill="#d7f5df"/>
+  <circle cx="46.5" cy="44.5" r="2.2" fill="#9be0a8"/>
+</svg>

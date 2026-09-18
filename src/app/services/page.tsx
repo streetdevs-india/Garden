@@ -3,7 +3,7 @@ import Link from "next/link";
 import { services } from "@/lib/site";
 import { Arrow } from "@/components/Icons";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { FadeUp } from "@/components/Animate";
+import { FadeUp, SplitText } from "@/components/Animate";
 import {
   AudienceSection,
   HomeFaqSection,
@@ -16,7 +16,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Landscaping Services | Garden Design, Lawn Care & More",
   description:
-    "Complete landscaping services from Greenly — garden design, lawn care, irrigation, hardscaping, lighting, terrace gardens and maintenance AMC across Delhi NCR and India.",
+    "Complete landscaping services from Hind Landscape Co. — garden design, lawn care, irrigation, hardscaping, lighting, terrace gardens and maintenance AMC across Delhi NCR and India.",
   path: "/services",
 });
 
@@ -26,15 +26,19 @@ export default function ServicesPage() {
 
   return (
     <main>
-      <section className="page-hero">
+      <section className="page-hero" style={{ "--hero-img": "url('/images/service-design.jpg')" } as React.CSSProperties}>
         <div className="wrap">
           <Breadcrumbs items={[{ name: "Services" }]} />
           <div className="eyebrow">Our Services</div>
-          <h1>Complete landscaping services for every garden dream</h1>
+          <SplitText as="h1" text="Complete landscaping services for every garden dream" />
           <p>
             Garden design, lawn care, irrigation, hardscaping, lighting and maintenance AMC — covering
             residential, farmhouse and commercial outdoor spaces across Delhi NCR and India.
           </p>
+          <div className="hero-cta-row">
+            <Link href="/quote" className="btn btn-green btn-pulse">Get a Free Quote <Arrow /></Link>
+            <Link href="/contact" className="btn btn-outline">Talk to the studio</Link>
+          </div>
         </div>
       </section>
 

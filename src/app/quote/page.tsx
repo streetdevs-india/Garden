@@ -3,14 +3,15 @@ import Link from "next/link";
 import { QuoteForm } from "@/components/SiteChrome";
 import { quoteAssurances, processSteps, homeFaqs } from "@/lib/psychology";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { FadeUp } from "@/components/Animate";
+import { Arrow } from "@/components/Icons";
+import { FadeUp, Reveal, SplitText } from "@/components/Animate";
 import { testimonials } from "@/lib/site";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   title: "Get a Free Quote | Dream Garden Assessment",
   description:
-    "Request a free Greenly landscaping quote. Share your locality and photos — we reply with a clear next step for design, install or maintenance.",
+    "Request a free Hind Landscape Co. landscaping quote. Share your locality and photos — we reply with a clear next step for design, install or maintenance.",
   path: "/quote",
 });
 
@@ -23,19 +24,23 @@ export default async function QuotePage({
 
   return (
     <main>
-      <section className="page-hero">
+      <section className="page-hero" style={{ "--hero-img": "url('/images/service-design.jpg')" } as React.CSSProperties}>
         <div className="wrap">
           <Breadcrumbs items={[{ name: "Get a Quote" }]} />
           <div className="eyebrow">Free Quote</div>
-          <h1>Ready to create your dream garden?</h1>
+          <SplitText as="h1" text="Ready to create your dream garden?" />
           <p>Tell us about the space — design, lawn, lighting or a full landscape. We reply with a clear next step.</p>
+          <div className="hero-cta-row">
+            <Link href="#quote-form" className="btn btn-green btn-pulse">Start the form <Arrow /></Link>
+            <Link href="/contact" className="btn btn-outline">Talk to the studio</Link>
+          </div>
         </div>
       </section>
 
       <section className="page-section">
-        <div className="wrap" style={{ display: "grid", gridTemplateColumns: "1.15fr 0.85fr", gap: 36, alignItems: "start" }}>
-          <FadeUp>
-            <div>
+        <div className="wrap quote-page-grid">
+          <Reveal variant="left">
+            <div id="quote-form">
               {sent && (
                 <div className="note" style={{ marginBottom: 20, borderRadius: 16 }}>
                   ✓ Thank you — we have your request and will be in touch about the garden.
@@ -43,9 +48,9 @@ export default async function QuotePage({
               )}
               <QuoteForm />
             </div>
-          </FadeUp>
+          </Reveal>
 
-          <FadeUp delay={100}>
+          <Reveal variant="right" delay={100}>
             <div>
               {/* Steps */}
               <div style={{ background: "#fff", border: "1px solid var(--line)", borderRadius: 20, padding: "24px 22px", marginBottom: 16 }}>
@@ -81,22 +86,24 @@ export default async function QuotePage({
                 <span style={{ color: "rgba(255,255,255,0.5)", fontSize: 12 }}>{testimonials[0].place}</span>
               </div>
             </div>
-          </FadeUp>
+          </Reveal>
         </div>
 
         {/* FAQ */}
         <div className="wrap" style={{ marginTop: 48 }}>
           <FadeUp>
             <h2 style={{ marginBottom: 20 }}>Before you hit send</h2>
-            <div className="faq-list">
-              {homeFaqs.map((f) => (
-                <details key={f.q} className="faq-item">
+          </FadeUp>
+          <div className="faq-list">
+            {homeFaqs.map((f, i) => (
+              <Reveal key={f.q} delay={i * 50}>
+                <details className="faq-item">
                   <summary>{f.q}</summary>
                   <p>{f.a}</p>
                 </details>
-              ))}
-            </div>
-          </FadeUp>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
     </main>

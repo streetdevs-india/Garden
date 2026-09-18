@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { SeoCta } from "@/components/SeoCta";
 import { Arrow, ServiceGlyph } from "@/components/Icons";
+import { FadeUp, Reveal, SplitText, ZoomImage } from "@/components/Animate";
 import { getService, services } from "@/lib/site";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 
@@ -36,7 +37,7 @@ export default async function ServiceDetailPage({ params }: Props) {
     "@type": "Service",
     name: service.title,
     description: service.seoDescription,
-    provider: { "@type": "LandscapingBusiness", name: "Greenly", url: absoluteUrl("/") },
+    provider: { "@type": "LandscapingBusiness", name: "Hind Landscape Co.", url: absoluteUrl("/") },
     areaServed: "IN",
     url: absoluteUrl(`/services/${service.slug}`),
     image: absoluteUrl(service.image),
@@ -45,7 +46,10 @@ export default async function ServiceDetailPage({ params }: Props) {
   return (
     <main>
       <JsonLd data={jsonLd} />
-      <section className="page-hero">
+      <section
+        className="page-hero"
+        style={{ "--hero-img": `url('${service.image}')` } as React.CSSProperties}
+      >
         <div className="wrap">
           <Breadcrumbs
             items={[
@@ -54,13 +58,20 @@ export default async function ServiceDetailPage({ params }: Props) {
             ]}
           />
           <div className="eyebrow">Service</div>
-          <h1>{service.title}</h1>
+          <SplitText as="h1" text={service.title} />
           <p>{service.seoDescription}</p>
+          <div className="hero-cta-row">
+            <Link href="/quote" className="btn btn-green btn-pulse">Get a Free Quote <Arrow /></Link>
+            <Link href="/contact" className="btn btn-outline">Talk to the studio</Link>
+          </div>
         </div>
       </section>
       <section className="page-section">
         <div className="wrap service-detail-page">
-          <img src={service.image} alt={`${service.title} — Greenly landscaping project photo`} />
+          <FadeUp>
+            <ZoomImage src={service.image} alt={`${service.title} — Hind Landscape Co. landscaping project photo`} />
+          </FadeUp>
+          <Reveal variant="right" delay={80}>
           <div>
             <span className="service-badge"><ServiceGlyph slug={service.slug} /></span>
             {service.body.map((p) => (
@@ -72,18 +83,23 @@ export default async function ServiceDetailPage({ params }: Props) {
               <Link href="/locations/delhi-ncr" className="btn btn-outline">Delhi NCR coverage</Link>
             </div>
           </div>
+          </Reveal>
         </div>
       </section>
       {service.faqs.length > 0 && (
         <section className="page-section seo-faq">
           <div className="wrap">
-            <h2>FAQs about {service.title}</h2>
+            <FadeUp>
+              <h2>FAQs about {service.title}</h2>
+            </FadeUp>
             <div className="faq-list">
-              {service.faqs.map((f) => (
-                <details key={f.q} className="faq-item">
-                  <summary>{f.q}</summary>
-                  <p>{f.a}</p>
-                </details>
+              {service.faqs.map((f, i) => (
+                <Reveal key={f.q} delay={i * 55}>
+                  <details className="faq-item">
+                    <summary>{f.q}</summary>
+                    <p>{f.a}</p>
+                  </details>
+                </Reveal>
               ))}
             </div>
           </div>
@@ -91,16 +107,20 @@ export default async function ServiceDetailPage({ params }: Props) {
       )}
       <section className="page-section">
         <div className="wrap">
-          <h2>Related services</h2>
+          <FadeUp>
+            <h2>Related services</h2>
+          </FadeUp>
           <div className="seo-link-grid">
             {services
               .filter((s) => s.slug !== service.slug)
               .slice(0, 6)
-              .map((s) => (
-                <Link key={s.slug} href={`/services/${s.slug}`} className="seo-link-card">
-                  <strong>{s.title}</strong>
-                  <span>{s.text}</span>
-                </Link>
+              .map((s, i) => (
+                <FadeUp key={s.slug} delay={i * 45}>
+                  <Link href={`/services/${s.slug}`} className="seo-link-card">
+                    <strong>{s.title}</strong>
+                    <span>{s.text}</span>
+                  </Link>
+                </FadeUp>
               ))}
           </div>
         </div>

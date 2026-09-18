@@ -38,6 +38,127 @@ export function FadeUp({
   );
 }
 
+/* ---------- Reveal — directional scroll reveal ---------- */
+export function Reveal({
+  children,
+  delay = 0,
+  variant = "up",
+  className = "",
+  as: Tag = "div",
+}: {
+  children: ReactNode;
+  delay?: number;
+  variant?: "up" | "left" | "right" | "zoom" | "blur";
+  className?: string;
+  as?: "div" | "section" | "article" | "span" | "li";
+}) {
+  const ref = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          const add = () => el.classList.add("in-view");
+          delay ? setTimeout(add, delay) : add();
+          observer.unobserve(el);
+        }
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [delay]);
+
+  const Component = Tag as "div";
+  return (
+    <Component ref={ref as React.Ref<HTMLDivElement>} className={`reveal reveal-${variant} ${className}`}>
+      {children}
+    </Component>
+  );
+}
+
+/* ---------- ZoomImage — parallax zoom on scroll ---------- */
+export function ZoomImage({
+  src,
+  alt,
+  className = "",
+  loading = "lazy",
+}: {
+  src: string;
+  alt: string;
+  className?: string;
+  loading?: "lazy" | "eager";
+}) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.classList.add("in-view");
+          observer.unobserve(el);
+        }
+      },
+      { threshold: 0.15 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div ref={ref} className={`zoom-img ${className}`}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={src} alt={alt} loading={loading} />
+    </div>
+  );
+}
+
+/* ---------- SplitText — word-by-word reveal for headings ---------- */
+export function SplitText({
+  text,
+  className = "",
+  as: Tag = "h2",
+}: {
+  text: string;
+  className?: string;
+  as?: "h1" | "h2" | "h3" | "p";
+}) {
+  const ref = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.classList.add("in-view");
+          observer.unobserve(el);
+        }
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  const Component = Tag as "h2";
+  const words = text.split(" ");
+  return (
+    <Component ref={ref as React.Ref<HTMLHeadingElement>} className={`split-text ${className}`}>
+      {words.map((w, i) => (
+        <span key={i} className="split-word" style={{ transitionDelay: `${i * 45}ms` }}>
+          {w}
+          {i < words.length - 1 ? "\u00A0" : ""}
+        </span>
+      ))}
+    </Component>
+  );
+}
+
 /* ---------- CountUp ---------- */
 export function CountUp({
   value,

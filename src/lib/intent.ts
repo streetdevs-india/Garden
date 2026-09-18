@@ -18,9 +18,9 @@ export const intentPages: IntentPage[] = [
     eyebrow: "India",
     title: "Landscaping Company in India | Design, Build & Maintain",
     description:
-      "Greenly is a landscaping company in India for garden design, lawns, irrigation, hardscaping, lighting and maintenance — Delhi NCR primary, pan-India mobilisation.",
+      "Hind Landscape Co. is a landscaping company in India for garden design, lawns, irrigation, hardscaping, lighting and maintenance — Delhi NCR primary, pan-India mobilisation.",
     intro:
-      "Buyers searching for a landscaping company in India need clear scope, climate-aware planting and maintenance continuity — not brochure promises. Greenly designs, builds and maintains outdoor spaces for homes, farmhouses, hotels and commercial sites.",
+      "Buyers searching for a landscaping company in India need clear scope, climate-aware planting and maintenance continuity — not brochure promises. Hind Landscape Co. designs, builds and maintains outdoor spaces for homes, farmhouses, hotels and commercial sites.",
     bullets: [
       "Garden design and planting plans",
       "Lawn care, irrigation and outdoor lighting",
@@ -28,7 +28,7 @@ export const intentPages: IntentPage[] = [
       "Maintenance AMC after handover",
     ],
     faqs: [
-      { q: "Where does Greenly primarily operate?", a: "Delhi NCR is primary. We mobilise across India for suitable project scopes." },
+      { q: "Where does Hind Landscape Co. primarily operate?", a: "Delhi NCR is primary. We mobilise across India for suitable project scopes." },
       { q: "Do you handle commercial landscaping?", a: "Yes — hotels, campuses, societies and estate-scale residential programmes." },
     ],
   },
@@ -36,11 +36,11 @@ export const intentPages: IntentPage[] = [
     slug: "commercial-landscaping",
     path: "/commercial-landscaping",
     eyebrow: "Commercial",
-    title: "Commercial Landscaping Services India | Greenly",
+    title: "Commercial Landscaping Services India | Hind Landscape Co.",
     description:
       "Commercial landscaping for hotels, campuses, societies and retail — design, install, irrigation, lighting and AMC.",
     intro:
-      "Commercial landscapes must survive footfall, FM teams and seasonal stress. Greenly scopes arrival courts, lawns, planting and irrigation with maintenance in mind.",
+      "Commercial landscapes must survive footfall, FM teams and seasonal stress. Hind Landscape Co. scopes arrival courts, lawns, planting and irrigation with maintenance in mind.",
     bullets: ["Hospitality outdoor spaces", "Campus and institutional softscape", "Society common areas", "AMC-ready handover"],
     faqs: [
       { q: "What is typical commercial scope?", a: "Design-build softscape/hardscape, irrigation, lighting and optional maintenance contracts." },
@@ -68,7 +68,7 @@ export const intentPages: IntentPage[] = [
     description:
       "Corporate campus landscaping — shade trees, arrival lawns, irrigation zones and FM-friendly maintenance programmes.",
     intro:
-      "Campus landscapes need durable turf, clear irrigation and safe sightlines. Greenly delivers design through maintenance AMC for managed properties.",
+      "Campus landscapes need durable turf, clear irrigation and safe sightlines. Hind Landscape Co. delivers design through maintenance AMC for managed properties.",
     bullets: ["Arrival lawns and avenue planting", "Irrigation zoning", "Shade and seating edges", "FM-ready AMC"],
     faqs: [
       { q: "Can you maintain after install?", a: "Yes. Landscape maintenance AMC keeps campuses consistent year-round." },
@@ -78,7 +78,7 @@ export const intentPages: IntentPage[] = [
     slug: "residential-landscaping",
     path: "/residential-landscaping",
     eyebrow: "Residential",
-    title: "Residential Landscaping & Garden Design | Greenly",
+    title: "Residential Landscaping & Garden Design | Hind Landscape Co.",
     description:
       "Residential landscaping for villas, apartments and farmhouses — garden design, lawns, terrace gardens and lighting.",
     intro:
@@ -96,7 +96,7 @@ export const intentPages: IntentPage[] = [
     description:
       "Garden maintenance in Delhi NCR — lawn care, hedge pruning, irrigation checks and seasonal cleanups with AMC options.",
     intro:
-      "Delhi NCR gardens need scheduled care through heat, monsoon and winter. Greenly offers visit-based maintenance and AMC programmes.",
+      "Delhi NCR gardens need scheduled care through heat, monsoon and winter. Hind Landscape Co. offers visit-based maintenance and AMC programmes.",
     bullets: ["Lawn mowing and feeding", "Hedge and shrub shaping", "Irrigation checks", "Seasonal cleanup"],
     faqs: [
       { q: "Which cities are covered?", a: "Delhi, Gurugram, Noida, Faridabad and wider Delhi NCR for suitable AMC scopes." },
@@ -108,9 +108,9 @@ export const intentPages: IntentPage[] = [
     eyebrow: "Delhi",
     title: "Landscape Contractor in Delhi | Design-Build Execution",
     description:
-      "Looking for a landscape contractor in Delhi? Greenly handles design-build execution, irrigation, hardscape and maintenance handover.",
+      "Looking for a landscape contractor in Delhi? Hind Landscape Co. handles design-build execution, irrigation, hardscape and maintenance handover.",
     intro:
-      "A landscape contractor in Delhi should understand local climate, nursery supply and site access. Greenly executes residential and commercial outdoor works with clear scope.",
+      "A landscape contractor in Delhi should understand local climate, nursery supply and site access. Hind Landscape Co. executes residential and commercial outdoor works with clear scope.",
     bullets: ["Design-build execution", "Hardscape and softscape", "Irrigation and lighting", "Handover and AMC"],
     faqs: [
       { q: "Do you survey sites in Delhi?", a: "Yes. Share locality and photos on the quote form to schedule a visit." },
@@ -141,13 +141,13 @@ export const intentPages: IntentPage[] = [
     slug: "faq",
     path: "/faq",
     eyebrow: "FAQ",
-    title: "Landscaping FAQs | Greenly",
+    title: "Landscaping FAQs | Hind Landscape Co.",
     description:
-      "Frequently asked questions about Greenly landscaping services, Delhi NCR coverage, timelines, AMC and quotations.",
-    intro: "Straight answers on services, geography, timelines and how to start a project with Greenly.",
+      "Frequently asked questions about Hind Landscape Co. landscaping services, Delhi NCR coverage, timelines, AMC and quotations.",
+    intro: "Straight answers on services, geography, timelines and how to start a project with Hind Landscape Co..",
     bullets: ["Services and coverage", "Timelines and site visits", "AMC and maintenance", "Quotations"],
     faqs: [
-      { q: "What services does Greenly offer?", a: "Garden design, lawn care, tree care, irrigation, hardscaping, lighting, seasonal cleanup, terrace gardens, vertical gardens, farmhouse landscaping and maintenance AMC." },
+      { q: "What services does Hind Landscape Co. offer?", a: "Garden design, lawn care, tree care, irrigation, hardscaping, lighting, seasonal cleanup, terrace gardens, vertical gardens, farmhouse landscaping and maintenance AMC." },
       { q: "Is Delhi NCR your main area?", a: "Yes. We also mobilise pan-India for suitable projects." },
       { q: "How do I get a quote?", a: "Use the Get a Free Quote form with locality, photos and rough scope." },
       { q: "Do you maintain gardens after installation?", a: "Yes — optional landscape maintenance AMC." },

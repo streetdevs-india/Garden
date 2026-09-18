@@ -46,8 +46,8 @@ export default async function BlogPostPage({ params }: Props) {
     image: absoluteUrl(coverImg),
     datePublished: post.publishedAt,
     dateModified: post.publishedAt,
-    author: { "@type": "Organization", name: "Greenly" },
-    publisher: { "@type": "Organization", name: "Greenly", url: absoluteUrl("/") },
+    author: { "@type": "Organization", name: "Hind Landscape Co." },
+    publisher: { "@type": "Organization", name: "Hind Landscape Co.", url: absoluteUrl("/") },
     mainEntityOfPage: absoluteUrl(`/blog/${post.slug}`),
   };
 
@@ -85,9 +85,13 @@ export default async function BlogPostPage({ params }: Props) {
           >
             {post.title}
           </h1>
-          <p style={{ color: "rgba(255,255,255,0.72)", margin: 0, fontSize: 13.5 }}>
+          <p style={{ color: "rgba(255,255,255,0.72)", margin: "0 0 18px", fontSize: 13.5 }}>
             {post.publishedAt} · {post.readingMinutes} min read
           </p>
+          <div className="hero-cta-row">
+            <Link href="/quote" className="btn btn-green">Plan this for your site <Arrow /></Link>
+            <Link href="/contact" className="btn btn-outline">Ask a question</Link>
+          </div>
         </div>
       </div>
 

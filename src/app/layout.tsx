@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import { SiteProvider } from "@/components/SiteChrome";
 import { JsonLd } from "@/components/JsonLd";
 import { business } from "@/lib/business";
+import { teamMembers } from "@/lib/team";
 import { absoluteUrl } from "@/lib/seo";
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(business.siteUrl),
   title: {
-    default: "Greenly | Landscaping & Gardening Delhi NCR & India",
-    template: "%s | Greenly",
+    default: "Hind Landscape Co. | Landscaping & Gardening Delhi NCR & India",
+    template: "%s | Hind Landscape Co.",
   },
   description: business.description,
   applicationName: business.name,
@@ -30,16 +31,20 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     siteName: business.name,
-    title: "Greenly | Landscaping & Gardening",
+    title: "Hind Landscape Co. | Landscaping & Gardening",
     description: business.description,
     url: absoluteUrl("/"),
-    images: [{ url: absoluteUrl("/images/hero.jpg"), width: 1200, height: 630, alt: "Greenly landscaping" }],
+    images: [{ url: absoluteUrl("/images/hero.jpg"), width: 1200, height: 630, alt: "Hind Landscape Co. landscaping" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Greenly | Landscaping & Gardening",
+    title: "Hind Landscape Co. | Landscaping & Gardening",
     description: business.description,
     images: [absoluteUrl("/images/hero.jpg")],
+  },
+  icons: {
+    icon: [{ url: "/images/favicon-tree.png", type: "image/png" }],
+    apple: [{ url: "/images/favicon-tree.png", type: "image/png" }],
   },
   robots: { index: true, follow: true },
   alternates: { canonical: absoluteUrl("/"), languages: { "en-IN": absoluteUrl("/") } },
@@ -72,7 +77,30 @@ const orgLd = {
     latitude: business.geo.lat,
     longitude: business.geo.lng,
   },
-  areaServed: ["Delhi", "Gurugram", "Noida", "Faridabad", "Delhi NCR", "India"],
+  areaServed: [
+    "Delhi",
+    "Gurugram",
+    "Noida",
+    "Faridabad",
+    "Greater Noida",
+    "Ghaziabad",
+    "Delhi NCR",
+    "Haryana",
+    "Uttar Pradesh",
+    "Rajasthan",
+    "Maharashtra",
+    "Karnataka",
+    "Telangana",
+    "Tamil Nadu",
+    "Gujarat",
+    "West Bengal",
+    "India",
+  ],
+  employee: teamMembers.map((m) => ({
+    "@type": "Person",
+    name: m.name,
+    jobTitle: m.role,
+  })),
   openingHours: business.hours,
 };
 

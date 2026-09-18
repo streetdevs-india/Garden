@@ -20,17 +20,25 @@ export function HeroMotion() {
         gsap.set(frames, { autoAlpha: 1 });
         return;
       }
-      gsap.from(frames, {
-        autoAlpha: 0,
-        y: 36,
-        scale: 0.9,
-        rotation: () => gsap.utils.random(-6, 6),
-        duration: 0.8,
-        stagger: 0.09,
-        ease: "power3.out",
-        delay: 0.35,
-        clearProps: "transform",
-      });
+      gsap.fromTo(
+        frames,
+        {
+          autoAlpha: 0,
+          y: 32,
+          scale: 0.92,
+          rotation: -4,
+        },
+        {
+          autoAlpha: 1,
+          y: 0,
+          scale: 1,
+          rotation: 0,
+          duration: 0.95,
+          stagger: 0.1,
+          ease: "power2.out",
+          delay: 0.35,
+        }
+      );
     },
     { scope: root }
   );

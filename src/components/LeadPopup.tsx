@@ -3,9 +3,9 @@
 import { FormEvent, useEffect, useRef, useState } from "react";
 import { services } from "@/lib/site";
 import { business } from "@/lib/business";
-import { Arrow, LeafMark } from "@/components/Icons";
+import { Arrow, HindMark, PhoneIcon } from "@/components/Icons";
 
-const STORAGE_KEY = "greenly-lead-popup-seen";
+const STORAGE_KEY = "hind-lead-popup-seen-v2";
 
 function validate(name: string, phone: string, service: string) {
   const errors: Record<string, string> = {};
@@ -41,7 +41,7 @@ export function LeadPopup() {
       /* private mode — still show once this session */
     }
 
-    const timer = window.setTimeout(() => setOpen(true), 1200);
+    const timer = window.setTimeout(() => setOpen(true), 5000);
     return () => window.clearTimeout(timer);
   }, []);
 
@@ -103,13 +103,18 @@ export function LeadPopup() {
         </button>
 
         <div className="lead-pop-head">
-          <span className="lead-pop-mark"><LeafMark size={32} /></span>
+          <span className="lead-pop-mark"><HindMark size={32} /></span>
           <p className="lead-pop-kicker">Free site visit</p>
-          <h2 id="lead-pop-title">Tell Anas what you need</h2>
+          <h2 id="lead-pop-title">Tell Ajay what you need</h2>
           <p>
             Three details. {business.contactName} calls you back on your number —
             no spam, no long form.
           </p>
+          <div className="lead-pop-pills">
+            <span>Free site visit</span>
+            <span>Named plant list</span>
+            <span>Reply in hours</span>
+          </div>
         </div>
 
         {sent ? (
@@ -185,6 +190,9 @@ export function LeadPopup() {
             <button type="submit" className="btn btn-green lead-pop-submit">
               Request a callback <Arrow />
             </button>
+            <a href={`tel:${business.phoneTel}`} className="lead-pop-call">
+              <PhoneIcon size={15} /> Prefer to call? {business.phone}
+            </a>
             <button type="button" className="lead-pop-skip" onClick={dismiss}>
               Skip for now
             </button>

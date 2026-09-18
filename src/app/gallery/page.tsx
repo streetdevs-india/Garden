@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Arrow } from "@/components/Icons";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { FadeUp } from "@/components/Animate";
+import { FadeUp, SplitText } from "@/components/Animate";
 import { MidCta } from "@/components/PageSections";
 import { GalleryReveal } from "@/components/GalleryReveal";
 import { galleryPhotos } from "@/lib/gallery";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Gallery | Beautiful Green Spaces by Greenly",
+  title: "Gallery | Beautiful Green Spaces by Hind Landscape Co.",
   description:
-    "Browse Greenly landscaping gallery — hotel gardens, farmhouses, paths, lighting and planted courts across Delhi NCR and India.",
+    "Browse Hind Landscape Co. landscaping gallery — hotel gardens, farmhouses, paths, lighting and planted courts across Delhi NCR and India.",
   path: "/gallery",
 });
 
@@ -26,12 +26,16 @@ const categories = [
 export default function GalleryPage() {
   return (
     <main>
-      <section className="page-hero">
+      <section className="page-hero" style={{ "--hero-img": "url('/images/gallery-right.jpg')" } as React.CSSProperties}>
         <div className="wrap">
           <Breadcrumbs items={[{ name: "Gallery" }]} />
           <div className="eyebrow">Gallery</div>
-          <h1>Designing beautiful green spaces</h1>
+          <SplitText as="h1" text="Designing beautiful green spaces" />
           <p>Hotels, farmhouses, planted courts and the quieter work of keeping a garden well — full frames, nothing cropped away.</p>
+          <div className="hero-cta-row">
+            <Link href="/quote" className="btn btn-green btn-pulse">Start your garden <Arrow /></Link>
+            <Link href="/contact" className="btn btn-outline">Ask about a project</Link>
+          </div>
         </div>
       </section>
 

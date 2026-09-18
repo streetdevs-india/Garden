@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { business } from "@/lib/business";
+import { PhoneIcon, WhatsAppIcon, CalendarIcon } from "@/components/Icons";
 
 export function StickyAsk() {
   const pathname = usePathname();
@@ -19,20 +20,20 @@ export function StickyAsk() {
   if (pathname === "/quote") return null;
 
   return (
-    <div className={`sticky-ask${show ? " is-on" : ""}`} role="region" aria-label="Talk to Greenly">
+    <div className={`sticky-ask${show ? " is-on" : ""}`} role="region" aria-label="Talk to Hind Landscape Co.">
       <a className="sticky-ask-call" href={`tel:${business.phoneTel}`}>
-        Call {business.contactName.split(" ").slice(-1)[0]}
+        <PhoneIcon size={14} /> Call {business.contactName.split(" ").slice(-1)[0]}
       </a>
       <a
         className="sticky-ask-wa"
-        href={`https://wa.me/${business.whatsapp}?text=${encodeURIComponent("Hi Anas, I would like a site visit for my garden.")}`}
+        href={`https://wa.me/${business.whatsapp}?text=${encodeURIComponent("Hi Ajay, I would like a site visit for my garden.")}`}
         target="_blank"
         rel="noopener noreferrer"
       >
-        WhatsApp
+        <WhatsAppIcon size={14} /> WhatsApp
       </a>
       <Link className="sticky-ask-quote" href="/quote">
-        Free site visit
+        <CalendarIcon size={14} /> Free site visit
       </Link>
     </div>
   );

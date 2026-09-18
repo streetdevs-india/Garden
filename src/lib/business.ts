@@ -1,32 +1,37 @@
 /** Live NAP — keep identical on Google Business Profile and directories. */
 export const business = {
-  name: "Greenly",
-  legalName: "Greenly Landscaping & Gardening",
-  tagline: "Landscaping & Gardening",
-  contactName: "Mohd Anas",
+  name: "Hind Landscape Co.",
+  shortName: "Hind",
+  legalName: "Hind Landscape Co.",
+  tagline: "Landscape Architecture & Urban Design",
+  contactName: "Ajay Kumar",
   description:
-    "Greenly designs, builds and maintains gardens, lawns and outdoor spaces for homes, farmhouses, hotels and commercial properties across Delhi NCR and India. Speak with Mohd Anas for a free site visit.",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://greenly.garden",
-  email: "hello@greenly.garden",
-  phone: "+91 97161 77107",
-  phoneTel: "+919716177107",
-  whatsapp: "919716177107",
+    "Hind Landscape Co. plans, designs and executes landscape master plans for residential, commercial, campus and urban projects across Delhi NCR and India. Speak with Ajay Kumar for a free site visit.",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://hindlandscape.co",
+  email: "hello@hindlandscape.co",
+  phone: "+91 99901 16281",
+  phoneTel: "+919990116281",
+  whatsapp: "919990116281",
   address: {
-    street: "By appointment · Delhi NCR",
+    street: "D-51, Abul Fazal Enclave, Jamia Nagar, Okhla",
     locality: "New Delhi",
     region: "Delhi",
-    postalCode: "110001",
+    postalCode: "110025",
     country: "IN",
   },
-  geo: { lat: 28.6139, lng: 77.209 },
+  addressLine:
+    "D-51, Abul Fazal Enclave, Jamia Nagar, Okhla, New Delhi, Delhi 110025",
+  geo: { lat: 28.5616, lng: 77.2948 },
   hours: "Mo-Sa 08:00-18:00",
   priceRange: "₹₹₹",
   sameAs: [] as string[],
+  showreelVideo: "/videos/gwr-showreel.mp4",
+  aboutVideo: "/videos/sss-gwr-showreel.mp4",
 } as const;
 
 export const proofStats = [
-  { value: 15, suffix: "+", decimals: 0, label: "Years of Experience" },
+  { value: 30, suffix: "+", decimals: 0, label: "Years of Practice" },
   { value: 500, suffix: "+", decimals: 0, label: "Happy Clients" },
-  { value: 30, suffix: "+", decimals: 0, label: "Projects Completed" },
+  { value: 120, suffix: "+", decimals: 0, label: "Projects Delivered" },
   { value: 4.9, suffix: "", decimals: 1, label: "Average rating" },
 ] as const;

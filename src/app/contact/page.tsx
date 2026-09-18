@@ -1,136 +1,269 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { QuoteForm } from "@/components/SiteChrome";
+import { ContactModal } from "@/components/ContactModal";
 import { business } from "@/lib/business";
 import { locations } from "@/lib/locations";
 import { quoteAssurances, homeFaqs } from "@/lib/psychology";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FadeUp } from "@/components/Animate";
+import { Arrow, PhoneIcon, WhatsAppIcon, MailIcon, MapPinIcon, ClockIcon, FeatureIcon } from "@/components/Icons";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Contact Greenly | Landscaping Quote Delhi NCR",
-  description:
-    "Contact Mohd Anas at Greenly for landscaping in Delhi NCR. Call +91 97161 77107 or request a site assessment for garden design, lawn care and maintenance.",
+  title: `Contact ${business.name} | Free Site Visit Delhi NCR`,
+  description: `Reach ${business.contactName} at ${business.name} — call ${business.phone}, WhatsApp or fill the form. Free site visit for garden design, lawn care and landscaping.`,
   path: "/contact",
 });
 
-const mapSrc = `https://www.google.com/maps?q=${business.geo.lat},${business.geo.lng}&z=11&hl=en&output=embed`;
+// D-51 Abul Fazal Enclave, Jamia Nagar, Okhla, New Delhi 110025 — real pin
+const mapSrc =
+  "https://maps.google.com/maps?q=D-51+Abul+Fazal+Enclave+Jamia+Nagar+Okhla+New+Delhi+110025&t=&z=15&ie=UTF8&iwloc=&output=embed";
+
+const trustStrip = [
+  { icon: "leaf",      label: "Free site visit",  sub: "No obligation" },
+  { icon: "bolt",      label: "4-hour reply",     sub: "Mon – Sat" },
+  { icon: "clipboard", label: "Named quotes",     sub: "Plant lists included" },
+  { icon: "award",     label: "30+ yrs practice", sub: "Trusted studio" },
+];
 
 export default function ContactPage() {
   return (
     <main>
-      <section className="page-hero">
+
+      {/* ══════ HERO ══════ */}
+      <section
+        className="page-hero contact-hero-tall"
+        style={{ "--hero-img": "url('/images/work-landscape.jpg')" } as React.CSSProperties}
+      >
         <div className="wrap">
           <Breadcrumbs items={[{ name: "Contact" }]} />
-          <div className="eyebrow">Contact</div>
-          <h1>Tell us about the space</h1>
+          <div className="eyebrow">Contact Us</div>
+          <h1>Start your landscape<br />journey today</h1>
           <p>
-            Speak with {business.contactName} — share a little about the garden, the lawn or the project.
-            We&apos;ll come back with the next step.
+            One call or message is all it takes. {business.contactName} will personally walk
+            through your requirements and suggest the best next step — free.
           </p>
+          <div className="contact-hero-actions">
+            <a href={`tel:${business.phoneTel}`} className="btn btn-green btn-pulse">
+              <PhoneIcon size={16} /> Call {business.contactName} <Arrow />
+            </a>
+            <a
+              href={`https://wa.me/${business.whatsapp}?text=${encodeURIComponent("Hi Ajay, I want to discuss a landscaping project.")}`}
+              className="btn btn-outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <WhatsAppIcon size={16} /> WhatsApp Us
+            </a>
+            <ContactModal />
+          </div>
+        </div>
+
+        {/* Floating phone pill */}
+        <div className="contact-hero-pill">
+          <span className="contact-hero-dot" aria-hidden />
+          <span>Available Mon – Sat · 8 AM – 6 PM</span>
+          <a href={`tel:${business.phoneTel}`}>{business.phone}</a>
         </div>
       </section>
 
-      <section className="page-section">
+      {/* ══════ TRUST STRIP ══════ */}
+      <div className="contact-trust-strip">
         <div className="wrap">
-          <div className="contact-layout">
+          <div className="contact-trust-row">
+            {trustStrip.map((t) => (
+              <div key={t.label} className="contact-trust-item">
+                <span className="contact-trust-icon" aria-hidden>
+                  <FeatureIcon name={t.icon} size={22} />
+                </span>
+                <div>
+                  <strong>{t.label}</strong>
+                  <span>{t.sub}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* ══════ FORM + INFO SPLIT ══════ */}
+      <section className="page-section contact-main-section">
+        <div className="wrap">
+          <div className="contact-split">
+
+            {/* LEFT — Quote form */}
             <FadeUp>
-              <QuoteForm />
+              <div className="contact-form-panel">
+                <div className="contact-form-head">
+                  <div className="eyebrow">Request a visit</div>
+                  <h2>Tell us about your space</h2>
+                  <p>Share a few details — we respond with a clear scope and timeline, usually within 4 hours.</p>
+                </div>
+                <QuoteForm />
+              </div>
             </FadeUp>
 
-            <FadeUp delay={120}>
-              <div className="contact-card">
-                <p className="contact-kicker">Your landscaper</p>
-                <h2>{business.contactName}</h2>
-                <p className="contact-firm">
-                  {business.legalName} — homes, farmhouses, hotels and campuses across Delhi NCR.
-                </p>
+            {/* RIGHT — Info card (dark) */}
+            <FadeUp delay={110}>
+              <div className="contact-info-panel">
 
-                <div className="contact-facts">
+                {/* Director card */}
+                <div className="contact-director">
+                  <img
+                    src="/images/team/ajay-kumar.png"
+                    alt={business.contactName}
+                    className="contact-director-img"
+                  />
                   <div>
-                    <strong>Phone</strong>
-                    <a href={`tel:${business.phoneTel}`}>{business.phone}</a>
-                  </div>
-                  <div>
-                    <strong>WhatsApp</strong>
-                    <a
-                      href={`https://wa.me/${business.whatsapp}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Message Anas
-                    </a>
-                  </div>
-                  <div>
-                    <strong>Email</strong>
-                    <a href={`mailto:${business.email}`}>{business.email}</a>
-                  </div>
-                  <div>
-                    <strong>Hours</strong>
-                    <span>Monday – Saturday, 8:00 – 18:00</span>
-                  </div>
-                  <div>
-                    <strong>We serve</strong>
-                    <div className="contact-chips">
-                      {locations.filter((l) => l.primary).map((l) => (
-                        <Link key={l.slug} href={`/locations/${l.slug}`}>
-                          {l.name}
-                        </Link>
-                      ))}
-                    </div>
+                    <strong>{business.contactName}</strong>
+                    <span>Director &amp; Principal Landscape Designer</span>
+                    <span className="contact-director-exp">30+ years of practice</span>
                   </div>
                 </div>
 
-                <ul className="contact-assures">
-                  {quoteAssurances.map((item) => (
+                {/* Contact details */}
+                <ul className="contact-detail-list">
+                  <li>
+                    <span className="cdl-icon cdl-phone"><PhoneIcon size={18} solid /></span>
+                    <div>
+                      <em>Phone</em>
+                      <a href={`tel:${business.phoneTel}`}>{business.phone}</a>
+                    </div>
+                  </li>
+                  <li>
+                    <span className="cdl-icon cdl-wa"><WhatsAppIcon size={18} /></span>
+                    <div>
+                      <em>WhatsApp</em>
+                      <a
+                        href={`https://wa.me/${business.whatsapp}?text=${encodeURIComponent("Hi Ajay, I want to discuss a landscaping project.")}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Message on WhatsApp
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <span className="cdl-icon cdl-mail"><MailIcon size={18} solid /></span>
+                    <div>
+                      <em>Email</em>
+                      <a href={`mailto:${business.email}`}>{business.email}</a>
+                    </div>
+                  </li>
+                  <li>
+                    <span className="cdl-icon cdl-pin"><MapPinIcon size={18} solid /></span>
+                    <div>
+                      <em>Studio Address</em>
+                      <span>{business.addressLine}</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span className="cdl-icon cdl-clock"><ClockIcon size={18} solid /></span>
+                    <div>
+                      <em>Working Hours</em>
+                      <span>Monday – Saturday, 8:00 AM – 6:00 PM</span>
+                    </div>
+                  </li>
+                </ul>
+
+                {/* Service areas */}
+                <div className="contact-areas">
+                  <p className="contact-areas-label">We serve</p>
+                  <div className="contact-areas-chips">
+                    {locations.filter((l) => l.primary).map((l) => (
+                      <Link key={l.slug} href={`/locations/${l.slug}`}>
+                        {l.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Assurances */}
+                <ul className="contact-assures-v2">
+                  {quoteAssurances.slice(0, 3).map((item) => (
                     <li key={item}>
                       <span>✓</span>
                       {item}
                     </li>
                   ))}
                 </ul>
+
               </div>
             </FadeUp>
           </div>
+        </div>
+      </section>
 
+      {/* ══════ MAP + ADDRESS ══════ */}
+      <section className="contact-map-section">
+        <div className="wrap">
           <FadeUp>
-            <div className="contact-map-block">
-              <div className="contact-map-copy">
-                <div className="eyebrow">Find us</div>
-                <h2>Delhi NCR, by appointment</h2>
-                <p>
-                  We visit sites across Delhi, Gurugram, Noida and Faridabad. Call {business.contactName} on{" "}
-                  <a href={`tel:${business.phoneTel}`}>{business.phone}</a> and we&apos;ll come to you.
-                </p>
-              </div>
-              <div className="contact-map">
+            <div className="contact-map-layout">
+              <div className="contact-map-frame">
                 <iframe
-                  title="Greenly service area — Delhi NCR"
+                  title={`${business.name} studio — New Delhi`}
                   src={mapSrc}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   allowFullScreen
                 />
               </div>
-            </div>
-          </FadeUp>
-
-          <FadeUp>
-            <div style={{ marginTop: 48 }}>
-              <h2 style={{ marginBottom: 20 }}>Common questions</h2>
-              <div className="faq-list">
-                {homeFaqs.map((f) => (
-                  <details key={f.q} className="faq-item">
-                    <summary>{f.q}</summary>
-                    <p>{f.a}</p>
-                  </details>
-                ))}
+              <div className="contact-map-aside">
+                <div className="eyebrow">Find us</div>
+                <h2>Visit the studio</h2>
+                <address className="contact-map-address">
+                  {business.addressLine}
+                </address>
+                <div className="contact-map-actions">
+                  <a
+                    href={`https://maps.google.com/maps?q=D-51+Abul+Fazal+Enclave+Jamia+Nagar+Okhla+New+Delhi+110025`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-green"
+                  >
+                    Get Directions <Arrow />
+                  </a>
+                  <a href={`tel:${business.phoneTel}`} className="btn btn-outline">
+                    Call us
+                  </a>
+                </div>
+                <p className="contact-map-note">
+                  We also visit sites across Delhi NCR — call us and we&apos;ll come to you.
+                </p>
               </div>
             </div>
           </FadeUp>
         </div>
       </section>
+
+      {/* ══════ FAQ ══════ */}
+      <section className="page-section contact-faq-section">
+        <div className="wrap">
+          <FadeUp>
+            <div className="contact-faq-head">
+              <div>
+                <div className="eyebrow">FAQs</div>
+                <h2>Common questions</h2>
+              </div>
+              <Link href="/faq" className="btn btn-outline">
+                All FAQs <Arrow />
+              </Link>
+            </div>
+          </FadeUp>
+          <div className="contact-faq-grid">
+            {homeFaqs.map((f, i) => (
+              <FadeUp key={f.q} delay={i * 60}>
+                <details className="faq-item">
+                  <summary>{f.q}</summary>
+                  <p>{f.a}</p>
+                </details>
+              </FadeUp>
+            ))}
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }

@@ -1,10 +1,10 @@
 /** Shared copy for conversion / psychology sections — static, no CMS. */
 
 export const trustPoints = [
-  { value: "15+",  label: "Years crafting outdoor spaces"    },
-  { value: "500+", label: "Happy homes & commercial sites"   },
-  { value: "30+",  label: "Projects delivered on schedule"   },
-  { value: "NCR",  label: "Primary service across Delhi NCR" },
+  { value: "30+",  label: "Years of landscape practice"      },
+  { value: "500+", label: "Homes, farms & commercial sites"  },
+  { value: "4h",   label: "Typical first reply window"       },
+  { value: "NCR",  label: "Delhi NCR · pan-India scopes"     },
 ] as const;
 
 export const processSteps = [

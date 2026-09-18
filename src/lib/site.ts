@@ -19,12 +19,12 @@ export const services: ServiceItem[] = [
     detail:
       "We plan every bed, path and view so the garden feels calm, useful and entirely yours — from the first sketch to the planting plan.",
     image: "/images/service-design.jpg",
-    seoTitle: "Garden Design & Planning Services in India | Greenly",
+    seoTitle: "Garden Design & Planning Services in India | Hind Landscape Co.",
     seoDescription:
       "Custom garden design and landscape planning for homes, farmhouses and commercial properties across Delhi NCR and India.",
     body: [
       "Good garden design starts with how you live outdoors — morning light, entry views, kids’ play, evening seating and maintenance reality.",
-      "Greenly prepares layouts, planting plans and material directions so installation stays clear for homeowners, architects and site teams.",
+      "Hind Landscape Co. prepares layouts, planting plans and material directions so installation stays clear for homeowners, architects and site teams.",
       "Whether you need a compact city garden or an estate-scale landscape, we keep the plan practical for Delhi NCR climate and Indian site conditions.",
     ],
     faqs: [
@@ -40,7 +40,7 @@ export const services: ServiceItem[] = [
     detail:
       "Mowing, feeding and seasonal care that keep the lawn dense, even and green without turning your weekends into chores.",
     image: "/images/service-lawn.jpg",
-    seoTitle: "Lawn Care & Maintenance Services | Greenly Landscaping",
+    seoTitle: "Lawn Care & Maintenance Services | Hind Landscape Co. Landscaping",
     seoDescription:
       "Professional lawn care, mowing, feeding and seasonal maintenance for homes and commercial properties in Delhi NCR and India.",
     body: [
@@ -61,12 +61,12 @@ export const services: ServiceItem[] = [
     detail:
       "Pruning, feeding and health checks that help trees and shrubs stay strong, shaped and safe through every season.",
     image: "/images/service-trees.jpg",
-    seoTitle: "Tree & Plant Care Services | Pruning & Health | Greenly",
+    seoTitle: "Tree & Plant Care Services | Pruning & Health | Hind Landscape Co.",
     seoDescription:
       "Tree pruning, shrub shaping and plant health care for residential and commercial landscapes across Delhi NCR.",
     body: [
       "Trees and shrubs need structured pruning, soil care and pest watch — especially after monsoon and before peak summer.",
-      "Greenly shapes hedges, palms and specimen plants so they stay safe near paths, façades and parking.",
+      "Hind Landscape Co. shapes hedges, palms and specimen plants so they stay safe near paths, façades and parking.",
       "We also plan replacement and enrichment planting when older beds need a reset.",
     ],
     faqs: [
@@ -81,7 +81,7 @@ export const services: ServiceItem[] = [
     detail:
       "Efficient watering that reaches the roots and skips the waste, so beds stay lush even when you are away.",
     image: "/images/service-irrigation.jpg",
-    seoTitle: "Garden Irrigation Systems India | Drip & Sprinkler | Greenly",
+    seoTitle: "Garden Irrigation Systems India | Drip & Sprinkler | Hind Landscape Co.",
     seoDescription:
       "Design and installation of drip and sprinkler irrigation systems for gardens, lawns and commercial landscapes in India.",
     body: [
@@ -122,7 +122,7 @@ export const services: ServiceItem[] = [
     detail:
       "Warm, carefully placed light that opens the garden after dusk — safe paths, soft beds and a quieter kind of evening.",
     image: "/images/service-lighting.jpg",
-    seoTitle: "Outdoor & Garden Lighting Design | Greenly",
+    seoTitle: "Outdoor & Garden Lighting Design | Hind Landscape Co.",
     seoDescription:
       "Landscape lighting for pathways, trees, façades and seating areas — warm, safe and premium evening gardens.",
     body: [
@@ -161,7 +161,7 @@ export const services: ServiceItem[] = [
     text: "Green roofs and terrace planting that feel intentional.",
     detail: "Waterproofing-aware terrace gardens with planters, seating greenery and light irrigation for Indian apartments and homes.",
     image: "/images/service-design.jpg",
-    seoTitle: "Terrace Garden Design & Installation India | Greenly",
+    seoTitle: "Terrace Garden Design & Installation India | Hind Landscape Co.",
     seoDescription:
       "Terrace garden design for apartments and homes — planters, lightweight soil mixes, irrigation and seating greenery.",
     body: [
@@ -179,7 +179,7 @@ export const services: ServiceItem[] = [
     text: "Living walls for façades, balconies and indoor atriums.",
     detail: "Vertical gardens and green walls with irrigation and plant mixes suited to Indian light and heat.",
     image: "/images/service-trees.jpg",
-    seoTitle: "Vertical Garden & Green Wall Installation | Greenly",
+    seoTitle: "Vertical Garden & Green Wall Installation | Hind Landscape Co.",
     seoDescription:
       "Green walls and vertical gardens for homes, offices and commercial façades across Delhi NCR and India.",
     body: [
@@ -286,7 +286,7 @@ export const works = [
 export const testimonials = [
   {
     quote:
-      "We had two other landscapers quote before Greenly. Both sent vague proposals with no plant names and left us guessing on budget. Greenly visited, walked us through a clear zone-wise plan, and delivered exactly on time. Two monsoons later the garden still looks like handover day.",
+      "We had two other landscapers quote before Hind Landscape Co.. Both sent vague proposals with no plant names and left us guessing on budget. Hind Landscape Co. visited, walked us through a clear zone-wise plan, and delivered exactly on time. Two monsoons later the garden still looks like handover day.",
     name: "Rajan Kapoor",
     place: "Home garden, Vasant Kunj, New Delhi",
   },
@@ -298,7 +298,7 @@ export const testimonials = [
   },
   {
     quote:
-      "We use Greenly for quarterly maintenance across two South Delhi properties. Same crew, same date each visit. They send a brief note after each session and replaced a failing hedge section last March before we even noticed the problem. Exactly what good maintenance should feel like.",
+      "We use Hind Landscape Co. for quarterly maintenance across two South Delhi properties. Same crew, same date each visit. They send a brief note after each session and replaced a failing hedge section last March before we even noticed the problem. Exactly what good maintenance should feel like.",
     name: "Deepak Srivastava",
     place: "Residential properties, South Delhi",
   },
@@ -309,7 +309,7 @@ export const pages = [
   { href: "/services", label: "Services" },
   { href: "/about", label: "About Us" },
   { href: "/gallery", label: "Gallery" },
-  { href: "/blog", label: "Blog" },
+  { href: "/blog", label: "Blogs" },
   { href: "/testimonials", label: "Testimonials" },
   { href: "/contact", label: "Contact" },
 ] as const;

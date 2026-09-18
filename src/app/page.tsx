@@ -3,21 +3,24 @@ import type { Metadata } from "next";
 import { services, stats } from "@/lib/site";
 import { galleryPhotos } from "@/lib/gallery";
 import { business } from "@/lib/business";
-import { Arrow, LeafDeco, ServiceGlyph } from "@/components/Icons";
+import { Arrow, LeafDeco, ServiceGlyph, FeatureIcon } from "@/components/Icons";
 import { VideoCard, WatchButton } from "@/components/SiteChrome";
 import { buildMetadata } from "@/lib/seo";
-import { CountUp, FadeUp, ScrollHeaderClass } from "@/components/Animate";
+import { CountUp, FadeUp, Reveal, ZoomImage, SplitText, ScrollHeaderClass } from "@/components/Animate";
+import { TrustBar } from "@/components/PageSections";
 import { processSteps } from "@/lib/psychology";
 import { LeadForm } from "@/components/LeadForm";
 import { GalleryReveal } from "@/components/GalleryReveal";
 import { HeroMotion } from "@/components/HeroMotion";
-import { ProofBand } from "@/components/ProofBand";
+import { BrandLogo } from "@/components/BrandLogo";
+import { ServiceTilesMotion } from "@/components/ServiceTilesMotion";
+import { TestimonialSlider } from "@/components/TestimonialSlider";
 import { LeadPopup } from "@/components/LeadPopup";
 
 export const metadata: Metadata = buildMetadata({
   title: "Landscaping & Gardening in Delhi NCR & India",
   description:
-    "Greenly designs, builds and maintains gardens, lawns and outdoor spaces for homes, farmhouses, hotels and commercial properties across Delhi NCR and India.",
+    "Hind Landscape Co. designs, builds and maintains gardens, lawns and outdoor spaces for homes, farmhouses, hotels and commercial properties across Delhi NCR and India.",
   path: "/",
 });
 
@@ -37,7 +40,18 @@ export default function HomePage() {
 
       {/* ══════════════════════ 1. HERO ══════════════════════ */}
       <div className="hero-wrap">
-        <section className="hero" style={{ backgroundImage: "url(/images/hero.jpg)" }}>
+        <section className="hero">
+          <video
+            className="hero-bg-video"
+            src={business.showreelVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            aria-hidden
+          />
+          <div className="hero-bg-frost" aria-hidden />
           <div className="hero-leaves" aria-hidden>
             <span className="hero-leaf hl-1" />
             <span className="hero-leaf hl-2" />
@@ -46,19 +60,16 @@ export default function HomePage() {
           </div>
 
           <div className="hero-copy">
+            <BrandLogo variant="hero" linked={false} />
             <div className="hero-kicker">
               <i />
               Delhi NCR gardens that last past handover
             </div>
-            <h1>
-              Outdoor space you
-              <br />
-              actually want to sit in
-            </h1>
+            <SplitText as="h1" text="Outdoor space you actually want to sit in" />
             <p>
-              {business.contactName} and the Greenly crew design, plant and maintain gardens for
-              Delhi heat, monsoon, and the way your family uses the lawn after dark — not a
-              show plot that fades in May.
+              {business.contactName} and the {business.shortName} studio design, plant and maintain
+              landscapes that hold their beauty through Delhi heat, monsoon and winter — built
+              for the way your family actually uses the space.
             </p>
             <div className="hero-actions">
               <Link href="/quote" className="btn btn-green btn-pulse">
@@ -75,21 +86,28 @@ export default function HomePage() {
         </section>
       </div>
 
-      {/* ══════════════════════ 2. ABOUT (screenshot match) ══════════════════════ */}
+      <TrustBar />
+
+      {/* ══════════════════════ 2. ABOUT ══════════════════════ */}
       <section className="about">
         <div className="wrap about-grid">
           <FadeUp>
             <div>
-              <div className="eyebrow">About Us</div>
-              <h2>Our Passion for Greener Spaces</h2>
+              <div className="eyebrow">About Hind Landscape Co.</div>
+              <h2>Three decades of crafting India's finest outdoor spaces</h2>
               <p className="lede">
-                We are a team of passionate gardeners and landscape experts dedicated to creating
-                beautiful, sustainable and functional outdoor spaces for homes, offices and
-                commercial properties.
+                Led by {business.contactName}, our studio of landscape architects, horticulturists
+                and engineers has designed master plans for homes, campuses, hotels and commercial
+                sites across Delhi NCR and India.
               </p>
-              <Link href="/about" className="btn btn-green">
-                Learn More <Arrow />
-              </Link>
+              <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 28 }}>
+                <Link href="/about" className="btn btn-green">
+                  Meet the Team <Arrow />
+                </Link>
+                <Link href="/quote" className="btn btn-outline">
+                  Free Site Visit
+                </Link>
+              </div>
               <div className="stats">
                 {stats.map((item) => (
                   <div className="stat" key={item.label}>
@@ -109,8 +127,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ══════════════════════ 4. SERVICES (asymmetric) ══════════════════════ */}
-      <section className="services" id="services">
+      {/* ══════════════════════ 4. SERVICES (bento) ══════════════════════ */}
+      <section className="services services-v2" id="services">
         <div className="wrap">
           <FadeUp>
             <div className="section-header">
@@ -124,39 +142,37 @@ export default function HomePage() {
             </div>
           </FadeUp>
 
-          <div className="services-layout">
-            <FadeUp>
-              <Link href={`/services/${featured.slug}`} className="service-hero-card">
-                <img src={featured.image} alt={featured.title} />
-                <div className="service-hero-overlay">
-                  <div className="service-hero-badge">
-                    <ServiceGlyph slug={featured.slug} /> Featured
-                  </div>
+          <div className="svc-bento">
+            <Reveal variant="left" className="svc-bento-feature-wrap">
+              <Link href={`/services/${featured.slug}`} className="svc-bento-feature">
+                <ZoomImage src={featured.image} alt={featured.title} className="svc-bento-feature-img" />
+                <div className="svc-bento-feature-shade" aria-hidden />
+                <div className="svc-bento-feature-body">
+                  <span className="svc-bento-tag">
+                    <ServiceGlyph slug={featured.slug} /> Featured service
+                  </span>
                   <h3>{featured.title}</h3>
                   <p>{featured.text}</p>
-                  <span className="btn btn-ghost" style={{ display: "inline-flex", gap: 8, pointerEvents: "none" }}>
-                    Explore <Arrow />
-                  </span>
+                  <span className="svc-bento-cta">Explore the scope <Arrow /></span>
                 </div>
               </Link>
-            </FadeUp>
+            </Reveal>
 
-            <div className="service-list">
+            <ServiceTilesMotion>
               {listServices.map((service, i) => (
-                <FadeUp key={service.slug} delay={i * 55}>
-                  <Link href={`/services/${service.slug}`} className="service-list-item">
-                    <span className="service-list-badge">
-                      <ServiceGlyph slug={service.slug} />
-                    </span>
-                    <div className="service-list-text">
-                      <strong>{service.title}</strong>
-                      <span>{service.text}</span>
-                    </div>
-                    <span className="service-list-arrow"><Arrow /></span>
-                  </Link>
-                </FadeUp>
+                <Link key={service.slug} href={`/services/${service.slug}`} className="svc-bento-tile">
+                  <span className="svc-bento-tile-num">0{i + 2}</span>
+                  <span className="svc-bento-tile-icon">
+                    <ServiceGlyph slug={service.slug} />
+                  </span>
+                  <div className="svc-bento-tile-copy">
+                    <strong>{service.title}</strong>
+                    <span>{service.text}</span>
+                  </div>
+                  <span className="svc-bento-tile-go"><Arrow /></span>
+                </Link>
               ))}
-            </div>
+            </ServiceTilesMotion>
           </div>
         </div>
       </section>
@@ -196,49 +212,45 @@ export default function HomePage() {
         </section>
       </FadeUp>
 
-      {/* ══════════════════════ 6. COLLAGE + WHY US ══════════════════════ */}
-      <section className="pair" style={{ paddingTop: 72 }}>
-        <div className="wrap pair-grid">
+      {/* ══════════════════════ 6. WHY US (bento) ══════════════════════ */}
+      <section className="psy-section why-us-v2">
+        <div className="why-us-v2-bg" aria-hidden />
+        <div className="wrap">
           <FadeUp>
-            <div className="collage">
-              <img className="c-path" src="/images/gallery-path.jpg" alt="Garden path under arbor" />
-              <img className="c-flowers" src="/images/gallery-flowers.jpg" alt="Flower border" />
-              <div className="c-right">
-                <img className="c-leaf" src="/images/gallery-leaf-ss.jpg" alt="Garden shrubs" />
-                <div className="green-card">
-                  <h3>Designing<br />Beautiful<br />Green Spaces</h3>
-                  <p>From small gardens to large landscapes, we create spaces that inspire.</p>
-                  <Link href="/gallery" className="btn btn-ghost">
-                    View Gallery <Arrow />
-                  </Link>
-                </div>
-              </div>
+            <div className="why-us-head">
+              <div className="eyebrow">Why Choose Us</div>
+              <h2>A studio that stays with every project</h2>
+              <p className="lede">From the first site walk to handover and AMC — named plants, clear scopes, no vague quotes.</p>
             </div>
           </FadeUp>
-
-          <FadeUp delay={160}>
-            <div className="why-copy">
-              <div className="why-kicker">Why Choose Us</div>
-              <h2>Growing Beautiful<br />Spaces for Over Decade</h2>
-              <p>
-                We combine creativity, experience and quality materials to deliver
-                outdoor spaces that last and stay beautiful.
-              </p>
-              <div className="reasons">
-                {([
-                  { icon: "/images/icon-team.png",      title: "Expert Team",       text: "Skilled & Professional" },
-                  { icon: "/images/icon-materials.png",  title: "Quality Materials", text: "Long Lasting Results"   },
-                  { icon: "/images/icon-time.png",       title: "On-Time Delivery",  text: "We Value Your Time"     },
-                ] as const).map((item) => (
-                  <article className="reason" key={item.title}>
-                    <img src={item.icon} alt="" />
-                    <h3>{item.title}</h3>
-                    <p>{item.text}</p>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </FadeUp>
+          <div className="why-bento">
+            {([
+              { icon: "award",     title: "30+ Years of Practice",   text: "Three decades of Indian urban landscaping under Ajay Kumar's leadership.", lead: true },
+              { icon: "weather",   title: "Climate-Aware Design",     text: "Every plan accounts for Delhi heat, monsoon stress and winter maintenance reality." },
+              { icon: "clipboard", title: "Transparent Quoting",      text: "Named plant lists, zone-wise irrigation scope and line-by-line costs — always in writing.", accent: true },
+              { icon: "tool",      title: "Post-Handover Support",    text: "Optional AMC keeps your garden green through every season, not just on handover day." },
+              { icon: "map",       title: "Pan-India Capability",     text: "Delhi NCR primary — we mobilise across India for suitable project scopes." },
+              { icon: "team",      title: "30+ Experts On-Site",      text: "Architects, horticulturists and engineers — not subcontracted labour.", wide: true },
+            ] as const).map((item, i) => (
+              <FadeUp key={item.title} delay={i * 65} className="fill">
+                <article
+                  className={[
+                    "why-card",
+                    "lead" in item && item.lead ? "why-card-lead" : "",
+                    "accent" in item && item.accent ? "why-card-accent" : "",
+                    "wide" in item && item.wide ? "why-card-wide" : "",
+                  ].filter(Boolean).join(" ")}
+                >
+                  <span className="why-card-num">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="why-card-icon" aria-hidden>
+                    <FeatureIcon name={item.icon} size={22} />
+                  </span>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </article>
+              </FadeUp>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -269,7 +281,7 @@ export default function HomePage() {
       </section>
 
       {/* ══════════════════════ 9. TESTIMONIALS ══════════════════════ */}
-      <ProofBand />
+      <TestimonialSlider />
 
       {/* ══════════════════════ 10. LEAD CAPTURE (above footer) ══════════════════════ */}
       <section className="lead-section lead-section-footer">

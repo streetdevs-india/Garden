@@ -8,7 +8,7 @@ export function IntentPageView({ page }: { page: IntentPage }) {
   return (
     <SeoLanding
       eyebrow={page.eyebrow}
-      title={page.title.replace(/ \| Greenly$/, "").replace(/ \| .*$/, "")}
+      title={page.title.replace(/ \| Hind Landscape Co.$/, "").replace(/ \| .*$/, "")}
       lede={page.intro}
       crumbs={[{ name: page.eyebrow }, { name: page.title.split("|")[0].trim() }]}
       faqs={page.faqs}
@@ -42,7 +42,7 @@ export function IntentPageView({ page }: { page: IntentPage }) {
         <Link href="/locations">All locations</Link>
       </p>
       <p>
-        Read more on the <Link href="/blog">Greenly blog</Link> or{" "}
+        Read more on the <Link href="/blog">Hind Landscape Co. blog</Link> or{" "}
         <Link href="/quote">request a free quote</Link>.
       </p>
     </SeoLanding>

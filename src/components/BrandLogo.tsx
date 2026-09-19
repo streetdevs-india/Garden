@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { business } from "@/lib/business";
 
-const LOGO_SRC = "/images/logo-hind.png";
+const LOGO_SRC = {
+  header: "/images/logo-hind-nav.png",
+  footer: "/images/logo-hind-footer.png",
+} as const;
 
 type BrandLogoProps = {
-  variant?: "header" | "footer" | "hero";
+  variant?: "header" | "footer";
   linked?: boolean;
   className?: string;
 };
@@ -13,11 +16,11 @@ export function BrandLogo({ variant = "header", linked = true, className = "" }:
   const img = (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src={LOGO_SRC}
+      src={LOGO_SRC[variant]}
       alt={business.name}
       className={`brand-logo brand-logo-${variant}`}
-      width={variant === "hero" ? 320 : variant === "footer" ? 280 : 240}
-      height={variant === "hero" ? 80 : variant === "footer" ? 72 : 62}
+      width={variant === "footer" ? 300 : 260}
+      height={variant === "footer" ? 88 : 72}
     />
   );
 

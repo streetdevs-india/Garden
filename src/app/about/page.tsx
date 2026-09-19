@@ -4,7 +4,7 @@ import { works } from "@/lib/site";
 import { business } from "@/lib/business";
 import { teamMembers } from "@/lib/team";
 import { aboutValues, processSteps } from "@/lib/psychology";
-import { Arrow } from "@/components/Icons";
+import { Arrow, FeatureIcon } from "@/components/Icons";
 import { FadeUp, Reveal, SplitText } from "@/components/Animate";
 import { MidCta } from "@/components/PageSections";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -15,6 +15,16 @@ export const metadata: Metadata = buildMetadata({
   description: `Meet ${business.contactName} and the ${business.name} team — landscape architects and designers crafting calm outdoor spaces across Delhi NCR and India.`,
   path: "/about",
 });
+
+const aboutWork = [
+  { ...works[0], tag: "Hospitality", place: "Hotel campus" },
+  { ...works[1], tag: "Farmhouse", place: "Weekend estate" },
+  { ...works[2], tag: "Landscape", place: "Master plan" },
+  { ...works[3], tag: "Care", place: "Seasonal beds" },
+  { src: "/images/gallery-path.jpg", alt: "Garden path under arbor", tag: "Pathways", place: "Arbor walk" },
+  { src: "/images/gallery-flowers.jpg", alt: "Seasonal flower border", tag: "Planting", place: "Colour border" },
+  { src: "/images/service-lighting.jpg", alt: "Evening garden lighting", tag: "Lighting", place: "Night garden" },
+] as const;
 
 export default function AboutPage() {
   const lead = teamMembers.find((m) => m.featured)!;
@@ -43,14 +53,15 @@ export default function AboutPage() {
         <div className="wrap about-story-grid">
           <Reveal variant="left" delay={80}>
             <figure className="owner-portrait">
-              <img
-                src={lead.photo}
-                alt={`${lead.name}, ${lead.role} at ${business.name}`}
+              <video
+                src="/videos/story.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                aria-label={`${lead.name}, ${lead.role} at ${business.name}`}
               />
-              <figcaption>
-                <strong>{lead.name}</strong>
-                <span>Director · {business.name}</span>
-              </figcaption>
             </figure>
           </Reveal>
           <Reveal variant="right">
@@ -175,18 +186,28 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="psy-section psy-muted">
+      <section className="about-values-section">
+        <div className="about-values-bg" aria-hidden />
         <div className="wrap">
           <FadeUp>
-            <div className="psy-head">
+            <div className="about-values-head">
               <div className="eyebrow">What we stand for</div>
               <h2>Values you can feel on site</h2>
+              <p className="lede">
+                Not slogans on a wall — habits our crews follow from the first site walk to the last snag check.
+              </p>
             </div>
           </FadeUp>
-          <div className="promise-grid">
+          <div className="about-values-grid">
             {aboutValues.map((item, i) => (
-              <FadeUp key={item.title} delay={i * 80}>
-                <article className="promise-card">
+              <FadeUp key={item.title} delay={i * 90}>
+                <article className={`about-value-card${i === 0 ? " is-lead" : ""}`}>
+                  <div className="about-value-top">
+                    <span className="about-value-icon" aria-hidden>
+                      <FeatureIcon name={item.icon} size={24} />
+                    </span>
+                    <span className="about-value-num">{String(i + 1).padStart(2, "0")}</span>
+                  </div>
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
                 </article>
@@ -205,46 +226,62 @@ export default function AboutPage() {
             </div>
           </FadeUp>
           <div className="process-timeline">
-            {processSteps.map((item, i) => (
-              <FadeUp key={item.step} delay={i * 90}>
-                <div className="process-step-wrap">
-                  <div className="process-num">{item.step}</div>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </div>
-              </FadeUp>
+            <div className="process-line" aria-hidden />
+            {processSteps.map((item) => (
+              <div key={item.step} className="process-step-wrap">
+                <div className="process-num">{item.step}</div>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="psy-section psy-muted">
-        <div className="wrap">
+      <section className="about-work-section">
+        <div className="wrap wrap-wide">
           <FadeUp>
-            <div className="section-header" style={{ marginBottom: 28 }}>
+            <div className="about-work-head">
               <div>
                 <div className="eyebrow">Our Work</div>
                 <h2>Landscapes that hold their shape</h2>
+                <p>
+                  Homes, farmhouses, hotels and campuses — spaces built to look settled after monsoon,
+                  not just on handover day.
+                </p>
               </div>
               <Link href="/gallery" className="btn btn-outline">
                 Open Gallery <Arrow />
               </Link>
             </div>
           </FadeUp>
-          <div className="gallery-masonry">
-            {[
-              ...works,
-              { src: "/images/gallery-path.jpg", alt: "Garden path under arbor" },
-              { src: "/images/gallery-flowers.jpg", alt: "Seasonal flower border" },
-              { src: "/images/service-lighting.jpg", alt: "Evening garden lighting" },
-              { src: "/images/service-hardscape.jpg", alt: "Stone patio and steps" },
-            ].map((item) => (
-              <figure key={item.src} className="gallery-masonry-item">
-                <img src={item.src} alt={item.alt} />
-                <div className="gallery-item-label">{item.alt}</div>
-              </figure>
+
+          <div className="about-work-grid">
+            {aboutWork.map((item, i) => (
+              <FadeUp key={item.src} delay={(i % 4) * 60} className={i === 0 ? "about-work-lead-wrap" : ""}>
+                <Link
+                  href="/gallery"
+                  className={`about-work-card${i === 0 ? " is-lead" : ""}`}
+                >
+                  <img src={item.src} alt={item.alt} />
+                  <span className="about-work-shade" aria-hidden />
+                  <span className="about-work-meta">
+                    <em>{item.tag}</em>
+                    <strong>{item.place}</strong>
+                  </span>
+                </Link>
+              </FadeUp>
             ))}
           </div>
+
+          <FadeUp>
+            <div className="about-work-foot">
+              <p>Want to see more finished sites?</p>
+              <Link href="/gallery" className="btn btn-green">
+                Browse full gallery <Arrow />
+              </Link>
+            </div>
+          </FadeUp>
         </div>
       </section>
 

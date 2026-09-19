@@ -318,6 +318,12 @@ export function VideoCard() {
 }
 
 function Footer() {
+  const { lat, lng } = business.geo;
+  const mapQuery = encodeURIComponent(business.addressLine);
+  const mapEmbed =
+    `https://maps.google.com/maps?q=${lat},${lng}&ll=${lat},${lng}&z=16&hl=en&output=embed`;
+  const mapLink = `https://www.google.com/maps/search/?api=1&query=${mapQuery}`;
+
   return (
     <footer className="footer">
       {/* ── CTA banner ── */}
@@ -338,16 +344,14 @@ function Footer() {
         </div>
       </div>
 
-      {/* ── Main grid ── */}
+      {/* ── Main grid: brand + link columns ── */}
       <div className="wrap footer-grid">
-        {/* Brand col */}
         <div className="footer-brand-col">
           <BrandLogo variant="footer" className="footer-logo" />
           <p className="footer-tagline">
             Landscape architects crafting master plans for homes, campuses and cities across Delhi NCR &amp; India.
           </p>
 
-          {/* Contact list — elegant vertical */}
           <ul className="footer-contact-list">
             <li>
               <a href={`tel:${business.phoneTel}`}>
@@ -376,23 +380,15 @@ function Footer() {
                 </span>
               </a>
             </li>
-            <li>
-              <div className="footer-contact-static">
-                <span className="footer-contact-ico footer-contact-ico-pin"><MapPinIcon size={18} solid /></span>
-                <span className="footer-contact-text">
-                  <em>Studio</em>
-                  <b>{business.addressLine}</b>
-                </span>
-              </div>
-            </li>
           </ul>
         </div>
 
-        {/* Link columns */}
         <div className="footer-links-wrap">
           <div className="footer-link-col">
             <h4>Explore</h4>
-            {pages.map((p) => <Link key={p.href} href={p.href}>{p.label}</Link>)}
+            {pages.map((p) => (
+              <Link key={p.href} href={p.href}>{p.label}</Link>
+            ))}
             <Link href="/locations">Locations</Link>
             <Link href="/faq">FAQ</Link>
           </div>
@@ -411,6 +407,35 @@ function Footer() {
             <Link href="/gallery">View gallery</Link>
             <Link href="/testimonials">Testimonials</Link>
             <Link href="/blog">Guides &amp; blogs</Link>
+          </div>
+        </div>
+      </div>
+
+      {/* ── Map band: embed + studio info ── */}
+      <div className="wrap footer-map-band">
+        <div className="footer-map-embed">
+          <iframe
+            title={`${business.name} studio map`}
+            src={mapEmbed}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          />
+        </div>
+        <div className="footer-map-info">
+          <span className="footer-map-ico" aria-hidden="true">
+            <MapPinIcon size={20} solid />
+          </span>
+          <h4>Find the studio</h4>
+          <p>{business.addressLine}</p>
+          <p className="footer-map-hours">Mon–Sat · 8:00 AM – 6:00 PM</p>
+          <div className="footer-map-actions">
+            <a href={mapLink} target="_blank" rel="noopener noreferrer" className="footer-map-dir">
+              Open in Google Maps
+            </a>
+            <a href={`tel:${business.phoneTel}`} className="footer-map-call">
+              <PhoneIcon size={14} /> Call us
+            </a>
           </div>
         </div>
       </div>

@@ -6,14 +6,19 @@ import { business } from "@/lib/business";
 import { Arrow, LeafDeco, ServiceGlyph, FeatureIcon } from "@/components/Icons";
 import { VideoCard, WatchButton } from "@/components/SiteChrome";
 import { buildMetadata } from "@/lib/seo";
-import { CountUp, FadeUp, Reveal, ZoomImage, SplitText, ScrollHeaderClass } from "@/components/Animate";
+import { CountUp, FadeUp, SplitText, ScrollHeaderClass } from "@/components/Animate";
 import { TrustBar } from "@/components/PageSections";
 import { processSteps } from "@/lib/psychology";
 import { LeadForm } from "@/components/LeadForm";
 import { GalleryReveal } from "@/components/GalleryReveal";
 import { HeroMotion } from "@/components/HeroMotion";
-import { BrandLogo } from "@/components/BrandLogo";
-import { ServiceTilesMotion } from "@/components/ServiceTilesMotion";
+import { HeroIntro } from "@/components/HeroIntro";
+import { AboutSectionMotion } from "@/components/AboutSectionMotion";
+import {
+  ServicesStoryMotion,
+  WhyUsMotion,
+  ProcessMotion,
+} from "@/components/HomeSectionMotions";
 import { TestimonialSlider } from "@/components/TestimonialSlider";
 import { LeadPopup } from "@/components/LeadPopup";
 
@@ -32,7 +37,7 @@ const trustSignals = [
 ];
 
 export default function HomePage() {
-  const [featured, ...listServices] = services.slice(0, 6);
+  const homeServices = services.slice(0, 6);
 
   return (
     <main>
@@ -59,13 +64,12 @@ export default function HomePage() {
             <span className="hero-leaf hl-4" />
           </div>
 
-          <div className="hero-copy">
-            <BrandLogo variant="hero" linked={false} />
+          <HeroIntro>
             <div className="hero-kicker">
               <i />
               Delhi NCR gardens that last past handover
             </div>
-            <SplitText as="h1" text="Outdoor space you actually want to sit in" />
+            <SplitText as="h1" text="Outdoor space you actually want to sit in" manual />
             <p>
               {business.contactName} and the {business.shortName} studio design, plant and maintain
               landscapes that hold their beauty through Delhi heat, monsoon and winter — built
@@ -78,7 +82,7 @@ export default function HomePage() {
               <WatchButton title="Watch Our Story" subtitle="See how we bring nature to life" />
             </div>
             <HeroMotion />
-          </div>
+          </HeroIntro>
 
           <div className="hero-scroll" aria-hidden>
             <div className="hero-scroll-mouse" />
@@ -89,91 +93,89 @@ export default function HomePage() {
       <TrustBar />
 
       {/* ══════════════════════ 2. ABOUT ══════════════════════ */}
-      <section className="about">
+      <AboutSectionMotion>
         <div className="wrap about-grid">
-          <FadeUp>
-            <div>
-              <div className="eyebrow">About Hind Landscape Co.</div>
-              <h2>Three decades of crafting India's finest outdoor spaces</h2>
-              <p className="lede">
-                Led by {business.contactName}, our studio of landscape architects, horticulturists
-                and engineers has designed master plans for homes, campuses, hotels and commercial
-                sites across Delhi NCR and India.
-              </p>
-              <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 28 }}>
-                <Link href="/about" className="btn btn-green">
-                  Meet the Team <Arrow />
-                </Link>
-                <Link href="/quote" className="btn btn-outline">
-                  Free Site Visit
-                </Link>
-              </div>
-              <div className="stats">
-                {stats.map((item) => (
-                  <div className="stat" key={item.label}>
-                    <img src={item.icon} alt="" />
-                    <strong>
-                      <CountUp value={item.value} suffix={item.suffix} />
-                    </strong>
-                    <span>{item.label}</span>
-                  </div>
-                ))}
-              </div>
+          <div className="about-copy-anim">
+            <div className="eyebrow">About Hind Landscape Co.</div>
+            <h2>Three decades of crafting India&apos;s finest outdoor spaces</h2>
+            <p className="lede">
+              Led by {business.contactName}, our studio of landscape architects, horticulturists
+              and engineers has designed master plans for homes, campuses, hotels and commercial
+              sites across Delhi NCR and India.
+            </p>
+            <div className="about-cta-row">
+              <Link href="/about" className="btn btn-green">
+                Meet the Team <Arrow />
+              </Link>
+              <Link href="/quote" className="btn btn-outline">
+                Free Site Visit
+              </Link>
             </div>
-          </FadeUp>
-          <FadeUp delay={90} className="fill">
+            <div className="stats">
+              {stats.map((item) => (
+                <div className="stat" key={item.label}>
+                  <img src={item.icon} alt="" />
+                  <strong>
+                    <CountUp value={item.value} suffix={item.suffix} />
+                  </strong>
+                  <span>{item.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="about-video-anim fill">
             <VideoCard />
-          </FadeUp>
+          </div>
         </div>
-      </section>
+      </AboutSectionMotion>
 
-      {/* ══════════════════════ 4. SERVICES (bento) ══════════════════════ */}
-      <section className="services services-v2" id="services">
+      {/* ══════════════════════ 4. SERVICES (story stack) ══════════════════════ */}
+      <section className="services services-v3" id="services">
         <div className="wrap">
           <FadeUp>
-            <div className="section-header">
-              <div>
-                <div className="eyebrow">Our Services</div>
-                <h2>Everything Your Garden Needs</h2>
-              </div>
-              <Link href="/services" className="btn btn-outline">
-                All Services <Arrow />
-              </Link>
+            <div className="svc-story-head">
+              <div className="eyebrow">Our Services</div>
+              <h2>Everything your garden needs — scoped clearly</h2>
+              <p className="lede">
+                From first sketch to irrigation and evening light — six core services we deliver
+                across Delhi NCR homes, farmhouses and commercial sites.
+              </p>
             </div>
           </FadeUp>
 
-          <div className="svc-bento">
-            <Reveal variant="left" className="svc-bento-feature-wrap">
-              <Link href={`/services/${featured.slug}`} className="svc-bento-feature">
-                <ZoomImage src={featured.image} alt={featured.title} className="svc-bento-feature-img" />
-                <div className="svc-bento-feature-shade" aria-hidden />
-                <div className="svc-bento-feature-body">
-                  <span className="svc-bento-tag">
-                    <ServiceGlyph slug={featured.slug} /> Featured service
-                  </span>
-                  <h3>{featured.title}</h3>
-                  <p>{featured.text}</p>
-                  <span className="svc-bento-cta">Explore the scope <Arrow /></span>
+          <ServicesStoryMotion>
+            {homeServices.map((service, i) => (
+              <Link
+                key={service.slug}
+                href={`/services/${service.slug}`}
+                className={`svc-story${i % 2 === 1 ? " is-flip" : ""}`}
+              >
+                <div className="svc-story-media">
+                  <img src={service.image} alt={service.title} />
+                  <span className="svc-story-num">{String(i + 1).padStart(2, "0")}</span>
                 </div>
-              </Link>
-            </Reveal>
-
-            <ServiceTilesMotion>
-              {listServices.map((service, i) => (
-                <Link key={service.slug} href={`/services/${service.slug}`} className="svc-bento-tile">
-                  <span className="svc-bento-tile-num">0{i + 2}</span>
-                  <span className="svc-bento-tile-icon">
+                <div className="svc-story-body">
+                  <span className="svc-story-icon" aria-hidden>
                     <ServiceGlyph slug={service.slug} />
                   </span>
-                  <div className="svc-bento-tile-copy">
-                    <strong>{service.title}</strong>
-                    <span>{service.text}</span>
-                  </div>
-                  <span className="svc-bento-tile-go"><Arrow /></span>
-                </Link>
-              ))}
-            </ServiceTilesMotion>
-          </div>
+                  <h3>{service.title}</h3>
+                  <p>{service.detail || service.text}</p>
+                  <span className="svc-story-cta">
+                    Explore this service <Arrow />
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </ServicesStoryMotion>
+
+          <FadeUp>
+            <div className="svc-story-foot">
+              <p>Need something else — terrace, vertical garden, or AMC?</p>
+              <Link href="/services" className="btn btn-green">
+                View all services <Arrow />
+              </Link>
+            </div>
+          </FadeUp>
         </div>
       </section>
 
@@ -213,16 +215,14 @@ export default function HomePage() {
       </FadeUp>
 
       {/* ══════════════════════ 6. WHY US (bento) ══════════════════════ */}
-      <section className="psy-section why-us-v2">
+      <WhyUsMotion>
         <div className="why-us-v2-bg" aria-hidden />
         <div className="wrap">
-          <FadeUp>
-            <div className="why-us-head">
-              <div className="eyebrow">Why Choose Us</div>
-              <h2>A studio that stays with every project</h2>
-              <p className="lede">From the first site walk to handover and AMC — named plants, clear scopes, no vague quotes.</p>
-            </div>
-          </FadeUp>
+          <div className="why-us-head">
+            <div className="eyebrow">Why Choose Us</div>
+            <h2>A studio that stays with every project</h2>
+            <p className="lede">From the first site walk to handover and AMC — named plants, clear scopes, no vague quotes.</p>
+          </div>
           <div className="why-bento">
             {([
               { icon: "award",     title: "30+ Years of Practice",   text: "Three decades of Indian urban landscaping under Ajay Kumar's leadership.", lead: true },
@@ -232,53 +232,49 @@ export default function HomePage() {
               { icon: "map",       title: "Pan-India Capability",     text: "Delhi NCR primary — we mobilise across India for suitable project scopes." },
               { icon: "team",      title: "30+ Experts On-Site",      text: "Architects, horticulturists and engineers — not subcontracted labour.", wide: true },
             ] as const).map((item, i) => (
-              <FadeUp key={item.title} delay={i * 65} className="fill">
-                <article
-                  className={[
-                    "why-card",
-                    "lead" in item && item.lead ? "why-card-lead" : "",
-                    "accent" in item && item.accent ? "why-card-accent" : "",
-                    "wide" in item && item.wide ? "why-card-wide" : "",
-                  ].filter(Boolean).join(" ")}
-                >
-                  <span className="why-card-num">{String(i + 1).padStart(2, "0")}</span>
-                  <span className="why-card-icon" aria-hidden>
-                    <FeatureIcon name={item.icon} size={22} />
-                  </span>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </article>
-              </FadeUp>
+              <article
+                key={item.title}
+                className={[
+                  "why-card",
+                  "lead" in item && item.lead ? "why-card-lead" : "",
+                  "accent" in item && item.accent ? "why-card-accent" : "",
+                  "wide" in item && item.wide ? "why-card-wide" : "",
+                ].filter(Boolean).join(" ")}
+              >
+                <span className="why-card-num">{String(i + 1).padStart(2, "0")}</span>
+                <span className="why-card-icon" aria-hidden>
+                  <FeatureIcon name={item.icon} size={22} />
+                </span>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </article>
             ))}
           </div>
         </div>
-      </section>
+      </WhyUsMotion>
 
       {/* ══════════════════════ 8. PROCESS ══════════════════════ */}
-      <section className="psy-section psy-muted" style={{ paddingTop: 80 }}>
+      <ProcessMotion>
         <div className="wrap">
-          <FadeUp>
-            <div style={{ textAlign: "center", maxWidth: 480, margin: "0 auto 52px" }}>
-              <div className="eyebrow">How It Works</div>
-              <h2>Simple, calm, clear</h2>
-              <p className="lede">
-                You always know what happens next — and what you&apos;re approving.
-              </p>
-            </div>
-          </FadeUp>
+          <div className="process-head">
+            <div className="eyebrow">How It Works</div>
+            <h2>Simple, calm, clear</h2>
+            <p className="lede">
+              You always know what happens next — and what you&apos;re approving.
+            </p>
+          </div>
           <div className="process-timeline">
-            {processSteps.map((item, i) => (
-              <FadeUp key={item.step} delay={i * 90}>
-                <div className="process-step-wrap">
-                  <div className="process-num">{item.step}</div>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </div>
-              </FadeUp>
+            <div className="process-line" aria-hidden />
+            {processSteps.map((item) => (
+              <div key={item.step} className="process-step-wrap">
+                <div className="process-num">{item.step}</div>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
             ))}
           </div>
         </div>
-      </section>
+      </ProcessMotion>
 
       {/* ══════════════════════ 9. TESTIMONIALS ══════════════════════ */}
       <TestimonialSlider />

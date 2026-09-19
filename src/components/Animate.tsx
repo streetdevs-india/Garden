@@ -122,14 +122,18 @@ export function SplitText({
   text,
   className = "",
   as: Tag = "h2",
+  manual = false,
 }: {
   text: string;
   className?: string;
   as?: "h1" | "h2" | "h3" | "p";
+  /** When true, skip IntersectionObserver — GSAP (or parent) drives the reveal */
+  manual?: boolean;
 }) {
   const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    if (manual) return;
     const el = ref.current;
     if (!el) return;
     const observer = new IntersectionObserver(
@@ -143,14 +147,21 @@ export function SplitText({
     );
     observer.observe(el);
     return () => observer.disconnect();
-  }, []);
+  }, [manual]);
 
   const Component = Tag as "h2";
   const words = text.split(" ");
   return (
-    <Component ref={ref as React.Ref<HTMLHeadingElement>} className={`split-text ${className}`}>
+    <Component
+      ref={ref as React.Ref<HTMLHeadingElement>}
+      className={`split-text${manual ? " is-manual" : ""} ${className}`.trim()}
+    >
       {words.map((w, i) => (
-        <span key={i} className="split-word" style={{ transitionDelay: `${i * 45}ms` }}>
+        <span
+          key={i}
+          className="split-word"
+          style={manual ? undefined : { transitionDelay: `${i * 45}ms` }}
+        >
           {w}
           {i < words.length - 1 ? "\u00A0" : ""}
         </span>

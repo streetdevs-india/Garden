@@ -108,14 +108,17 @@ export const audienceCards = [
 
 export const aboutValues = [
   {
+    icon: "leaf" as const,
     title: "Listen before we sketch",
     text: "Light, soil, how you move outdoors and what you want evenings to feel like. We design for your reality, not a show garden.",
   },
   {
+    icon: "clipboard" as const,
     title: "Materials that last beyond handover",
     text: "Plant species, hardscape finishes and irrigation components chosen for Indian heat, monsoon and long-term maintenance ease.",
   },
   {
+    icon: "award" as const,
     title: "Clean site, clean handover",
     text: "Crews respect your home and neighbours. Handover includes a walkthrough, written care notes and a final snag check.",
   },

@@ -21,19 +21,37 @@ export function StickyAsk() {
 
   return (
     <div className={`sticky-ask${show ? " is-on" : ""}`} role="region" aria-label="Talk to Hind Landscape Co.">
-      <a className="sticky-ask-call" href={`tel:${business.phoneTel}`}>
-        <PhoneIcon size={14} /> Call {business.contactName.split(" ").slice(-1)[0]}
+      <a
+        className="sticky-ask-btn sticky-ask-call"
+        href={`tel:${business.phoneTel}`}
+        aria-label="Call us"
+      >
+        <span className="sticky-ask-label">Call us</span>
+        <span className="sticky-ask-ico" aria-hidden="true">
+          <PhoneIcon size={22} solid />
+        </span>
       </a>
       <a
-        className="sticky-ask-wa"
+        className="sticky-ask-btn sticky-ask-wa"
         href={`https://wa.me/${business.whatsapp}?text=${encodeURIComponent("Hi Ajay, I would like a site visit for my garden.")}`}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="WhatsApp"
       >
-        <WhatsAppIcon size={14} /> WhatsApp
+        <span className="sticky-ask-label">WhatsApp</span>
+        <span className="sticky-ask-ico" aria-hidden="true">
+          <WhatsAppIcon size={22} />
+        </span>
       </a>
-      <Link className="sticky-ask-quote" href="/quote">
-        <CalendarIcon size={14} /> Free site visit
+      <Link
+        className="sticky-ask-btn sticky-ask-quote"
+        href="/quote"
+        aria-label="Free site visit"
+      >
+        <span className="sticky-ask-label">Free site visit</span>
+        <span className="sticky-ask-ico" aria-hidden="true">
+          <CalendarIcon size={22} />
+        </span>
       </Link>
     </div>
   );

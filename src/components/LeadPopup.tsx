@@ -4,23 +4,26 @@ import { FormEvent, useEffect, useRef, useState } from "react";
 import { services } from "@/lib/site";
 import { business } from "@/lib/business";
 import { Arrow, HindMark, PhoneIcon } from "@/components/Icons";
+import {
+  allowNameKey,
+  allowPhoneKey,
+  sanitizeName,
+  sanitizePhone,
+  validateName,
+  validatePhone,
+  validateRequiredSelect,
+} from "@/lib/formValidation";
 
 const STORAGE_KEY = "hind-lead-popup-seen-v2";
 
 function validate(name: string, phone: string, service: string) {
   const errors: Record<string, string> = {};
-  const n = name.trim();
-  if (n.length < 2) errors.name = "Please enter your name.";
-  else if (!/^[a-zA-Z\s.'-]{2,60}$/.test(n)) errors.name = "Use letters only in your name.";
-
-  const digits = phone.replace(/\D/g, "");
-  if (digits.length < 10 || digits.length > 12) {
-    errors.phone = "Enter a valid 10-digit mobile number.";
-  } else if (!/^[6-9]\d{9}$/.test(digits.slice(-10))) {
-    errors.phone = "Mobile number should start with 6–9.";
-  }
-
-  if (!service) errors.service = "Please choose a service.";
+  const nameErr = validateName(name);
+  const phoneErr = validatePhone(phone);
+  const serviceErr = validateRequiredSelect(service, "service");
+  if (nameErr) errors.name = nameErr;
+  if (phoneErr) errors.phone = phoneErr;
+  if (serviceErr) errors.service = serviceErr;
   return errors;
 }
 
@@ -142,8 +145,11 @@ export function LeadPopup() {
                 autoComplete="name"
                 placeholder="Your full name"
                 value={name}
+                maxLength={60}
+                inputMode="text"
+                onKeyDown={allowNameKey}
                 onChange={(e) => {
-                  setName(e.target.value);
+                  setName(sanitizeName(e.target.value));
                   setErrors((p) => ({ ...p, name: "" }));
                 }}
               />
@@ -155,12 +161,15 @@ export function LeadPopup() {
               <input
                 name="phone"
                 type="tel"
-                inputMode="tel"
+                inputMode="numeric"
+                pattern="[6-9][0-9]{9}"
+                maxLength={10}
                 autoComplete="tel"
                 placeholder="10-digit mobile"
                 value={phone}
+                onKeyDown={allowPhoneKey}
                 onChange={(e) => {
-                  setPhone(e.target.value);
+                  setPhone(sanitizePhone(e.target.value));
                   setErrors((p) => ({ ...p, phone: "" }));
                 }}
               />

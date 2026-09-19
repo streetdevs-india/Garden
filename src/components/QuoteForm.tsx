@@ -3,6 +3,20 @@
 import { FormEvent, useMemo, useState } from "react";
 import { services } from "@/lib/site";
 import { Arrow } from "@/components/Icons";
+import {
+  allowEmailKey,
+  allowNameKey,
+  allowPhoneKey,
+  sanitizeEmail,
+  sanitizeMessage,
+  sanitizeName,
+  sanitizePhone,
+  validateEmail,
+  validateName,
+  validateOptionalMessage,
+  validatePhone,
+  validateRequiredSelect,
+} from "@/lib/formValidation";
 
 type FieldErrors = Partial<Record<"name" | "phone" | "email" | "service" | "message", string>>;
 
@@ -14,32 +28,16 @@ function validate(values: {
   message: string;
 }): FieldErrors {
   const errors: FieldErrors = {};
-  const name = values.name.trim();
-  const phone = values.phone.trim();
-  const email = values.email.trim();
-  const message = values.message.trim();
-
-  if (name.length < 2) errors.name = "Please enter your full name (at least 2 characters).";
-  else if (!/^[a-zA-Z\s.'-]{2,60}$/.test(name)) errors.name = "Use letters only in your name.";
-
-  const digits = phone.replace(/\D/g, "");
-  if (digits.length < 10 || digits.length > 12) {
-    errors.phone = "Enter a valid 10-digit Indian mobile number.";
-  } else if (!/^[6-9]\d{9}$/.test(digits.slice(-10))) {
-    errors.phone = "Mobile number should start with 6–9.";
-  }
-
-  if (!email) errors.email = "Email is required.";
-  else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) errors.email = "Enter a valid email address.";
-
-  if (!values.service) errors.service = "Please select a service.";
-
-  if (message && message.length < 10) {
-    errors.message = "Add a bit more detail (at least 10 characters), or leave this blank.";
-  } else if (message.length > 800) {
-    errors.message = "Please keep the message under 800 characters.";
-  }
-
+  const nameErr = validateName(values.name);
+  const phoneErr = validatePhone(values.phone);
+  const emailErr = validateEmail(values.email);
+  const serviceErr = validateRequiredSelect(values.service, "service");
+  const messageErr = validateOptionalMessage(values.message);
+  if (nameErr) errors.name = nameErr;
+  if (phoneErr) errors.phone = phoneErr;
+  if (emailErr) errors.email = emailErr;
+  if (serviceErr) errors.service = serviceErr;
+  if (messageErr) errors.message = messageErr;
   return errors;
 }
 
@@ -48,14 +46,13 @@ export function QuoteForm() {
     name: "",
     phone: "",
     email: "",
-    service: services[0]?.title ?? "Garden Design & Planning",
+    service: "",
     message: "",
   });
   const [errors, setErrors] = useState<FieldErrors>({});
   const [touched, setTouched] = useState<Record<string, boolean>>({});
   const [sent, setSent] = useState(false);
   const [submitting, setSubmitting] = useState(false);
-  // honeypot — bots fill this, humans don't
   const [honeypot, setHoneypot] = useState("");
 
   const hasErrors = useMemo(() => Object.keys(errors).length > 0, [errors]);
@@ -78,8 +75,10 @@ export function QuoteForm() {
 
   function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // Honeypot check — silently "succeed" for bots
-    if (honeypot) { setSent(true); return; }
+    if (honeypot) {
+      setSent(true);
+      return;
+    }
 
     const nextErrors = validate(values);
     setTouched({ name: true, phone: true, email: true, service: true, message: true });
@@ -110,7 +109,7 @@ export function QuoteForm() {
               name: "",
               phone: "",
               email: "",
-              service: services[0]?.title ?? "Garden Design & Planning",
+              service: "",
               message: "",
             });
             setErrors({});
@@ -131,7 +130,10 @@ export function QuoteForm() {
           name="name"
           autoComplete="name"
           value={values.name}
-          onChange={(e) => update("name", e.target.value)}
+          maxLength={60}
+          inputMode="text"
+          onKeyDown={allowNameKey}
+          onChange={(e) => update("name", sanitizeName(e.target.value))}
           onBlur={() => onBlur("name")}
           placeholder="Your name"
           aria-invalid={Boolean(touched.name && errors.name)}
@@ -149,10 +151,13 @@ export function QuoteForm() {
         <input
           name="phone"
           type="tel"
-          inputMode="tel"
+          inputMode="numeric"
+          pattern="[6-9][0-9]{9}"
+          maxLength={10}
           autoComplete="tel"
           value={values.phone}
-          onChange={(e) => update("phone", e.target.value)}
+          onKeyDown={allowPhoneKey}
+          onChange={(e) => update("phone", sanitizePhone(e.target.value))}
           onBlur={() => onBlur("phone")}
           placeholder="10-digit mobile number"
           aria-invalid={Boolean(touched.phone && errors.phone)}
@@ -171,8 +176,11 @@ export function QuoteForm() {
           type="email"
           name="email"
           autoComplete="email"
+          inputMode="email"
+          maxLength={80}
           value={values.email}
-          onChange={(e) => update("email", e.target.value)}
+          onKeyDown={allowEmailKey}
+          onChange={(e) => update("email", sanitizeEmail(e.target.value))}
           onBlur={() => onBlur("email")}
           placeholder="you@email.com"
           aria-invalid={Boolean(touched.email && errors.email)}
@@ -194,6 +202,7 @@ export function QuoteForm() {
           onBlur={() => onBlur("service")}
           aria-invalid={Boolean(touched.service && errors.service)}
         >
+          <option value="">Choose a service…</option>
           {services.map((s) => (
             <option key={s.slug} value={s.title}>
               {s.title}
@@ -209,7 +218,8 @@ export function QuoteForm() {
         <textarea
           name="message"
           value={values.message}
-          onChange={(e) => update("message", e.target.value)}
+          maxLength={800}
+          onChange={(e) => update("message", sanitizeMessage(e.target.value))}
           onBlur={() => onBlur("message")}
           placeholder="Lawn, patio, lighting, a full garden…"
           rows={4}
@@ -229,7 +239,6 @@ export function QuoteForm() {
         </div>
       )}
 
-      {/* Honeypot: visually hidden, not filled by real users */}
       <label style={{ position: "absolute", left: "-9999px", top: "auto", width: 1, height: 1, overflow: "hidden" }} aria-hidden="true">
         <span>Do not fill this field</span>
         <input

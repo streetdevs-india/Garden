@@ -3,10 +3,11 @@
 import Link from "next/link";
 import { useRef } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import type { GalleryPhoto } from "@/lib/gallery";
 
-gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export function GalleryReveal({
   items,
@@ -24,22 +25,26 @@ export function GalleryReveal({
       const shots = gsap.utils.toArray<HTMLElement>(".gal-shot");
       if (!shots.length) return;
 
-      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      if (reduce) {
-        gsap.set(shots, { autoAlpha: 1 });
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        gsap.set(shots, { autoAlpha: 1, clearProps: "transform" });
         return;
       }
 
-      gsap.from(shots, {
-        autoAlpha: 0,
-        y: 64,
-        scale: 0.92,
-        rotation: () => gsap.utils.random(-3.5, 3.5),
-        duration: 0.95,
-        stagger: { each: 0.07, from: "center" },
-        ease: "power4.out",
-        delay: 0.08,
+      gsap.set(shots, { autoAlpha: 0, y: 56, scale: 0.88 });
+
+      gsap.to(shots, {
+        autoAlpha: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.85,
+        stagger: { each: 0.08, from: "center" },
+        ease: "power3.out",
         clearProps: "transform",
+        scrollTrigger: {
+          trigger: root.current,
+          start: "top 82%",
+          once: true,
+        },
       });
     },
     { scope: root }

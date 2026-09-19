@@ -3,6 +3,17 @@
 import { useEffect, useRef, useState } from "react";
 import { business } from "@/lib/business";
 import { LeafIcon, PhoneIcon } from "@/components/Icons";
+import {
+  allowNameKey,
+  allowPhoneKey,
+  sanitizeMessage,
+  sanitizeName,
+  sanitizePhone,
+  validateName,
+  validateOptionalMessage,
+  validatePhone,
+  validateRequiredSelect,
+} from "@/lib/formValidation";
 
 const SERVICES = [
   "Garden Design",
@@ -45,7 +56,6 @@ export function ContactModal() {
     }
   }, [open]);
 
-  // Also handle native dialog cancel (Escape key via browser)
   useEffect(() => {
     const dlg = dialogRef.current;
     if (!dlg) return;
@@ -67,24 +77,29 @@ export function ContactModal() {
 
   function validate() {
     const errs: Record<string, string> = {};
-    if (!name.trim()) errs.name = "Name required";
-    const digits = phone.replace(/\D/g, "");
-    if (digits.length < 10) errs.phone = "Valid 10-digit number required";
-    else if (!/^[6-9]/.test(digits)) errs.phone = "Must start with 6–9";
-    if (!service) errs.service = "Please pick a service";
+    const nameErr = validateName(name);
+    const phoneErr = validatePhone(phone);
+    const serviceErr = validateRequiredSelect(service, "service");
+    const messageErr = validateOptionalMessage(message);
+    if (nameErr) errs.name = nameErr;
+    if (phoneErr) errs.phone = phoneErr;
+    if (serviceErr) errs.service = serviceErr;
+    if (messageErr) errs.message = messageErr;
     return errs;
   }
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     const errs = validate();
-    if (Object.keys(errs).length) { setErrors(errs); return; }
+    if (Object.keys(errs).length) {
+      setErrors(errs);
+      return;
+    }
     setState("sent");
   }
 
   return (
     <>
-      {/* Trigger button */}
       <button
         type="button"
         className="contact-modal-trigger"
@@ -95,7 +110,6 @@ export function ContactModal() {
         Quick Contact
       </button>
 
-      {/* Dialog modal */}
       <dialog
         ref={dialogRef}
         className="contact-modal-dialog"
@@ -154,8 +168,14 @@ export function ContactModal() {
                     type="text"
                     placeholder="Full name"
                     value={name}
-                    onChange={(e) => { setName(e.target.value); setErrors((p) => ({ ...p, name: "" })); }}
+                    maxLength={60}
+                    inputMode="text"
                     autoComplete="name"
+                    onKeyDown={allowNameKey}
+                    onChange={(e) => {
+                      setName(sanitizeName(e.target.value));
+                      setErrors((p) => ({ ...p, name: "" }));
+                    }}
                   />
                   {errors.name && <span className="cm-err">{errors.name}</span>}
                 </div>
@@ -167,8 +187,15 @@ export function ContactModal() {
                     type="tel"
                     placeholder="10-digit mobile"
                     value={phone}
-                    onChange={(e) => { setPhone(e.target.value); setErrors((p) => ({ ...p, phone: "" })); }}
+                    maxLength={10}
+                    inputMode="numeric"
+                    pattern="[6-9][0-9]{9}"
                     autoComplete="tel"
+                    onKeyDown={allowPhoneKey}
+                    onChange={(e) => {
+                      setPhone(sanitizePhone(e.target.value));
+                      setErrors((p) => ({ ...p, phone: "" }));
+                    }}
                   />
                   {errors.phone && <span className="cm-err">{errors.phone}</span>}
                 </div>
@@ -178,25 +205,37 @@ export function ContactModal() {
                   <select
                     id="cm-service"
                     value={service}
-                    onChange={(e) => { setService(e.target.value); setErrors((p) => ({ ...p, service: "" })); }}
+                    onChange={(e) => {
+                      setService(e.target.value);
+                      setErrors((p) => ({ ...p, service: "" }));
+                    }}
                   >
                     <option value="">Select a service…</option>
                     {SERVICES.map((s) => (
-                      <option key={s} value={s}>{s}</option>
+                      <option key={s} value={s}>
+                        {s}
+                      </option>
                     ))}
                   </select>
                   {errors.service && <span className="cm-err">{errors.service}</span>}
                 </div>
 
-                <div className="cm-field">
-                  <label htmlFor="cm-msg">Brief Description <span className="cm-opt">(optional)</span></label>
+                <div className={`cm-field${errors.message ? " has-err" : ""}`}>
+                  <label htmlFor="cm-msg">
+                    Brief Description <span className="cm-opt">(optional)</span>
+                  </label>
                   <textarea
                     id="cm-msg"
                     placeholder="Size of garden, property type, city…"
                     rows={3}
                     value={message}
-                    onChange={(e) => setMessage(e.target.value)}
+                    maxLength={800}
+                    onChange={(e) => {
+                      setMessage(sanitizeMessage(e.target.value));
+                      setErrors((p) => ({ ...p, message: "" }));
+                    }}
                   />
+                  {errors.message && <span className="cm-err">{errors.message}</span>}
                 </div>
 
                 <button type="submit" className="btn btn-green cm-submit">

@@ -89,21 +89,24 @@ export function AudienceSection() {
               each property asks for a different garden. Pick the closest fit and we&apos;ll
               tailor planting, irrigation and upkeep to how the space is actually used.
             </p>
+            <p className="audience-swipe-hint" aria-hidden>Swipe to browse →</p>
           </div>
         </FadeUp>
         <div className="audience-grid">
           {audienceCards.map((card, i) => (
-            <FadeUp key={card.title} delay={i * 65} className="fill">
+            <FadeUp key={card.title} delay={i * 65} className="fill audience-card-wrap">
               <Link
                 href={card.href}
                 className="audience-card-v2"
                 style={{ backgroundImage: `url(${audienceBgs[i]})` }}
               >
-                <div className="audience-card-icon">
-                  {audienceIcons[i]}
+                <div className="audience-card-top">
+                  <span className="audience-card-icon" aria-hidden>
+                    {audienceIcons[i]}
+                  </span>
+                  <span className="audience-card-label">{card.label}</span>
                 </div>
                 <div className="audience-card-body">
-                  <span className="audience-card-label">{card.label}</span>
                   <h3>{card.title}</h3>
                   <p>{card.text}</p>
                   <span className="audience-card-link">Explore <Arrow /></span>
@@ -128,14 +131,13 @@ export function ProcessSection() {
           </div>
         </FadeUp>
         <div className="process-timeline">
-          {processSteps.map((item, i) => (
-            <FadeUp key={item.step} delay={i * 80}>
-              <div className="process-step-wrap">
-                <div className="process-num">{item.step}</div>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </div>
-            </FadeUp>
+          <div className="process-line" aria-hidden />
+          {processSteps.map((item) => (
+            <div key={item.step} className="process-step-wrap">
+              <div className="process-num">{item.step}</div>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </div>
           ))}
         </div>
       </div>

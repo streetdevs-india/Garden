@@ -26,14 +26,13 @@ export function ServiceTilesMotion({ children }: { children: ReactNode }) {
 
       const entrance = gsap.fromTo(
         tiles,
-        { opacity: 0, y: 28, scale: 0.94, rotate: -3 },
+        { opacity: 0, y: 24, scale: 0.96 },
         {
           opacity: 1,
           y: 0,
           scale: 1,
-          rotate: 0,
-          duration: 0.75,
-          stagger: 0.09,
+          duration: 0.65,
+          stagger: 0.08,
           ease: "power3.out",
           scrollTrigger: {
             trigger: grid,
@@ -43,88 +42,7 @@ export function ServiceTilesMotion({ children }: { children: ReactNode }) {
         }
       );
 
-      const setActive = () => {
-        const center = grid.scrollLeft + grid.clientWidth * 0.5;
-        let closestTile: HTMLElement | undefined;
-        let closestDist = Infinity;
-
-        tiles.forEach((tile) => {
-          const left = tile.offsetLeft;
-          const mid = left + tile.offsetWidth * 0.5;
-          const dist = Math.abs(center - mid);
-          tile.classList.remove("is-active");
-          if (dist < closestDist) {
-            closestDist = dist;
-            closestTile = tile;
-          }
-        });
-
-        closestTile?.classList.add("is-active");
-      };
-
-      let marquee: gsap.core.Tween | null = null;
-      let resumeTimer: ReturnType<typeof setTimeout> | null = null;
-      const mobile = window.matchMedia("(max-width: 640px)");
-
-      const killMarquee = () => {
-        marquee?.kill();
-        marquee = null;
-      };
-
-      const startMarquee = () => {
-        if (!mobile.matches) return;
-        killMarquee();
-        const maxScroll = grid.scrollWidth - grid.clientWidth;
-        if (maxScroll <= 8) return;
-
-        marquee = gsap.fromTo(
-          grid,
-          { scrollLeft: 0 },
-          {
-            scrollLeft: maxScroll,
-            duration: Math.max(maxScroll / 36, 8),
-            ease: "sine.inOut",
-            repeat: -1,
-            yoyo: true,
-            repeatDelay: 1.2,
-            onUpdate: setActive,
-          }
-        );
-      };
-
-      const pauseMarquee = () => {
-        marquee?.pause();
-        if (resumeTimer) clearTimeout(resumeTimer);
-      };
-
-      const scheduleResume = () => {
-        if (resumeTimer) clearTimeout(resumeTimer);
-        resumeTimer = setTimeout(() => marquee?.resume(), 2400);
-      };
-
-      grid.addEventListener("scroll", setActive, { passive: true });
-      grid.addEventListener("touchstart", pauseMarquee, { passive: true });
-      grid.addEventListener("touchend", scheduleResume, { passive: true });
-      grid.addEventListener("pointerdown", pauseMarquee);
-      grid.addEventListener("pointerup", scheduleResume);
-
-      const onResize = () => {
-        setActive();
-        killMarquee();
-        startMarquee();
-      };
-
-      mobile.addEventListener("change", onResize);
-      window.addEventListener("resize", onResize);
-
-      setActive();
-      startMarquee();
-
       return () => {
-        killMarquee();
-        if (resumeTimer) clearTimeout(resumeTimer);
-        mobile.removeEventListener("change", onResize);
-        window.removeEventListener("resize", onResize);
         entrance.scrollTrigger?.kill();
         entrance.kill();
       };

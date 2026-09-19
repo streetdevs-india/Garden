@@ -41,20 +41,28 @@ export default function ContactPage() {
           <div className="eyebrow">Contact Us</div>
           <h1>Start your landscape<br />journey today</h1>
           <p>
-            One call or message is all it takes. {business.contactName} will personally walk
-            through your requirements and suggest the best next step — free.
+            One call or message is all it takes. Our studio will walk through your requirements
+            and suggest the best next step — free.
           </p>
           <div className="contact-hero-actions">
-            <a href={`tel:${business.phoneTel}`} className="btn btn-green btn-pulse">
-              <PhoneIcon size={16} /> Call {business.contactName} <Arrow />
-            </a>
+            <Link href="/quote" className="btn btn-green btn-pulse">
+              Book a free site visit <Arrow />
+            </Link>
             <a
-              href={`https://wa.me/${business.whatsapp}?text=${encodeURIComponent("Hi Ajay, I want to discuss a landscaping project.")}`}
-              className="btn btn-outline"
+              href={`https://wa.me/${business.whatsapp}?text=${encodeURIComponent("Hi Hind Landscape Co., I would like to discuss a landscaping project.")}`}
+              className="btn btn-outline contact-hero-wa"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Chat on WhatsApp"
             >
-              <WhatsAppIcon size={16} /> WhatsApp Us
+              <WhatsAppIcon size={18} /> WhatsApp
+            </a>
+            <a
+              href={`tel:${business.phoneTel}`}
+              className="btn btn-outline contact-hero-call"
+              aria-label={`Call ${business.phone}`}
+            >
+              <PhoneIcon size={18} /> Call us
             </a>
             <ContactModal />
           </div>
@@ -77,7 +85,7 @@ export default function ContactPage() {
                 <span className="contact-trust-icon" aria-hidden>
                   <FeatureIcon name={t.icon} size={22} />
                 </span>
-                <div>
+                <div className="contact-trust-copy">
                   <strong>{t.label}</strong>
                   <span>{t.sub}</span>
                 </div>
@@ -92,20 +100,8 @@ export default function ContactPage() {
         <div className="wrap">
           <div className="contact-split">
 
-            {/* LEFT — Quote form */}
-            <FadeUp>
-              <div className="contact-form-panel">
-                <div className="contact-form-head">
-                  <div className="eyebrow">Request a visit</div>
-                  <h2>Tell us about your space</h2>
-                  <p>Share a few details — we respond with a clear scope and timeline, usually within 4 hours.</p>
-                </div>
-                <QuoteForm />
-              </div>
-            </FadeUp>
-
-            {/* RIGHT — Info card (dark) */}
-            <FadeUp delay={110}>
+            {/* LEFT — Info card (dark) */}
+            <FadeUp className="contact-info-col">
               <div className="contact-info-panel">
 
                 {/* Director card */}
@@ -125,15 +121,15 @@ export default function ContactPage() {
                 {/* Contact details */}
                 <ul className="contact-detail-list">
                   <li>
-                    <span className="cdl-icon cdl-phone"><PhoneIcon size={18} solid /></span>
-                    <div>
+                    <span className="cdl-icon cdl-phone" aria-hidden><PhoneIcon size={20} solid /></span>
+                    <div className="cdl-copy">
                       <em>Phone</em>
                       <a href={`tel:${business.phoneTel}`}>{business.phone}</a>
                     </div>
                   </li>
                   <li>
-                    <span className="cdl-icon cdl-wa"><WhatsAppIcon size={18} /></span>
-                    <div>
+                    <span className="cdl-icon cdl-wa" aria-hidden><WhatsAppIcon size={20} /></span>
+                    <div className="cdl-copy">
                       <em>WhatsApp</em>
                       <a
                         href={`https://wa.me/${business.whatsapp}?text=${encodeURIComponent("Hi Ajay, I want to discuss a landscaping project.")}`}
@@ -145,22 +141,22 @@ export default function ContactPage() {
                     </div>
                   </li>
                   <li>
-                    <span className="cdl-icon cdl-mail"><MailIcon size={18} solid /></span>
-                    <div>
+                    <span className="cdl-icon cdl-mail" aria-hidden><MailIcon size={20} solid /></span>
+                    <div className="cdl-copy">
                       <em>Email</em>
                       <a href={`mailto:${business.email}`}>{business.email}</a>
                     </div>
                   </li>
                   <li>
-                    <span className="cdl-icon cdl-pin"><MapPinIcon size={18} solid /></span>
-                    <div>
+                    <span className="cdl-icon cdl-pin" aria-hidden><MapPinIcon size={20} solid /></span>
+                    <div className="cdl-copy">
                       <em>Studio Address</em>
                       <span>{business.addressLine}</span>
                     </div>
                   </li>
                   <li>
-                    <span className="cdl-icon cdl-clock"><ClockIcon size={18} solid /></span>
-                    <div>
+                    <span className="cdl-icon cdl-clock" aria-hidden><ClockIcon size={20} solid /></span>
+                    <div className="cdl-copy">
                       <em>Working Hours</em>
                       <span>Monday – Saturday, 8:00 AM – 6:00 PM</span>
                     </div>
@@ -189,6 +185,18 @@ export default function ContactPage() {
                   ))}
                 </ul>
 
+              </div>
+            </FadeUp>
+
+            {/* RIGHT — Quote form */}
+            <FadeUp delay={110} className="contact-form-col">
+              <div className="contact-form-panel">
+                <div className="contact-form-head">
+                  <div className="eyebrow">Request a visit</div>
+                  <h2>Tell us about your space</h2>
+                  <p>Share a few details — we respond with a clear scope and timeline, usually within 4 hours.</p>
+                </div>
+                <QuoteForm />
               </div>
             </FadeUp>
           </div>

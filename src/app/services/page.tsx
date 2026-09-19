@@ -55,19 +55,46 @@ export default function ServicesPage() {
               <div>
                 <div className="eyebrow">Core services</div>
                 <h2>What we do</h2>
+                <p>
+                  Seven core scopes — from first sketch and planting to irrigation, hardscape and evening light.
+                </p>
               </div>
             </div>
             <div className="services-hub-grid-v2">
               {core.map((service, i) => (
-                <Link key={service.slug} href={`/services/${service.slug}`} className="svc-hub-card">
+                <Link
+                  key={service.slug}
+                  href={`/services/${service.slug}`}
+                  className={`svc-hub-card${i === 0 ? " is-featured" : ""}`}
+                >
                   <div className="svc-hub-img">
                     <img src={service.image} alt={service.title} />
                     <span className="svc-hub-num" aria-hidden>{String(i + 1).padStart(2, "0")}</span>
                   </div>
                   <div className="svc-hub-body">
-                    <h3>{service.title}</h3>
-                    <p>{service.text}</p>
-                    <span className="svc-hub-link">Learn more <Arrow /></span>
+                    {i === 0 ? (
+                      <>
+                        <span className="svc-hub-kicker">Flagship scope</span>
+                        <div className="svc-hub-featured-main">
+                          <div className="svc-hub-featured-copy">
+                            <h3>{service.title}</h3>
+                            <p>{service.detail}</p>
+                            <span className="svc-hub-link">Learn more <Arrow /></span>
+                          </div>
+                          <ul className="svc-hub-points">
+                            <li>Layouts &amp; planting plans</li>
+                            <li>Homes to commercial sites</li>
+                            <li>Climate-aware for Delhi NCR</li>
+                          </ul>
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <h3>{service.title}</h3>
+                        <p>{service.text}</p>
+                        <span className="svc-hub-link">Learn more <Arrow /></span>
+                      </>
+                    )}
                   </div>
                 </Link>
               ))}

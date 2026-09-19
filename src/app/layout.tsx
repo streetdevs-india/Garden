@@ -43,8 +43,14 @@ export const metadata: Metadata = {
     images: [absoluteUrl("/images/hero.jpg")],
   },
   icons: {
-    icon: [{ url: "/images/favicon-tree.png", type: "image/png" }],
-    apple: [{ url: "/images/favicon-tree.png", type: "image/png" }],
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/images/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/images/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/images/favicon-tree.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/images/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: ["/favicon.ico"],
   },
   robots: { index: true, follow: true },
   alternates: { canonical: absoluteUrl("/"), languages: { "en-IN": absoluteUrl("/") } },

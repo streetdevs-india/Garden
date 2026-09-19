@@ -26,7 +26,8 @@ export const business = {
   priceRange: "₹₹₹",
   sameAs: [] as string[],
   showreelVideo: "/videos/gwr-showreel.mp4",
-  aboutVideo: "/videos/sss-gwr-showreel.mp4",
+  aboutVideo: "/videos/story.mp4",
+  storyVideo: "/videos/story.mp4",
 } as const;
 
 export const proofStats = [

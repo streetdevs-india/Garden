@@ -30,24 +30,33 @@ export function GalleryReveal({
         return;
       }
 
-      gsap.set(shots, { autoAlpha: 0, y: 56, scale: 0.88 });
+      shots.forEach((shot, i) => {
+        const side = i % 3;
+        const x = side === 0 ? -40 : side === 1 ? 40 : 0;
+        const y = side === 2 ? 36 : 18;
 
-      gsap.to(shots, {
-        autoAlpha: 1,
-        y: 0,
-        scale: 1,
-        duration: 0.85,
-        stagger: { each: 0.08, from: "center" },
-        ease: "power3.out",
-        clearProps: "transform",
-        scrollTrigger: {
-          trigger: root.current,
-          start: "top 82%",
-          once: true,
-        },
+        gsap.fromTo(
+          shot,
+          { autoAlpha: 0, x, y, scale: 0.97 },
+          {
+            autoAlpha: 1,
+            x: 0,
+            y: 0,
+            scale: 1,
+            duration: 0.7,
+            ease: "power2.out",
+            clearProps: "transform",
+            scrollTrigger: {
+              trigger: shot,
+              start: "top 90%",
+              once: true,
+            },
+            delay: (i % 3) * 0.05,
+          }
+        );
       });
     },
-    { scope: root }
+    { scope: root, dependencies: [items] }
   );
 
   return (
@@ -55,7 +64,7 @@ export function GalleryReveal({
       {items.map((item) => {
         const inner = (
           <>
-            <img src={item.src} alt={item.alt} />
+            <img src={item.src} alt={item.alt} loading="lazy" />
             <span className="gallery-item-label">{item.alt}</span>
           </>
         );

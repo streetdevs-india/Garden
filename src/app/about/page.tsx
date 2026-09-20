@@ -24,6 +24,8 @@ const aboutWork = [
   { src: "/images/gallery-path.jpg", alt: "Garden path under arbor", tag: "Pathways", place: "Arbor walk" },
   { src: "/images/gallery-flowers.jpg", alt: "Seasonal flower border", tag: "Planting", place: "Colour border" },
   { src: "/images/service-lighting.jpg", alt: "Evening garden lighting", tag: "Lighting", place: "Night garden" },
+  { src: "/images/gallery-patio-lights.png", alt: "Twilight patio with festoon lights", tag: "Outdoor living", place: "Lit deck" },
+  { src: "/images/gallery-pavilion-night.png", alt: "Night pavilion with water features", tag: "Pavilion", place: "Evening garden" },
 ] as const;
 
 export default function AboutPage() {

@@ -165,7 +165,7 @@ export function SiteProvider({ children }: { children: React.ReactNode }) {
         <>
           <div className="backdrop" onClick={() => setMenu(false)} />
           <aside className="drawer" aria-label="Mobile menu">
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <div className="drawer-head">
               <strong>Menu</strong>
               <button className="icon-btn" onClick={() => setMenu(false)} aria-label="Close menu">✕</button>
             </div>
@@ -222,26 +222,41 @@ export function SiteProvider({ children }: { children: React.ReactNode }) {
               }
               return <Link key={p.href} href={p.href}>{p.label}</Link>;
             })}
-            <Link href="/quote" className="btn btn-green" style={{ marginTop: 12 }}>Get a Quote <Arrow /></Link>
+            <Link href="/quote" className="btn btn-green drawer-cta">Get a Quote <Arrow /></Link>
           </aside>
         </>
       )}
 
       {search && (
-        <div className="overlay" onClick={() => setSearch(false)}>
-          <div className="search-panel" onClick={(e) => e.stopPropagation()}>
-            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 10 }}>
-              <strong>Search {business.name}</strong>
-              <button className="close" onClick={() => setSearch(false)}>Close</button>
+        <div className="overlay search-overlay" onClick={() => setSearch(false)}>
+          <div className="search-panel" onClick={(e) => e.stopPropagation()} role="dialog" aria-label="Search">
+            <div className="search-panel-top">
+              <span className="search-panel-badge" aria-hidden><SearchIcon /></span>
+              <div className="search-panel-copy">
+                <strong>Search</strong>
+                <span>Services, gallery &amp; more</span>
+              </div>
+              <button type="button" className="search-panel-close" onClick={() => setSearch(false)} aria-label="Close search">
+                ✕
+              </button>
             </div>
-            <input
-              autoFocus
-              placeholder="Search services, gallery, contact…"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-            />
-            <div style={{ marginTop: 8 }}>
-              {query && hits.length === 0 && <p style={{ color: "#5d6d64" }}>No matches. Try “lawn”, “lighting” or “gallery”.</p>}
+            <label className="search-field">
+              <span className="sr-only">Search query</span>
+              <span className="search-field-ico" aria-hidden><SearchIcon /></span>
+              <input
+                autoFocus
+                placeholder="Search lawn, lighting, gallery…"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+              />
+            </label>
+            <div className="search-results">
+              {!query && (
+                <p className="search-hint">Type to find pages and services.</p>
+              )}
+              {query && hits.length === 0 && (
+                <p className="search-empty">No matches. Try “lawn”, “lighting” or “gallery”.</p>
+              )}
               {hits.map((hit) => (
                 <Link key={hit.href + hit.title} href={hit.href} className="search-hit" onClick={() => setSearch(false)}>
                   <strong>{hit.title}</strong>

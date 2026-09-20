@@ -38,13 +38,7 @@ export function LeadPopup() {
   const firstField = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    try {
-      if (localStorage.getItem(STORAGE_KEY) === "1") return;
-    } catch {
-      /* private mode — still show once this session */
-    }
-
-    const timer = window.setTimeout(() => setOpen(true), 5000);
+    const timer = window.setTimeout(() => setOpen(true), 3000);
     return () => window.clearTimeout(timer);
   }, []);
 
@@ -72,7 +66,6 @@ export function LeadPopup() {
   }
 
   function dismiss() {
-    markSeen();
     setOpen(false);
   }
 
@@ -106,12 +99,11 @@ export function LeadPopup() {
         </button>
 
         <div className="lead-pop-head">
-          <span className="lead-pop-mark"><HindMark size={32} /></span>
+          <span className="lead-pop-mark"><HindMark size={24} /></span>
           <p className="lead-pop-kicker">Free site visit</p>
           <h2 id="lead-pop-title">Tell Ajay what you need</h2>
           <p>
-            Three details. {business.contactName} calls you back on your number —
-            no spam, no long form.
+            Three details. {business.contactName} calls you back — no spam.
           </p>
           <div className="lead-pop-pills">
             <span>Free site visit</span>

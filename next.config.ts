@@ -34,6 +34,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: { unoptimized: true },
   poweredByHeader: false,            // hide X-Powered-By: Next.js
+  devIndicators: false,              // hide Next.js route / N badge in UI
   compress: true,
   async headers() {
     return [

@@ -36,7 +36,7 @@ export function AboutSectionMotion({ children }: { children: ReactNode }) {
 
       gsap.set(copyBits, { autoAlpha: 0, x: -72 });
       if (videoWrap) gsap.set(videoWrap, { autoAlpha: 0, scale: 0.9 });
-      if (videoMedia) gsap.set(videoMedia, { scale: 1.42 });
+      if (videoMedia) gsap.set(videoMedia, { scale: 1 });
       if (playBtn) gsap.set(playBtn, { autoAlpha: 0, scale: 0.6 });
       if (caption) gsap.set(caption, { autoAlpha: 0, y: 24 });
 
@@ -67,22 +67,10 @@ export function AboutSectionMotion({ children }: { children: ReactNode }) {
       }
 
       if (videoMedia) {
-        tl.to(
+        tl.fromTo(
           videoMedia,
-          {
-            scale: 1.06,
-            duration: 1.45,
-            ease: "power2.out",
-            onComplete: () => {
-              gsap.to(videoMedia, {
-                scale: 1.16,
-                duration: 7.5,
-                ease: "sine.inOut",
-                yoyo: true,
-                repeat: -1,
-              });
-            },
-          },
+          { scale: 1.04 },
+          { scale: 1, duration: 1.2, ease: "power2.out" },
           0.2
         );
       }

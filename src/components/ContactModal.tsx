@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import { business } from "@/lib/business";
-import { LeafIcon, PhoneIcon } from "@/components/Icons";
+import { PhoneIcon } from "@/components/Icons";
+import { getClientServices } from "@/lib/site";
 import {
   allowNameKey,
   allowPhoneKey,
@@ -15,18 +16,7 @@ import {
   validateRequiredSelect,
 } from "@/lib/formValidation";
 
-const SERVICES = [
-  "Garden Design",
-  "Lawn Care & Maintenance",
-  "Irrigation System",
-  "Hardscaping",
-  "Outdoor Lighting",
-  "Terrace Garden",
-  "Vertical Garden",
-  "Farmhouse Landscaping",
-  "Commercial Landscaping",
-  "Maintenance AMC",
-];
+const SERVICES = getClientServices().map((s) => s.title);
 
 type State = "idle" | "sent";
 
@@ -150,7 +140,7 @@ export function ContactModal() {
             <>
               <div className="contact-modal-top">
                 <div className="contact-modal-leaf" aria-hidden>
-                  <LeafIcon size={28} />
+                  <img src="/images/favicon-32.png" alt="" width={28} height={28} />
                 </div>
                 <div>
                   <h2 className="contact-modal-title">Quick Contact</h2>

@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: service.seoDescription,
     path: `/services/${service.slug}`,
     image: service.image,
+    keywords: service.keywords,
   });
 }
 
@@ -35,10 +36,19 @@ export default async function ServiceDetailPage({ params }: Props) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: service.title,
+    name: service.seoTitle,
+    alternateName: service.title,
     description: service.seoDescription,
-    provider: { "@type": "LandscapingBusiness", name: "Hind Landscape Co.", url: absoluteUrl("/") },
-    areaServed: "IN",
+    provider: {
+      "@type": "LandscapingBusiness",
+      name: "Hind Landscape Co.",
+      url: absoluteUrl("/"),
+      email: "Info@Hindlandscape.com",
+    },
+    areaServed: [
+      { "@type": "Country", name: "India" },
+      { "@type": "AdministrativeArea", name: "Delhi NCR" },
+    ],
     url: absoluteUrl(`/services/${service.slug}`),
     image: absoluteUrl(service.image),
   };
@@ -58,7 +68,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             ]}
           />
           <div className="eyebrow">Service</div>
-          <SplitText as="h1" text={service.title} />
+          <SplitText as="h1" text={service.seoTitle} />
           <p>{service.seoDescription}</p>
           <div className="hero-cta-row">
             <Link href="/quote" className="btn btn-green btn-pulse">Get a Free Quote <Arrow /></Link>

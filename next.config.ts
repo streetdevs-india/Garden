@@ -36,6 +36,12 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,            // hide X-Powered-By: Next.js
   devIndicators: false,              // hide Next.js route / N badge in UI
   compress: true,
+  async redirects() {
+    return [
+      { source: "/services/garden-design", destination: "/services/softscape-horticulture", permanent: true },
+      { source: "/services/tree-care", destination: "/services/trees-plants-exporter", permanent: true },
+    ];
+  },
   async headers() {
     return [
       {

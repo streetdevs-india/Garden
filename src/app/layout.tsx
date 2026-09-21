@@ -4,28 +4,19 @@ import { JsonLd } from "@/components/JsonLd";
 import { business } from "@/lib/business";
 import { teamMembers } from "@/lib/team";
 import { absoluteUrl } from "@/lib/seo";
+import { homepageKeywords } from "@/lib/seoKeywords";
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(business.siteUrl),
   title: {
-    default: "Hind Landscape Co. | Landscaping & Gardening Delhi NCR & India",
+    default: "Landscaping Company in Delhi NCR & India | Hind Landscape Co.",
     template: "%s | Hind Landscape Co.",
   },
   description: business.description,
   applicationName: business.name,
-  keywords: [
-    "landscaping company India",
-    "landscaping company Delhi",
-    "landscaping company Delhi NCR",
-    "garden design Delhi",
-    "lawn care Delhi NCR",
-    "terrace garden",
-    "farmhouse landscaping Delhi",
-    "landscape maintenance AMC",
-    "outdoor lighting garden",
-    "irrigation systems India",
-  ],
+  /* Discovery only — money keywords live on dedicated service/location/intent pages */
+  keywords: [...homepageKeywords],
   /* hreflang added in layout-level alternates below */
   openGraph: {
     type: "website",
@@ -117,7 +108,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
-          href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
       </head>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { services, stats } from "@/lib/site";
+import { stats, getClientServices } from "@/lib/site";
 import { galleryPhotos } from "@/lib/gallery";
 import { business } from "@/lib/business";
 import { Arrow, LeafDeco, ServiceGlyph, FeatureIcon } from "@/components/Icons";
@@ -37,7 +37,8 @@ const trustSignals = [
 ];
 
 export default function HomePage() {
-  const homeServices = services.slice(0, 6);
+  const homeServices = getClientServices().slice(0, 6);
+  const moreServices = getClientServices().slice(6);
 
   return (
     <main>
@@ -137,7 +138,7 @@ export default function HomePage() {
               <div className="eyebrow">Our Services</div>
               <h2>Everything your garden needs — scoped clearly</h2>
               <p className="lede">
-                From first sketch to irrigation and evening light — six core services we deliver
+                From hardscape and softscape to irrigation and evening light — core services we deliver
                 across Delhi NCR homes, farmhouses and commercial sites.
               </p>
             </div>
@@ -168,9 +169,34 @@ export default function HomePage() {
             ))}
           </ServicesStoryMotion>
 
+          {moreServices.length > 0 && (
+            <FadeUp>
+              <div className="svc-suite">
+                <div className="svc-suite-head">
+                  <span className="eyebrow">Full studio suite</span>
+                  <h3>More scopes we deliver across India</h3>
+                </div>
+                <div className="svc-suite-grid">
+                  {moreServices.map((service) => (
+                    <Link key={service.slug} href={`/services/${service.slug}`} className="svc-suite-card">
+                      <span className="svc-suite-icon" aria-hidden>
+                        <ServiceGlyph slug={service.slug} />
+                      </span>
+                      <span className="svc-suite-copy">
+                        <strong>{service.title}</strong>
+                        <em>{service.text}</em>
+                      </span>
+                      <span className="svc-suite-go" aria-hidden>→</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </FadeUp>
+          )}
+
           <FadeUp>
             <div className="svc-story-foot">
-              <p>Need something else — terrace, vertical garden, or AMC?</p>
+              <p>Looking for society AMC, balcony gardens, or a full master plan?</p>
               <Link href="/services" className="btn btn-green">
                 View all services <Arrow />
               </Link>
@@ -243,7 +269,11 @@ export default function HomePage() {
               >
                 <span className="why-card-num">{String(i + 1).padStart(2, "0")}</span>
                 <span className="why-card-icon" aria-hidden>
-                  <FeatureIcon name={item.icon} size={22} />
+                  {"lead" in item && item.lead ? (
+                    <img src="/images/favicon-32.png" alt="" width={26} height={26} />
+                  ) : (
+                    <FeatureIcon name={item.icon} size={22} />
+                  )}
                 </span>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>

@@ -3,7 +3,7 @@
 import { FormEvent, useEffect, useRef, useState } from "react";
 import { services } from "@/lib/site";
 import { business } from "@/lib/business";
-import { Arrow, HindMark, PhoneIcon } from "@/components/Icons";
+import { Arrow, PhoneIcon } from "@/components/Icons";
 import {
   allowNameKey,
   allowPhoneKey,
@@ -99,7 +99,9 @@ export function LeadPopup() {
         </button>
 
         <div className="lead-pop-head">
-          <span className="lead-pop-mark"><HindMark size={24} /></span>
+          <span className="lead-pop-mark" aria-hidden>
+            <img src="/images/favicon-32.png" alt="" width={28} height={28} />
+          </span>
           <p className="lead-pop-kicker">Free site visit</p>
           <h2 id="lead-pop-title">Tell Ajay what you need</h2>
           <p>

@@ -7,7 +7,12 @@ import { buildMetadata } from "@/lib/seo";
 const page = intentPages.find((p) => p.slug === "hotel-landscaping");
 
 export const metadata: Metadata = page
-  ? buildMetadata({ title: page.title, description: page.description, path: page.path })
+  ? buildMetadata({
+      title: page.title,
+      description: page.description,
+      path: page.path,
+      keywords: page.keywords,
+    })
   : {};
 
 export default function Page() {

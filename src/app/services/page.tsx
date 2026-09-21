@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { services } from "@/lib/site";
+import { getClientServices, getExtraServices } from "@/lib/site";
 import { Arrow } from "@/components/Icons";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SplitText } from "@/components/Animate";
@@ -15,15 +15,26 @@ import { ServicesPageMotion } from "@/components/ServicesPageMotion";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Landscaping Services | Garden Design, Lawn Care & More",
+  title: "Landscaping Services in India | Hardscape, Softscape, Irrigation & AMC",
   description:
-    "Complete landscaping services from Hind Landscape Co. — garden design, lawn care, irrigation, hardscaping, lighting, terrace gardens and maintenance AMC across Delhi NCR and India.",
+    "Hind Landscape Co. landscaping services in India — hardscape & civil, softscape & horticulture, irrigation, lighting, terrace & podium gardens, vertical gardens, AMC and more across Delhi NCR.",
   path: "/services",
+  keywords: [
+    "Hardscaping and Hardscape Landscaping for Commercial Sites",
+    "Softscape and Garden Landscaping Services in India",
+    "Landscape Irrigation Services for Commercial Sites",
+    "Landscape Lighting Services for Commercial Landscapes",
+    "Garden Maintenance Services and Landscape Maintenance AMC",
+    "Terrace Garden and Podium Landscaping Services",
+    "Natural Vertical Garden in Delhi NCR",
+    "landscaping services India",
+    "landscaping company Delhi NCR",
+  ],
 });
 
 export default function ServicesPage() {
-  const core = services.slice(0, 7);
-  const extras = services.slice(7);
+  const core = getClientServices();
+  const extras = getExtraServices();
 
   return (
     <main>
@@ -37,8 +48,8 @@ export default function ServicesPage() {
             <div className="eyebrow">Our Services</div>
             <SplitText as="h1" text="Complete landscaping services for every garden dream" manual />
             <p>
-              Garden design, lawn care, irrigation, hardscaping, lighting and maintenance AMC — covering
-              residential, farmhouse and commercial outdoor spaces across Delhi NCR and India.
+              Hardscape, softscape, irrigation, lighting, terrace &amp; podium gardens, vertical gardens,
+              AMC and specialised scopes — for homes, societies and commercial sites across Delhi NCR and India.
             </p>
             <div className="hero-cta-row">
               <Link href="/quote" className="btn btn-green btn-pulse">Get a Free Quote <Arrow /></Link>
@@ -53,10 +64,10 @@ export default function ServicesPage() {
           <div className="wrap wrap-wide">
             <div className="section-header core-services-head" style={{ marginBottom: 28 }}>
               <div>
-                <div className="eyebrow">Core services</div>
+                <div className="eyebrow">Client priority scopes</div>
                 <h2>What we do</h2>
                 <p>
-                  Seven core scopes — from first sketch and planting to irrigation, hardscape and evening light.
+                  Twelve core landscaping scopes — the exact services Hind Landscape Co. is known for across India.
                 </p>
               </div>
             </div>
@@ -107,11 +118,11 @@ export default function ServicesPage() {
             <div className="wrap wrap-wide">
               <div className="section-header svc-extras-head">
                 <div>
-                  <div className="eyebrow">Speciality services</div>
-                  <h2>Additional scopes</h2>
+                  <div className="eyebrow">Additional scopes</div>
+                  <h2>Also available</h2>
                   <p>
-                    Terrace gardens, living walls, farmhouse estates and maintenance AMC —
-                    the specialised work that sits alongside a full landscape build.
+                    Balcony gardens, society AMC, landscape architecture, lawn care, farmhouse estates
+                    and seasonal cleanups — alongside every full landscape build.
                   </p>
                 </div>
               </div>

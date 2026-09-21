@@ -1,3 +1,5 @@
+import { serviceKeywordMap } from "@/lib/seoKeywords";
+
 export type ServiceItem = {
   slug: string;
   title: string;
@@ -11,28 +13,300 @@ export type ServiceItem = {
   keywords: string[];
 };
 
+/**
+ * Client-priority services first (SEO titles are the approved “After Click” phrases).
+ * Keep those exact keyword titles — they drive India search targeting.
+ */
 export const services: ServiceItem[] = [
   {
-    slug: "garden-design",
-    title: "Garden Design & Planning",
-    text: "Creative designs that match your style and space.",
+    slug: "hardscaping",
+    title: "Hardscape & Civil",
+    text: "Patios, pathways, decks and durable outdoor structure.",
     detail:
-      "We plan every bed, path and view so the garden feels calm, useful and entirely yours — from the first sketch to the planting plan.",
-    image: "/images/service-design.jpg",
-    seoTitle: "Garden Design & Planning Services in India | Hind Landscape Co.",
+      "Stone, pavers, steps and civil finishes built for Indian heat and monsoon — so outdoor spaces stay usable year after year.",
+    image: "/images/service-hardscape.jpg",
+    seoTitle: "Hardscaping and Hardscape Landscaping for Commercial Sites",
     seoDescription:
-      "Custom garden design and landscape planning for homes, farmhouses and commercial properties across Delhi NCR and India.",
+      "Hardscaping and hardscape landscaping for commercial sites in Delhi NCR and India — pathways, plazas, decks, steps and outdoor floors by Hind Landscape Co.",
     body: [
-      "Good garden design starts with how you live outdoors — morning light, entry views, kids’ play, evening seating and maintenance reality.",
-      "Hind Landscape Co. prepares layouts, planting plans and material directions so installation stays clear for homeowners, architects and site teams.",
-      "Whether you need a compact city garden or an estate-scale landscape, we keep the plan practical for Delhi NCR climate and Indian site conditions.",
+      "Hardscape sets how people move through a site — entries, plazas, dining decks, pool surrounds and quiet seating courts.",
+      "We build with drainage, levels and material durability so stone and pavers survive monsoon, heat and commercial footfall.",
+      "Civil and softscape are coordinated so the finished landscape feels complete — not like separate vendor work.",
     ],
     faqs: [
-      { q: "Do you provide 2D or 3D garden layouts?", a: "Yes. We share clear layout drawings and planting schedules; 3D views can be included where the scope needs them." },
-      { q: "Can design be separate from installation?", a: "Yes. Many clients start with design-only, then continue to build and maintenance with the same team." },
+      {
+        q: "Do you hardscape commercial campuses?",
+        a: "Yes. We deliver pathways, plazas, parking-edge softworks and outdoor floors for offices, hotels and institutions across India.",
+      },
+      {
+        q: "What materials do you use?",
+        a: "Natural stone, concrete pavers and site-suitable finishes chosen for slip resistance, colour and maintenance.",
+      },
     ],
-    keywords: ["garden design India", "landscape planning Delhi", "garden landscape design"],
+    keywords: (serviceKeywordMap["hardscaping"] ?? []),
   },
+  {
+    slug: "softscape-horticulture",
+    title: "Softscape & Horticulture",
+    text: "Planting plans, beds and garden softscape that thrive.",
+    detail:
+      "Climate-aware planting, lawns and horticulture so softscape stays green through Delhi heat, dust and monsoon.",
+    image: "/images/service-design.jpg",
+    seoTitle: "Softscape and Garden Landscaping Services in India",
+    seoDescription:
+      "Softscape and garden landscaping services in India — planting design, horticulture, lawns and beds for homes and commercial sites by Hind Landscape Co.",
+    body: [
+      "Softscape is the living layer of a landscape — trees, shrubs, groundcovers, lawns and seasonal colour.",
+      "Hind Landscape Co. selects species for Indian climate, water use and maintenance reality, not just handover-day photos.",
+      "From compact city gardens to campus horticulture, we keep planting plans practical for Delhi NCR and pan-India sites.",
+    ],
+    faqs: [
+      {
+        q: "Do you provide planting schedules?",
+        a: "Yes. Layouts and named plant lists are part of softscape scopes so installation stays clear for site teams.",
+      },
+      {
+        q: "Can softscape be separate from hardscape?",
+        a: "Yes — many clients start with softscape enrichment on an existing hardscape, or the reverse.",
+      },
+    ],
+    keywords: (serviceKeywordMap["softscape-horticulture"] ?? []),
+  },
+  {
+    slug: "irrigation",
+    title: "Landscape Irrigation Services",
+    text: "Drip, sprinkler and zoned watering that saves water.",
+    detail:
+      "Efficient irrigation that reaches the roots and skips the waste — built for commercial and residential landscapes in India.",
+    image: "/images/service-irrigation.jpg",
+    seoTitle: "Landscape Irrigation Services for Commercial Sites",
+    seoDescription:
+      "Landscape irrigation services for commercial sites in India — drip, sprinkler and controller systems for campuses, hotels and estates by Hind Landscape Co.",
+    body: [
+      "Irrigation should match plant zones — lawns, shrubs, pots and trees rarely need the same water schedule.",
+      "We design drip, sprinkler and controller setups that reduce waste and keep beds alive through Delhi NCR summers.",
+      "Systems are planned with maintenance access so AMC teams can service filters and valves without digging up the garden.",
+    ],
+    faqs: [
+      {
+        q: "Do you irrigate terrace and podium gardens?",
+        a: "Yes. Terrace, podium and balcony systems are zoned for planters, green walls and lightweight mixes.",
+      },
+      {
+        q: "Can irrigation connect to timers?",
+        a: "Yes. Controllers and timers are part of most commercial and residential installs.",
+      },
+    ],
+    keywords: (serviceKeywordMap["irrigation"] ?? []),
+  },
+  {
+    slug: "lighting",
+    title: "Landscape Lighting",
+    text: "Warm, safe evening light for paths and planting.",
+    detail:
+      "Pathway, façade and soft wash lighting so commercial and residential landscapes stay usable after dusk.",
+    image: "/images/service-lighting.jpg",
+    seoTitle: "Landscape Lighting Services for Commercial Landscapes",
+    seoDescription:
+      "Landscape lighting services for commercial landscapes in Delhi NCR and India — pathways, trees, façades and seating by Hind Landscape Co.",
+    body: [
+      "Outdoor lighting should guide feet, show planting and avoid glare into windows or neighbouring plots.",
+      "We place path lights, uplights and soft wash fixtures so gardens and campuses feel usable after sunset.",
+      "Wiring and fixture choices consider weather sealing and easy lamp maintenance for AMC teams.",
+    ],
+    faqs: [
+      {
+        q: "Do you use warm LED fixtures?",
+        a: "Yes. Warm white LEDs are preferred for residential, hospitality and commercial garden lighting.",
+      },
+    ],
+    keywords: (serviceKeywordMap["lighting"] ?? []),
+  },
+  {
+    slug: "landscape-maintenance-amc",
+    title: "Landscape Maintenance (AMC)",
+    text: "Scheduled care so gardens stay handover-ready.",
+    detail:
+      "Annual maintenance contracts for lawns, hedges, irrigation checks and seasonal tasks across Delhi NCR and India.",
+    image: "/images/service-lawn.jpg",
+    seoTitle: "Garden Maintenance Services and Landscape Maintenance AMC",
+    seoDescription:
+      "Garden maintenance services and landscape maintenance AMC in Delhi NCR and India — lawns, hedges, irrigation and seasonal care by Hind Landscape Co.",
+    body: [
+      "AMC keeps gardens consistent after installation — the difference between a photo-day landscape and one that lasts.",
+      "Scopes include visit frequency, mowing, pruning, fertiliser windows, irrigation checks and replacement rules.",
+      "Ideal for homes, societies, hotels and commercial campuses that need predictable care.",
+    ],
+    faqs: [
+      {
+        q: "Can AMC cover only lawns?",
+        a: "Yes. We can scope lawn-only or full softscape and irrigation maintenance.",
+      },
+    ],
+    keywords: (serviceKeywordMap["landscape-maintenance-amc"] ?? []),
+  },
+  {
+    slug: "terrace-garden",
+    title: "Terrace & Podium Garden",
+    text: "Rooftop, terrace and podium planting that feels intentional.",
+    detail:
+      "Waterproofing-aware terrace and podium gardens with planters, seating greenery and light irrigation.",
+    image: "/images/service-design.jpg",
+    seoTitle: "Terrace Garden and Podium Landscaping Services",
+    seoDescription:
+      "Terrace garden and podium landscaping services in Delhi NCR and India — planters, lightweight mixes, irrigation and seating greenery by Hind Landscape Co.",
+    body: [
+      "Terrace and podium gardens must respect waterproofing, load and wind.",
+      "We plan planter layouts and plant lists that stay healthy without damaging the slab — for apartments, clubs and commercial podiums.",
+      "Ideal for Delhi NCR projects seeking privacy screens, flowering pots and compact seating gardens.",
+    ],
+    faqs: [
+      {
+        q: "Do you coordinate with waterproofing?",
+        a: "We design above finished waterproofing and flag any concerns before planting begins.",
+      },
+    ],
+    keywords: (serviceKeywordMap["terrace-garden"] ?? []),
+  },
+  {
+    slug: "vertical-garden",
+    title: "Vertical Garden (Greenwall)",
+    text: "Living walls for façades, balconies and atriums.",
+    detail:
+      "Natural vertical gardens and green walls with irrigation and plant mixes suited to Indian light and heat.",
+    image: "/images/service-trees.jpg",
+    seoTitle: "Natural Vertical Garden in Delhi NCR",
+    seoDescription:
+      "Natural vertical garden and greenwall installation in Delhi NCR — living walls for homes, offices and commercial façades by Hind Landscape Co.",
+    body: [
+      "Vertical gardens need reliable irrigation and plant species that survive heat and reflected light.",
+      "We build modular living walls for balconies, compound walls and lobby atriums with maintenance access in mind.",
+      "AMC is available for living walls we install across Delhi NCR.",
+    ],
+    faqs: [
+      {
+        q: "Are green walls high maintenance?",
+        a: "They need scheduled irrigation checks and plant replacement. We offer AMC for living walls we install.",
+      },
+    ],
+    keywords: (serviceKeywordMap["vertical-garden"] ?? []),
+  },
+  {
+    slug: "terrarium-paludarium",
+    title: "Terrarium and Paludarium",
+    text: "Indoor living ecosystems for homes and lobbies.",
+    detail:
+      "Custom terrarium and paludarium installations — glass gardens and humid planted displays for Indian interiors.",
+    image: "/images/service-trees.jpg",
+    seoTitle: "Terrarium and Paludarium Service in India",
+    seoDescription:
+      "Terrarium and paludarium service in India — custom indoor planted displays for homes, offices and hospitality by Hind Landscape Co.",
+    body: [
+      "Terrariums and paludariums bring living greenery into controlled indoor environments.",
+      "We design plant mixes, moisture balance and styling for lobbies, residences and boutique spaces across India.",
+      "Maintenance guidance is included so displays stay healthy after handover.",
+    ],
+    faqs: [
+      {
+        q: "Do you build large lobby terrariums?",
+        a: "Yes — from tabletop pieces to statement lobby installations, sized to light and humidity conditions.",
+      },
+    ],
+    keywords: (serviceKeywordMap["terrarium-paludarium"] ?? []),
+  },
+  {
+    slug: "indoor-plantation",
+    title: "Indoor Plantation",
+    text: "Office and indoor planting that stays healthy.",
+    detail:
+      "Indoor planting and office landscaping — planters, species selection and care plans for Indian workplaces.",
+    image: "/images/service-design.jpg",
+    seoTitle: "Indoor Planting and Office Landscaping Services",
+    seoDescription:
+      "Indoor planting and office landscaping services in India — lobby planters, workstation greenery and indoor horticulture by Hind Landscape Co.",
+    body: [
+      "Indoor plantation improves air quality perception and workplace calm when species match light levels.",
+      "We specify planters, soil mixes and plant lists for offices, clinics and hospitality interiors across Delhi NCR and India.",
+      "Optional AMC keeps indoor plants replaced and healthy without facilities-team guesswork.",
+    ],
+    faqs: [
+      {
+        q: "Do you service office plants monthly?",
+        a: "Yes. Indoor plantation AMC can include watering checks, pruning and plant replacement.",
+      },
+    ],
+    keywords: (serviceKeywordMap["indoor-plantation"] ?? []),
+  },
+  {
+    slug: "swimming-pools",
+    title: "Swimming Pools",
+    text: "Pool surrounds and poolside landscape rooms.",
+    detail:
+      "Pool landscaping and swimming pool surrounds — planting, decks and softscape that feel resort-ready.",
+    image: "/images/work-landscape.jpg",
+    seoTitle: "Pool Landscaping and Swimming Pool Surrounds",
+    seoDescription:
+      "Pool landscaping and swimming pool surrounds in Delhi NCR and India — decks, planting and outdoor living by Hind Landscape Co.",
+    body: [
+      "Pool landscapes need slip-aware paving, chlorine-tolerant planting and clear circulation for guests.",
+      "We design surrounds, planter edges and soft night lighting so pool decks feel like outdoor rooms.",
+      "Scopes coordinate with pool contractors on levels, drainage and access.",
+    ],
+    faqs: [
+      {
+        q: "Do you build the pool structure itself?",
+        a: "We focus on pool landscaping and surrounds. Structural pool works are coordinated with specialist pool contractors.",
+      },
+    ],
+    keywords: (serviceKeywordMap["swimming-pools"] ?? []),
+  },
+  {
+    slug: "water-features",
+    title: "Water Features",
+    text: "Fountains, cascades and reflective water elements.",
+    detail:
+      "Water feature landscaping for commercial sites — fountains, cascades and calm reflective pools.",
+    image: "/images/work-landscape.jpg",
+    seoTitle: "Water Feature Landscaping for Commercial Sites",
+    seoDescription:
+      "Water feature landscaping for commercial sites in India — fountains, cascades and reflective pools by Hind Landscape Co.",
+    body: [
+      "Water features become arrival statements when circulation, planting and lighting work together.",
+      "We plan pumps, edges and softscape so commercial sites stay dramatic without high surprise maintenance.",
+      "Ideal for campuses, hotels, clubs and estate entries across Delhi NCR and India.",
+    ],
+    faqs: [
+      {
+        q: "Do you maintain fountains after install?",
+        a: "Yes — water feature checks can be added to landscape AMC scopes.",
+      },
+    ],
+    keywords: (serviceKeywordMap["water-features"] ?? []),
+  },
+  {
+    slug: "trees-plants-exporter",
+    title: "Trees and Plants Exporter",
+    text: "Quality trees and plants for projects across India.",
+    detail:
+      "Trees and plants export and supply from Delhi India — specimen trees, palms and project-ready stock.",
+    image: "/images/service-trees.jpg",
+    seoTitle: "Trees and Plants Exporter in Delhi India",
+    seoDescription:
+      "Trees and plants exporter in Delhi India — specimen trees, palms and project plant supply by Hind Landscape Co.",
+    body: [
+      "Good landscapes start with healthy stock sized for the design — not last-minute market substitutions.",
+      "We source and supply trees and plants for residential, commercial and hospitality projects across India.",
+      "Export and interstate logistics are planned with hardening and transit care so plants arrive ready to establish.",
+    ],
+    faqs: [
+      {
+        q: "Do you supply only with full landscape contracts?",
+        a: "We supply for our own installs and selected project plant lists. Ask Ajay Kumar for current stock and lead times.",
+      },
+    ],
+    keywords: (serviceKeywordMap["trees-plants-exporter"] ?? []),
+  },
+  /* Additional India-relevant scopes (kept after client list) */
   {
     slug: "lawn-care",
     title: "Lawn Care & Maintenance",
@@ -40,7 +314,7 @@ export const services: ServiceItem[] = [
     detail:
       "Mowing, feeding and seasonal care that keep the lawn dense, even and green without turning your weekends into chores.",
     image: "/images/service-lawn.jpg",
-    seoTitle: "Lawn Care & Maintenance Services | Hind Landscape Co. Landscaping",
+    seoTitle: "Lawn Care & Maintenance Services in Delhi NCR & India",
     seoDescription:
       "Professional lawn care, mowing, feeding and seasonal maintenance for homes and commercial properties in Delhi NCR and India.",
     body: [
@@ -49,165 +323,16 @@ export const services: ServiceItem[] = [
       "Ideal for villas, farmhouses, society common areas and hospitality lawns that must look ready every week.",
     ],
     faqs: [
-      { q: "Which grass types do you work with?", a: "We advise based on light, water and use — including common warm-season lawns used across North India." },
-      { q: "Is lawn AMC available?", a: "Yes. Scheduled visits keep mowing, feeding and seasonal tasks on track." },
+      {
+        q: "Which grass types do you work with?",
+        a: "We advise based on light, water and use — including common warm-season lawns used across North India.",
+      },
+      {
+        q: "Is lawn AMC available?",
+        a: "Yes. Scheduled visits keep mowing, feeding and seasonal tasks on track.",
+      },
     ],
-    keywords: ["lawn care Delhi", "lawn maintenance India", "garden lawn services"],
-  },
-  {
-    slug: "tree-care",
-    title: "Tree & Plant Care",
-    text: "Expert care for every plant and tree.",
-    detail:
-      "Pruning, feeding and health checks that help trees and shrubs stay strong, shaped and safe through every season.",
-    image: "/images/service-trees.jpg",
-    seoTitle: "Tree & Plant Care Services | Pruning & Health | Hind Landscape Co.",
-    seoDescription:
-      "Tree pruning, shrub shaping and plant health care for residential and commercial landscapes across Delhi NCR.",
-    body: [
-      "Trees and shrubs need structured pruning, soil care and pest watch — especially after monsoon and before peak summer.",
-      "Hind Landscape Co. shapes hedges, palms and specimen plants so they stay safe near paths, façades and parking.",
-      "We also plan replacement and enrichment planting when older beds need a reset.",
-    ],
-    faqs: [
-      { q: "Do you prune large trees?", a: "We handle ornamental and landscape trees within safe site access. Very tall structural work may need specialist climbers we coordinate." },
-    ],
-    keywords: ["tree care Delhi", "plant pruning services", "hedge maintenance"],
-  },
-  {
-    slug: "irrigation",
-    title: "Irrigation Systems",
-    text: "Smart watering for a greener tomorrow.",
-    detail:
-      "Efficient watering that reaches the roots and skips the waste, so beds stay lush even when you are away.",
-    image: "/images/service-irrigation.jpg",
-    seoTitle: "Garden Irrigation Systems India | Drip & Sprinkler | Hind Landscape Co.",
-    seoDescription:
-      "Design and installation of drip and sprinkler irrigation systems for gardens, lawns and commercial landscapes in India.",
-    body: [
-      "Irrigation should match plant zones — lawns, shrubs, pots and trees rarely need the same water schedule.",
-      "We design drip, sprinkler and controller setups that reduce waste and keep beds alive through Delhi NCR summers.",
-      "Systems are planned with maintenance access so AMC teams can service filters and valves without digging up the garden.",
-    ],
-    faqs: [
-      { q: "Do you install drip irrigation for terrace gardens?", a: "Yes. Terrace and balcony systems are zoned for pots, planters and green walls." },
-      { q: "Can irrigation connect to timers?", a: "Yes. Controllers and timers are part of most residential and commercial installs." },
-    ],
-    keywords: ["irrigation systems India", "drip irrigation garden", "sprinkler installation Delhi"],
-  },
-  {
-    slug: "hardscaping",
-    title: "Hardscaping & Patios",
-    text: "Pathways, patios and functional outdoor living spaces.",
-    detail:
-      "Stone, steps and outdoor floors built to last, so the garden is as easy to walk as it is to look at.",
-    image: "/images/service-hardscape.jpg",
-    seoTitle: "Hardscaping & Patio Construction | Pathways & Outdoor Floors",
-    seoDescription:
-      "Hardscaping services for patios, pathways, steps and outdoor living areas — durable finishes for Indian weather.",
-    body: [
-      "Hardscape sets how you move through the garden — entries, dining decks, pool surrounds and quiet seating courts.",
-      "We build with drainage, levels and material durability in mind so stone and pavers survive monsoon and heat.",
-      "Softscape and lighting are coordinated so the finished outdoor room feels complete, not like separate vendors.",
-    ],
-    faqs: [
-      { q: "What materials do you use?", a: "Natural stone, concrete pavers and site-suitable finishes chosen for slip resistance, colour and maintenance." },
-    ],
-    keywords: ["hardscaping India", "patio construction Delhi", "garden pathways"],
-  },
-  {
-    slug: "lighting",
-    title: "Outdoor Lighting",
-    text: "Warm, soft and inviting evenings.",
-    detail:
-      "Warm, carefully placed light that opens the garden after dusk — safe paths, soft beds and a quieter kind of evening.",
-    image: "/images/service-lighting.jpg",
-    seoTitle: "Outdoor & Garden Lighting Design | Hind Landscape Co.",
-    seoDescription:
-      "Landscape lighting for pathways, trees, façades and seating areas — warm, safe and premium evening gardens.",
-    body: [
-      "Outdoor lighting should guide feet, show planting and avoid glare into windows or neighbours.",
-      "We place path lights, uplights and soft wash fixtures so gardens feel usable after sunset.",
-      "Wiring and fixture choices consider weather sealing and easy lamp maintenance.",
-    ],
-    faqs: [
-      { q: "Do you use warm LED fixtures?", a: "Yes. Warm white LEDs are preferred for residential and hospitality gardens." },
-    ],
-    keywords: ["outdoor lighting Delhi", "garden lighting India", "landscape lighting"],
-  },
-  {
-    slug: "seasonal-cleanup",
-    title: "Seasonal Cleanups",
-    text: "Keep your garden fresh all year round.",
-    detail:
-      "Leaf falls, spring tidy-ups and end-of-season resets so the garden never looks forgotten between visits.",
-    image: "/images/service-cleanup.jpg",
-    seoTitle: "Seasonal Garden Cleanup Services | Leaf & Monsoon Reset",
-    seoDescription:
-      "Seasonal garden cleanups, leaf removal, monsoon recovery and winter prep for homes and commercial landscapes.",
-    body: [
-      "Seasons change fast in North India — leaf fall, monsoon weeds and summer stress all need planned resets.",
-      "Cleanup visits clear debris, edge beds, refresh mulch and prep lawns for the next growth cycle.",
-      "Combine cleanup with maintenance AMC for gardens that stay presentable without last-minute panic before guests arrive.",
-    ],
-    faqs: [
-      { q: "How often should seasonal cleanup happen?", a: "Most Delhi NCR gardens benefit from major resets around monsoon and late winter, plus lighter visits as needed." },
-    ],
-    keywords: ["seasonal garden cleanup", "leaf removal Delhi", "monsoon garden care"],
-  },
-  {
-    slug: "terrace-garden",
-    title: "Terrace Garden",
-    text: "Green roofs and terrace planting that feel intentional.",
-    detail: "Waterproofing-aware terrace gardens with planters, seating greenery and light irrigation for Indian apartments and homes.",
-    image: "/images/service-design.jpg",
-    seoTitle: "Terrace Garden Design & Installation India | Hind Landscape Co.",
-    seoDescription:
-      "Terrace garden design for apartments and homes — planters, lightweight soil mixes, irrigation and seating greenery.",
-    body: [
-      "Terrace gardens must respect waterproofing, load and wind. We plan planter layouts and plant lists that stay healthy without damaging the slab.",
-      "Ideal for Delhi NCR apartments seeking privacy screens, herbs, flowering pots and compact seating gardens.",
-    ],
-    faqs: [
-      { q: "Do you coordinate with waterproofing?", a: "We design above finished waterproofing and flag any concerns before planting begins." },
-    ],
-    keywords: ["terrace garden Delhi", "rooftop garden India", "balcony terrace landscaping"],
-  },
-  {
-    slug: "vertical-garden",
-    title: "Vertical Garden & Green Walls",
-    text: "Living walls for façades, balconies and indoor atriums.",
-    detail: "Vertical gardens and green walls with irrigation and plant mixes suited to Indian light and heat.",
-    image: "/images/service-trees.jpg",
-    seoTitle: "Vertical Garden & Green Wall Installation | Hind Landscape Co.",
-    seoDescription:
-      "Green walls and vertical gardens for homes, offices and commercial façades across Delhi NCR and India.",
-    body: [
-      "Vertical gardens need reliable irrigation and plant species that survive heat and reflected light.",
-      "We build modular living walls for balconies, compound walls and lobby atriums with maintenance access in mind.",
-    ],
-    faqs: [
-      { q: "Are green walls high maintenance?", a: "They need scheduled irrigation checks and plant replacement. We offer AMC for living walls we install." },
-    ],
-    keywords: ["vertical garden Delhi", "green wall India", "living wall installation"],
-  },
-  {
-    slug: "landscape-maintenance-amc",
-    title: "Landscape Maintenance AMC",
-    text: "Scheduled care so gardens stay handover-ready.",
-    detail: "Annual maintenance contracts for lawns, hedges, irrigation checks and seasonal tasks.",
-    image: "/images/service-lawn.jpg",
-    seoTitle: "Landscape Maintenance AMC Delhi NCR | Garden Care Contracts",
-    seoDescription:
-      "Landscape maintenance AMC for homes, societies and commercial sites — lawns, hedges, irrigation and seasonal care.",
-    body: [
-      "AMC keeps gardens consistent after installation — the difference between a photo-day landscape and one that lasts.",
-      "Scopes include visit frequency, mowing, pruning, fertiliser windows, irrigation checks and replacement rules.",
-    ],
-    faqs: [
-      { q: "Can AMC cover only lawns?", a: "Yes. We can scope lawn-only or full softscape and irrigation maintenance." },
-    ],
-    keywords: ["landscape maintenance AMC", "garden maintenance Delhi", "lawn AMC India"],
+    keywords: (serviceKeywordMap["lawn-care"] ?? []),
   },
   {
     slug: "farmhouse-landscaping",
@@ -217,18 +342,122 @@ export const services: ServiceItem[] = [
     image: "/images/work-farmhouse.jpg",
     seoTitle: "Farmhouse Landscaping Delhi NCR | Estate Garden Design",
     seoDescription:
-      "Farmhouse landscaping in Delhi NCR — driveways, lawns, orchards edges, outdoor living and lighting for weekend homes.",
+      "Farmhouse landscaping in Delhi NCR — driveways, lawns, orchard edges, outdoor living and lighting for weekend homes.",
     body: [
       "Farmhouses need landscapes that feel generous yet maintainable when owners visit on weekends.",
-      "We plan arrival avenues, lawns, water-wise beds, outdoor kitchens surrounds and soft night lighting.",
+      "We plan arrival avenues, lawns, water-wise beds, outdoor kitchen surrounds and soft night lighting.",
     ],
     faqs: [
-      { q: "Do you landscape farmhouses outside Delhi?", a: "Yes across NCR and selected North India locations where crew logistics work." },
+      {
+        q: "Do you landscape farmhouses outside Delhi?",
+        a: "Yes across NCR and selected North India locations where crew logistics work.",
+      },
     ],
-    keywords: ["farmhouse landscaping Delhi", "farmhouse garden design", "estate landscaping NCR"],
+    keywords: (serviceKeywordMap["farmhouse-landscaping"] ?? []),
+  },
+  {
+    slug: "seasonal-cleanup",
+    title: "Seasonal Cleanups",
+    text: "Keep your garden fresh all year round.",
+    detail:
+      "Leaf falls, spring tidy-ups and end-of-season resets so the garden never looks forgotten between visits.",
+    image: "/images/service-cleanup.jpg",
+    seoTitle: "Seasonal Garden Cleanup Services | Leaf & Monsoon Reset India",
+    seoDescription:
+      "Seasonal garden cleanups, leaf removal, monsoon recovery and winter prep for homes and commercial landscapes in India.",
+    body: [
+      "Seasons change fast in North India — leaf fall, monsoon weeds and summer stress all need planned resets.",
+      "Cleanup visits clear debris, edge beds, refresh mulch and prep lawns for the next growth cycle.",
+    ],
+    faqs: [
+      {
+        q: "How often should seasonal cleanup happen?",
+        a: "Most Delhi NCR gardens benefit from major resets around monsoon and late winter, plus lighter visits as needed.",
+      },
+    ],
+    keywords: (serviceKeywordMap["seasonal-cleanup"] ?? []),
+  },
+  {
+    slug: "balcony-garden",
+    title: "Balcony Garden",
+    text: "Compact greening for apartments and small outdoor edges.",
+    detail:
+      "Balcony and small-space gardens with planters, privacy screens and light irrigation for Delhi NCR apartments.",
+    image: "/images/service-design.jpg",
+    seoTitle: "Balcony Garden Design Services in Delhi NCR & India",
+    seoDescription:
+      "Balcony garden design services in Delhi NCR and India — planters, privacy planting and compact outdoor greening by Hind Landscape Co.",
+    body: [
+      "Balcony gardens need lightweight mixes, wind-safe planters and plants that tolerate reflected heat.",
+      "We design compact layouts for herbs, flowering pots and privacy screens without overloading the slab.",
+      "Ideal for Delhi NCR apartments seeking green outlooks without a full terrace rebuild.",
+    ],
+    faqs: [
+      {
+        q: "How much weight can a balcony take?",
+        a: "We keep planter sizes and soil mixes conservative and flag structural limits before install.",
+      },
+    ],
+    keywords: (serviceKeywordMap["balcony-garden"] ?? []),
+  },
+  {
+    slug: "society-landscaping",
+    title: "Society & Apartment Landscaping",
+    text: "Common areas, lawns and AMC for residential societies.",
+    detail:
+      "Society and apartment complex landscaping — entry gardens, lawns, play edges and maintenance AMC across Delhi NCR.",
+    image: "/images/work-maintenance.jpg",
+    seoTitle: "Society Landscaping and Apartment Complex AMC in Delhi NCR",
+    seoDescription:
+      "Society landscaping and apartment complex AMC in Delhi NCR — common lawns, entry gardens and scheduled maintenance by Hind Landscape Co.",
+    body: [
+      "Society landscapes must look presentable every week with clear crew access and resident-safe materials.",
+      "We scope entry courts, lawns, hedge lines, irrigation checks and seasonal resets for RWAs and facility teams.",
+      "AMC contracts include visit calendars and named plant replacement rules so common areas stay handover-ready.",
+    ],
+    faqs: [
+      {
+        q: "Do you work with RWAs and facility managers?",
+        a: "Yes. Quotes and AMC scopes are written for society committees and facility teams.",
+      },
+    ],
+    keywords: (serviceKeywordMap["society-landscaping"] ?? []),
+  },
+  {
+    slug: "landscape-architecture",
+    title: "Landscape Architecture",
+    text: "Master plans and design direction for larger sites.",
+    detail:
+      "Landscape architecture and garden design for campuses, estates and commercial outdoor master plans across India.",
+    image: "/images/service-design.jpg",
+    seoTitle: "Landscape Architect and Garden Designer in Delhi NCR India",
+    seoDescription:
+      "Landscape architect and garden designer in Delhi NCR and India — outdoor master plans, planting design and site planning by Hind Landscape Co.",
+    body: [
+      "Landscape architecture connects circulation, planting, water and light into one outdoor plan.",
+      "Ajay Kumar and the Hind studio prepare layouts and material direction for architects, developers and homeowners.",
+      "From villa gardens to campus master plans, design stays practical for Indian climate and construction reality.",
+    ],
+    faqs: [
+      {
+        q: "Do you provide drawings for tender?",
+        a: "Yes — layout drawings, planting schedules and scope notes can be prepared for tender and site teams.",
+      },
+    ],
+    keywords: (serviceKeywordMap["landscape-architecture"] ?? []),
   },
 ];
 
+/** First 12 = client-priority commercial scopes (exact SEO titles in seoTitle). */
+export const CLIENT_SERVICE_COUNT = 12;
+
+export function getClientServices() {
+  return services.slice(0, CLIENT_SERVICE_COUNT);
+}
+
+export function getExtraServices() {
+  return services.slice(CLIENT_SERVICE_COUNT);
+}
 export const features = [
   {
     icon: "/images/icon-design.png",

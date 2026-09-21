@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
-import { pages, services } from "@/lib/site";
+import { pages, services, getClientServices } from "@/lib/site";
 import { business } from "@/lib/business";
 import { Arrow, Chevron, MenuIcon, PhoneIcon, WhatsAppIcon, MailIcon, MapPinIcon, PlayIcon, SearchIcon } from "./Icons";
 import { BrandLogo } from "./BrandLogo";
@@ -106,7 +106,7 @@ export function SiteProvider({ children }: { children: React.ReactNode }) {
                   All Services <span>→</span>
                 </Link>
                 <div className="nav-menu-sep" />
-                {services.slice(0, 7).map((s) => (
+                {getClientServices().map((s) => (
                   <Link key={s.slug} href={`/services/${s.slug}`}>{s.title}</Link>
                 ))}
               </div>
@@ -186,7 +186,7 @@ export function SiteProvider({ children }: { children: React.ReactNode }) {
                     </div>
                     {openAcc === "services" && (
                       <div className="drawer-acc-panel">
-                        {services.slice(0, 7).map((s) => (
+                        {getClientServices().map((s) => (
                           <Link key={s.slug} href={`/services/${s.slug}`}>{s.title}</Link>
                         ))}
                       </div>
@@ -405,14 +405,20 @@ function Footer() {
               <Link key={p.href} href={p.href}>{p.label}</Link>
             ))}
             <Link href="/locations">Locations</Link>
+            <Link href="/hotel-landscaping">Hotel Landscaping</Link>
+            <Link href="/commercial-landscaping">Commercial</Link>
+            <Link href="/residential-landscaping">Residential</Link>
             <Link href="/faq">FAQ</Link>
           </div>
 
-          <div className="footer-link-col">
+          <div className="footer-link-col footer-link-col-services">
             <h4>Services</h4>
-            {services.slice(0, 6).map((s) => (
-              <Link key={s.slug} href={`/services/${s.slug}`}>{s.title}</Link>
-            ))}
+            <div className="footer-services-grid">
+              {getClientServices().map((s) => (
+                <Link key={s.slug} href={`/services/${s.slug}`}>{s.title}</Link>
+              ))}
+            </div>
+            <Link href="/services" className="footer-services-all">All services →</Link>
           </div>
 
           <div className="footer-link-col">

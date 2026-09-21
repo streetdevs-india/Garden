@@ -19,7 +19,7 @@ export const blogPosts: BlogPost[] = [
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-01",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     locationSlug: "delhi",
     faqs: [
       { q: "Who should read this guide on landscaping company guide?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
@@ -57,7 +57,7 @@ export const blogPosts: BlogPost[] = [
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-02",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     locationSlug: "delhi",
     faqs: [
       { q: "Who should read this guide on garden design ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
@@ -323,7 +323,7 @@ export const blogPosts: BlogPost[] = [
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-09",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     locationSlug: "gurugram",
     faqs: [
       { q: "Who should read this guide on landscaping company guide?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
@@ -361,7 +361,7 @@ export const blogPosts: BlogPost[] = [
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-10",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     locationSlug: "gurugram",
     faqs: [
       { q: "Who should read this guide on garden design ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
@@ -627,7 +627,7 @@ export const blogPosts: BlogPost[] = [
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-17",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     locationSlug: "noida",
     faqs: [
       { q: "Who should read this guide on landscaping company guide?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
@@ -665,7 +665,7 @@ export const blogPosts: BlogPost[] = [
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-18",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     locationSlug: "noida",
     faqs: [
       { q: "Who should read this guide on garden design ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
@@ -931,7 +931,7 @@ export const blogPosts: BlogPost[] = [
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-25",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     locationSlug: "faridabad",
     faqs: [
       { q: "Who should read this guide on landscaping company guide?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
@@ -969,7 +969,7 @@ export const blogPosts: BlogPost[] = [
     category: "Delhi NCR Guides",
     publishedAt: "2026-01-26",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     locationSlug: "faridabad",
     faqs: [
       { q: "Who should read this guide on garden design ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
@@ -1235,7 +1235,7 @@ export const blogPosts: BlogPost[] = [
     category: "Delhi NCR Guides",
     publishedAt: "2026-02-02",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on landscaping company guide?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
@@ -1273,7 +1273,7 @@ export const blogPosts: BlogPost[] = [
     category: "Delhi NCR Guides",
     publishedAt: "2026-02-03",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on garden design ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
@@ -1539,7 +1539,7 @@ export const blogPosts: BlogPost[] = [
     category: "Cost & Planning",
     publishedAt: "2026-02-10",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     faqs: [
       { q: "Who should read this guide on how to choose a landscape contractor in india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
       { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
@@ -1576,7 +1576,7 @@ export const blogPosts: BlogPost[] = [
     category: "Cost & Planning",
     publishedAt: "2026-02-11",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     faqs: [
       { q: "Who should read this guide on landscaping cost guide india 2026?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
       { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
@@ -1949,7 +1949,7 @@ export const blogPosts: BlogPost[] = [
     category: "Commercial",
     publishedAt: "2026-02-21",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     faqs: [
       { q: "Who should read this guide on hotel landscaping checklist for india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
       { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
@@ -2136,7 +2136,7 @@ export const blogPosts: BlogPost[] = [
     category: "Design",
     publishedAt: "2026-02-26",
     readingMinutes: 6,
-    serviceSlug: "tree-care",
+    serviceSlug: "trees-plants-exporter",
     faqs: [
       { q: "Who should read this guide on hedge & privacy screen plants for india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
       { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
@@ -2210,7 +2210,7 @@ export const blogPosts: BlogPost[] = [
     category: "Cost & Planning",
     publishedAt: "2026-02-28",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     faqs: [
       { q: "Who should read this guide on how to compare landscaping quotations?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
       { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
@@ -2247,7 +2247,7 @@ export const blogPosts: BlogPost[] = [
     category: "Design",
     publishedAt: "2026-03-01",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     faqs: [
       { q: "Who should read this guide on eco-friendly landscaping practices in india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
       { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
@@ -2358,7 +2358,7 @@ export const blogPosts: BlogPost[] = [
     category: "Maintenance",
     publishedAt: "2026-03-04",
     readingMinutes: 6,
-    serviceSlug: "tree-care",
+    serviceSlug: "trees-plants-exporter",
     faqs: [
       { q: "Who should read this guide on tree pruning best practices in india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
       { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
@@ -2395,7 +2395,7 @@ export const blogPosts: BlogPost[] = [
     category: "Design",
     publishedAt: "2026-03-05",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on seasonal flower beds for north india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
@@ -2545,7 +2545,7 @@ export const blogPosts: BlogPost[] = [
     category: "Delhi NCR Guides",
     publishedAt: "2026-03-09",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     locationSlug: "noida",
     faqs: [
       { q: "Who should read this guide on noida villa garden ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
@@ -2659,7 +2659,7 @@ export const blogPosts: BlogPost[] = [
     category: "Commercial",
     publishedAt: "2026-03-12",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     faqs: [
       { q: "Who should read this guide on commercial vs residential landscaping?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
       { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
@@ -2807,7 +2807,7 @@ export const blogPosts: BlogPost[] = [
     category: "Design",
     publishedAt: "2026-03-16",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     locationSlug: "delhi-ncr",
     faqs: [
       { q: "Who should read this guide on native & adaptive plants for delhi ncr?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
@@ -2845,7 +2845,7 @@ export const blogPosts: BlogPost[] = [
     category: "Design",
     publishedAt: "2026-03-17",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     faqs: [
       { q: "Who should read this guide on kids-friendly garden design ideas?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
       { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
@@ -2882,7 +2882,7 @@ export const blogPosts: BlogPost[] = [
     category: "Design",
     publishedAt: "2026-03-18",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     faqs: [
       { q: "Who should read this guide on pet-friendly garden planting tips?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
       { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
@@ -2919,7 +2919,7 @@ export const blogPosts: BlogPost[] = [
     category: "Design",
     publishedAt: "2026-03-19",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     faqs: [
       { q: "Who should read this guide on entrance garden ideas for indian homes?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
       { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
@@ -3030,7 +3030,7 @@ export const blogPosts: BlogPost[] = [
     category: "Cost & Planning",
     publishedAt: "2026-03-22",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     faqs: [
       { q: "Who should read this guide on landscape contractor red flags?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
       { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
@@ -3067,7 +3067,7 @@ export const blogPosts: BlogPost[] = [
     category: "Cost & Planning",
     publishedAt: "2026-03-23",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     faqs: [
       { q: "Who should read this guide on questions to ask before a garden renovation?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
       { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
@@ -3104,7 +3104,7 @@ export const blogPosts: BlogPost[] = [
     category: "Design",
     publishedAt: "2026-03-24",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     faqs: [
       { q: "Who should read this guide on small garden design tips for india?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
       { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
@@ -3141,7 +3141,7 @@ export const blogPosts: BlogPost[] = [
     category: "Design",
     publishedAt: "2026-03-25",
     readingMinutes: 6,
-    serviceSlug: "tree-care",
+    serviceSlug: "trees-plants-exporter",
     faqs: [
       { q: "Who should read this guide on shade garden ideas under trees?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
       { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },
@@ -3363,7 +3363,7 @@ export const blogPosts: BlogPost[] = [
     category: "Cost & Planning",
     publishedAt: "2026-03-31",
     readingMinutes: 6,
-    serviceSlug: "garden-design",
+    serviceSlug: "softscape-horticulture",
     faqs: [
       { q: "Who should read this guide on why garden documentation matters?", a: "Homeowners, farmhouse owners, RWAs and commercial buyers comparing landscaping options in India." },
       { q: "Can Hind Landscape Co. help after I read this?", a: "Yes \u2014 share site photos and locality on the quote page for a free assessment." },

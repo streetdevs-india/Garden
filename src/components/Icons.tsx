@@ -102,7 +102,7 @@ export function ServiceGlyph({ slug }: { slug: string }) {
       </svg>
     );
   }
-  if (slug === "tree-care") {
+  if (slug === "tree-care" || slug === "trees-plants-exporter") {
     return (
       <svg {...common}>
         <path d="M12 21V10" />

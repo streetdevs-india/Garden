@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "@/content/blog/posts";
 import { business } from "@/lib/business";
+import { intentPages } from "@/lib/intent";
 import { locations } from "@/lib/locations";
 import { services } from "@/lib/site";
 
@@ -16,15 +17,6 @@ const staticRoutes = [
   "/quote",
   "/blog",
   "/locations",
-  "/faq",
-  "/landscaping-cost-guide",
-  "/landscaping-company-india",
-  "/commercial-landscaping",
-  "/hotel-landscaping",
-  "/corporate-campus-landscaping",
-  "/residential-landscaping",
-  "/garden-maintenance-delhi-ncr",
-  "/landscape-contractor-delhi",
   "/vs/four-leaf-landscape",
   "/vs/greenstar-landscape",
   "/vs/dilkhush-landscaping",
@@ -39,12 +31,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: path === "/" ? 1 : 0.7,
   }));
 
+  for (const page of intentPages) {
+    entries.push({
+      url: `${base}${page.path}`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    });
+  }
+
   for (const s of services) {
     entries.push({
       url: `${base}/services/${s.slug}`,
       lastModified: now,
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.85,
     });
   }
 
@@ -53,7 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${base}/locations/${loc.slug}`,
       lastModified: now,
       changeFrequency: "monthly",
-      priority: loc.primary ? 0.85 : 0.65,
+      priority: loc.primary ? 0.9 : 0.65,
     });
   }
 
@@ -62,7 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${base}/blog/${post.slug}`,
       lastModified: new Date(post.publishedAt),
       changeFrequency: "monthly",
-      priority: 0.6,
+      priority: 0.55,
     });
   }
 

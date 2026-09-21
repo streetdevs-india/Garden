@@ -6,9 +6,9 @@ export const business = {
   tagline: "Landscape Architecture & Urban Design",
   contactName: "Ajay Kumar",
   description:
-    "Hind Landscape Co. plans, designs and executes landscape master plans for residential, commercial, campus and urban projects across Delhi NCR and India. Speak with Ajay Kumar for a free site visit.",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://hindlandscape.co",
-  email: "hello@hindlandscape.co",
+    "Hind Landscape Co. delivers hardscape, softscape, irrigation, lighting, terrace & podium gardens, vertical gardens and landscape maintenance AMC across Delhi NCR and India. Speak with Ajay Kumar for a free site visit.",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://hindlandscaping.com",
+  email: "Info@Hindlandscape.com",
   phone: "+91 99901 16281",
   phoneTel: "+919990116281",
   whatsapp: "919990116281",

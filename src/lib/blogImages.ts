@@ -1,9 +1,9 @@
 import type { BlogPost } from "@/content/blog/posts";
 
 const serviceImages: Record<string, string> = {
-  "garden-design":              "/images/service-design.jpg",
+  "softscape-horticulture":     "/images/service-design.jpg",
   "lawn-care":                  "/images/service-lawn.jpg",
-  "tree-care":                  "/images/service-trees.jpg",
+  "trees-plants-exporter":      "/images/service-trees.jpg",
   "irrigation":                 "/images/service-irrigation.jpg",
   "hardscaping":                "/images/service-hardscape.jpg",
   "lighting":                   "/images/service-lighting.jpg",
@@ -12,6 +12,13 @@ const serviceImages: Record<string, string> = {
   "vertical-garden":            "/images/gallery-leaf-ss.jpg",
   "landscape-maintenance-amc":  "/images/work-maintenance.jpg",
   "farmhouse-landscaping":      "/images/work-farmhouse.jpg",
+  "terrarium-paludarium":       "/images/service-trees.jpg",
+  "indoor-plantation":          "/images/service-design.jpg",
+  "swimming-pools":             "/images/work-landscape.jpg",
+  "water-features":             "/images/work-landscape.jpg",
+  "balcony-garden":             "/images/service-design.jpg",
+  "society-landscaping":        "/images/work-maintenance.jpg",
+  "landscape-architecture":     "/images/service-design.jpg",
 };
 
 const categoryImages: Record<string, string> = {

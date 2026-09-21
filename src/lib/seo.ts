@@ -15,12 +15,14 @@ export function buildMetadata({
   path = "/",
   image = "/images/hero.jpg",
   noIndex = false,
+  keywords,
 }: {
   title: string;
   description: string;
   path?: string;
   image?: string;
   noIndex?: boolean;
+  keywords?: string[];
 }): Metadata {
   const url = absoluteUrl(path);
   const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
@@ -29,6 +31,7 @@ export function buildMetadata({
   return {
     title: fullTitle,
     description,
+    keywords: keywords?.length ? keywords : undefined,
     alternates: { canonical: url },
     robots: noIndex ? { index: false, follow: false } : { index: true, follow: true },
     openGraph: {

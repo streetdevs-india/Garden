@@ -14,7 +14,7 @@ export const featuredGalleryPhotos: GalleryPhoto[] = [
 ];
 
 const legacyGalleryPhotos: GalleryPhoto[] = [
-  { src: "/images/hero.jpg", alt: "Luxury evening garden with warm lighting" },
+  { src: "/images/gallery-modern-lawn.png", alt: "Luxury evening garden with warm lighting" },
   { src: "/images/work-hotel.jpg", alt: "Hotel garden at dusk" },
   { src: "/images/gallery-path.jpg", alt: "Garden pathway under a wooden arbor" },
   { src: "/images/service-hardscape.jpg", alt: "Stone patio with LED step lighting" },

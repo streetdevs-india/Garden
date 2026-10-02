@@ -4,15 +4,16 @@ import { stats, getClientServices } from "@/lib/site";
 import { galleryPhotos } from "@/lib/gallery";
 import { business } from "@/lib/business";
 import { Arrow, LeafDeco, ServiceGlyph, FeatureIcon } from "@/components/Icons";
-import { VideoCard, WatchButton } from "@/components/SiteChrome";
+import { VideoCard } from "@/components/SiteChrome";
 import { buildMetadata } from "@/lib/seo";
-import { CountUp, FadeUp, SplitText, ScrollHeaderClass } from "@/components/Animate";
+import { homepageKeywords } from "@/lib/seoKeywords";
+import { companyMeta, whoWeAre } from "@/lib/companyContent";
+import { CountUp, FadeUp, ScrollHeaderClass } from "@/components/Animate";
 import { TrustBar } from "@/components/PageSections";
 import { processSteps } from "@/lib/psychology";
 import { LeadForm } from "@/components/LeadForm";
 import { GalleryReveal } from "@/components/GalleryReveal";
-import { HeroMotion } from "@/components/HeroMotion";
-import { HeroIntro } from "@/components/HeroIntro";
+import { HomeHero } from "@/components/HomeHero";
 import { AboutSectionMotion } from "@/components/AboutSectionMotion";
 import {
   ServicesStoryMotion,
@@ -20,17 +21,16 @@ import {
   ProcessMotion,
 } from "@/components/HomeSectionMotions";
 import { TestimonialSlider } from "@/components/TestimonialSlider";
-import { LeadPopup } from "@/components/LeadPopup";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Landscaping & Gardening in Delhi NCR & India",
-  description:
-    "Hind Landscape Co. designs, builds and maintains gardens, lawns and outdoor spaces for homes, farmhouses, hotels and commercial properties across Delhi NCR and India.",
+  title: "Landscape Design and Development Company in India",
+  description: companyMeta.homeDescription,
   path: "/",
+  keywords: [...homepageKeywords],
 });
 
 const trustSignals = [
-  `Speak to ${business.contactName} · ${business.phone}`,
+  `Call the studio · ${business.phone}`,
   "No-obligation site visit — free",
   "Named plant lists, not vague quotes",
   "Delhi NCR · pan-India for select scopes",
@@ -45,51 +45,7 @@ export default function HomePage() {
       <ScrollHeaderClass />
 
       {/* ══════════════════════ 1. HERO ══════════════════════ */}
-      <div className="hero-wrap">
-        <section className="hero">
-          <video
-            className="hero-bg-video"
-            src={business.showreelVideo}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            aria-hidden
-          />
-          <div className="hero-bg-frost" aria-hidden />
-          <div className="hero-leaves" aria-hidden>
-            <span className="hero-leaf hl-1" />
-            <span className="hero-leaf hl-2" />
-            <span className="hero-leaf hl-3" />
-            <span className="hero-leaf hl-4" />
-          </div>
-
-          <HeroIntro>
-            <div className="hero-kicker">
-              <i />
-              Delhi NCR gardens that last past handover
-            </div>
-            <SplitText as="h1" text="Outdoor space you actually want to sit in" manual />
-            <p>
-              {business.contactName} and the {business.shortName} studio design, plant and maintain
-              landscapes that hold their beauty through Delhi heat, monsoon and winter — built
-              for the way your family actually uses the space.
-            </p>
-            <div className="hero-actions">
-              <Link href="/quote" className="btn btn-green btn-pulse">
-                Book a free site visit <Arrow />
-              </Link>
-              <WatchButton title="Watch Our Story" subtitle="See how we bring nature to life" />
-            </div>
-            <HeroMotion />
-          </HeroIntro>
-
-          <div className="hero-scroll" aria-hidden>
-            <div className="hero-scroll-mouse" />
-          </div>
-        </section>
-      </div>
+      <HomeHero />
 
       <TrustBar />
 
@@ -97,19 +53,17 @@ export default function HomePage() {
       <AboutSectionMotion>
         <div className="wrap about-grid">
           <div className="about-copy-anim">
-            <div className="eyebrow">About Hind Landscape Co.</div>
-            <h2>Three decades of crafting India&apos;s finest outdoor spaces</h2>
-            <p className="lede">
-              Led by {business.contactName}, our studio of landscape architects, horticulturists
-              and engineers has designed master plans for homes, campuses, hotels and commercial
-              sites across Delhi NCR and India.
-            </p>
+            <div className="eyebrow">{whoWeAre.label}</div>
+            <h2>{whoWeAre.headline}</h2>
+            <p className="lede">{whoWeAre.paragraphs[0]}</p>
+            <p className="lede">{whoWeAre.paragraphs[1]}</p>
+            <p>{whoWeAre.paragraphs[2]}</p>
             <div className="about-cta-row">
               <Link href="/about" className="btn btn-green">
-                Meet the Team <Arrow />
+                {whoWeAre.cta} <Arrow />
               </Link>
               <Link href="/quote" className="btn btn-outline">
-                Free Site Visit
+                Free Consultation
               </Link>
             </div>
             <div className="stats">
@@ -251,12 +205,12 @@ export default function HomePage() {
           </div>
           <div className="why-bento">
             {([
-              { icon: "award",     title: "30+ Years of Practice",   text: "Three decades of Indian urban landscaping under Ajay Kumar's leadership.", lead: true },
+              { icon: "award",     title: "15+ Years of Excellence", text: "Industry practice delivering landscapes that endure across Indian climates.", lead: true },
               { icon: "weather",   title: "Climate-Aware Design",     text: "Every plan accounts for Delhi heat, monsoon stress and winter maintenance reality." },
               { icon: "clipboard", title: "Transparent Quoting",      text: "Named plant lists, zone-wise irrigation scope and line-by-line costs — always in writing.", accent: true },
               { icon: "tool",      title: "Post-Handover Support",    text: "Optional AMC keeps your garden green through every season, not just on handover day." },
               { icon: "map",       title: "Pan-India Capability",     text: "Delhi NCR primary — we mobilise across India for suitable project scopes." },
-              { icon: "team",      title: "30+ Experts On-Site",      text: "Architects, horticulturists and engineers — not subcontracted labour.", wide: true },
+              { icon: "team",      title: "Dedicated Experts",       text: "Architects, horticulturists and engineers — not subcontracted labour.", wide: true },
             ] as const).map((item, i) => (
               <article
                 key={item.title}
@@ -293,7 +247,7 @@ export default function HomePage() {
               You always know what happens next — and what you&apos;re approving.
             </p>
           </div>
-          <div className="process-timeline">
+          <div className="process-timeline process-timeline-5">
             <div className="process-line" aria-hidden />
             {processSteps.map((item) => (
               <div key={item.step} className="process-step-wrap">
@@ -349,7 +303,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <LeadPopup />
     </main>
   );
 }

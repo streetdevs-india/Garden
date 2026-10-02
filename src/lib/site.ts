@@ -301,7 +301,7 @@ export const services: ServiceItem[] = [
     faqs: [
       {
         q: "Do you supply only with full landscape contracts?",
-        a: "We supply for our own installs and selected project plant lists. Ask Ajay Kumar for current stock and lead times.",
+        a: "We supply for our own installs and selected project plant lists. Ask the studio for current stock and lead times.",
       },
     ],
     keywords: (serviceKeywordMap["trees-plants-exporter"] ?? []),
@@ -435,7 +435,7 @@ export const services: ServiceItem[] = [
       "Landscape architect and garden designer in Delhi NCR and India — outdoor master plans, planting design and site planning by Hind Landscape Co.",
     body: [
       "Landscape architecture connects circulation, planting, water and light into one outdoor plan.",
-      "Ajay Kumar and the Hind studio prepare layouts and material direction for architects, developers and homeowners.",
+      "The Hind studio prepares layouts and material direction for architects, developers and homeowners.",
       "From villa gardens to campus master plans, design stays practical for Indian climate and construction reality.",
     ],
     faqs: [
@@ -482,9 +482,9 @@ export const features = [
 ] as const;
 
 export const stats = [
-  { icon: "/images/icon-years.png", value: 15, suffix: "+", label: "Years of Experience" },
-  { icon: "/images/icon-clients.png", value: 500, suffix: "+", label: "Happy Clients" },
-  { icon: "/images/icon-projects.png", value: 30, suffix: "+", label: "Projects Completed" },
+  { icon: "/images/icon-projects.png", value: 150, suffix: "+", label: "Projects Completed" },
+  { icon: "/images/icon-clients.png", value: 100, suffix: "%", label: "Satisfied Clients" },
+  { icon: "/images/icon-years.png", value: 15, suffix: "+", label: "Years of Excellence" },
 ] as const;
 
 export const reasons = [

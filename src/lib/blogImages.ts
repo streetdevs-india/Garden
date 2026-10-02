@@ -22,7 +22,7 @@ const serviceImages: Record<string, string> = {
 };
 
 const categoryImages: Record<string, string> = {
-  "Delhi NCR Guides": "/images/hero.jpg",
+  "Delhi NCR Guides": "/images/gallery-modern-lawn.png",
   "Design":           "/images/service-design.jpg",
   "Lawn Care":        "/images/service-lawn.jpg",
   "Irrigation":       "/images/service-irrigation.jpg",
@@ -36,7 +36,7 @@ const locationImages: Record<string, string> = {
   "gurugram":  "/images/service-hardscape.jpg",
   "noida":     "/images/gallery-path.jpg",
   "faridabad": "/images/service-lawn.jpg",
-  "delhi-ncr": "/images/hero.jpg",
+  "delhi-ncr": "/images/gallery-modern-lawn.png",
 };
 
 // Pool of images to cycle through when there is no specific match

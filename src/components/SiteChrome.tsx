@@ -8,6 +8,7 @@ import { business } from "@/lib/business";
 import { Arrow, Chevron, MenuIcon, PhoneIcon, WhatsAppIcon, MailIcon, MapPinIcon, PlayIcon, SearchIcon } from "./Icons";
 import { BrandLogo } from "./BrandLogo";
 import { StickyAsk } from "./StickyAsk";
+import { LeadPopup } from "./LeadPopup";
 export { QuoteForm } from "./QuoteForm";
 
 type VideoCtx = { openVideo: () => void };
@@ -273,6 +274,7 @@ export function SiteProvider({ children }: { children: React.ReactNode }) {
       {video && <VideoModal onClose={() => setVideo(false)} />}
       <Footer />
       <StickyAsk />
+      <LeadPopup />
     </VideoContext.Provider>
   );
 }
@@ -364,7 +366,7 @@ function Footer() {
         <div className="footer-brand-col">
           <BrandLogo variant="footer" className="footer-logo" />
           <p className="footer-tagline">
-            Landscape architects crafting master plans for homes, campuses and cities across Delhi NCR &amp; India.
+            {business.tagline} Full-spectrum landscape design and execution across India.
           </p>
 
           <ul className="footer-contact-list">
@@ -409,6 +411,9 @@ function Footer() {
             <Link href="/commercial-landscaping">Commercial</Link>
             <Link href="/residential-landscaping">Residential</Link>
             <Link href="/faq">FAQ</Link>
+            <Link href="/hind-landscape-co">Hind Landscape Co.</Link>
+            <Link href="/best-landscaping-company-delhi">Best in Delhi</Link>
+            <Link href="/best-landscaping-company-noida">Best in Noida</Link>
           </div>
 
           <div className="footer-link-col footer-link-col-services">

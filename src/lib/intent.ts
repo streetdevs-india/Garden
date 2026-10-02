@@ -1,4 +1,4 @@
-import { industryKeywords } from "@/lib/seoKeywords";
+import { brandSearchKeywords, industryKeywords } from "@/lib/seoKeywords";
 
 export type IntentPage = {
   slug: string;
@@ -56,6 +56,131 @@ function hub(page: Omit<IntentPage, "path"> & { path?: string }): IntentPage {
 }
 
 export const intentPages: IntentPage[] = [
+  {
+    slug: "hind-landscape-co",
+    path: "/hind-landscape-co",
+    eyebrow: "Hind Landscape Co.",
+    title: "Hind Landscape Co.",
+    description:
+      "Hind Landscape Co. is an independent studio at D-51, Abul Fazal Enclave, Okhla, New Delhi. Website hindlandscaping.com. Not Hindgreen Landscape Pvt. Ltd. Call +91 99901 16281.",
+    intro:
+      "Hind Landscape Co. is an independent landscaping company in Okhla, New Delhi. The only official website is hindlandscaping.com. Hind Landscape Co. is not Hindgreen Landscape Pvt. Ltd. and it is not Greentech International Co. Those are different businesses.",
+    bullets: [
+      "Legal name: Hind Landscape Co.",
+      "Studio: Hind Landscape Co., Okhla, New Delhi",
+      "Studio: D-51, Abul Fazal Enclave, Jamia Nagar, Okhla, New Delhi 110025",
+      "Phone: +91 99901 16281 · Email: hindlandscaping@gmail.com",
+      "Website: hindlandscaping.com",
+      "Hours: Monday to Saturday, 8:00 AM – 6:00 PM",
+    ],
+    keywords: [...brandSearchKeywords, "Hind Landscape Co. Okhla", "Hind Landscape Jamia Nagar"],
+    relatedLocations: ["delhi", "noida", "south-delhi"],
+    faqs: [
+      {
+        q: "Is Hind Landscape Co. the same as Hindgreen Landscape Pvt. Ltd.?",
+        a: "No. Hind Landscape Co. is a separate company at D-51, Abul Fazal Enclave, Jamia Nagar, Okhla, New Delhi 110025. Its website is hindlandscaping.com and its phone is +91 99901 16281. It is not Hindgreen Landscape Pvt. Ltd. and it is not Greentech International Co.",
+      },
+      {
+        q: "What is Hind Landscape Co.?",
+        a: "Hind Landscape Co. is a landscape architecture and contracting studio in Okhla, New Delhi. It designs, builds and maintains gardens for homes, hotels, societies and commercial sites in Delhi and Noida.",
+      },
+      {
+        q: "Where is Hind Landscape Co. located?",
+        a: "D-51, Abul Fazal Enclave, Jamia Nagar, Okhla, New Delhi, Delhi 110025.",
+      },
+      {
+        q: "Is Hind Landscape the same as Hind Landscaping?",
+        a: "Yes. Hind Landscape, Hind Landscaping, Hind Landscape Company and Hind Landscape Co. all refer to this studio at hindlandscaping.com.",
+      },
+      {
+        q: "How do I contact Hind Landscape Co.?",
+        a: "Call or WhatsApp +91 99901 16281, or email hindlandscaping@gmail.com. Site visits in Delhi and Noida are free for serious enquiries.",
+      },
+    ],
+  },
+  {
+    slug: "best-landscaping-company-delhi",
+    path: "/best-landscaping-company-delhi",
+    eyebrow: "Delhi",
+    title: "Best Landscaping Company in Delhi",
+    description:
+      "Best landscaping company in Delhi — Hind Landscape Co. in Okhla. Garden design, hardscape, terrace gardens and maintenance AMC across Delhi. Call +91 99901 16281.",
+    intro:
+      "Looking for the best landscape in Delhi? Hind Landscape Co. is the Okhla studio homeowners, hotels and societies call when the garden has to survive Delhi heat, dust and monsoon — with named plant lists and optional AMC.",
+    bullets: [
+      "Garden design and planting plans for Delhi plots and farmhouses",
+      "Hardscape, irrigation, lighting and water features",
+      "Terrace, podium and vertical gardens",
+      "Landscape maintenance AMC after handover",
+      "Free site visit across Delhi, including South Delhi and Okhla",
+    ],
+    keywords: [
+      "best landscape in Delhi",
+      "best landscaping company in Delhi",
+      "best landscape company Delhi",
+      "best garden designer Delhi",
+      "landscaping company Delhi",
+      "Hind Landscape Co.",
+    ],
+    relatedServices: ["landscape-architecture", "softscape-horticulture", "terrace-garden", "landscape-maintenance-amc"],
+    relatedLocations: ["delhi", "delhi-ncr", "south-delhi", "chattarpur"],
+    faqs: [
+      {
+        q: "Who is the best landscaping company in Delhi?",
+        a: "Hind Landscape Co., from Okhla, New Delhi, designs and builds residential, hotel and commercial landscapes across Delhi, with maintenance AMC after handover.",
+      },
+      {
+        q: "Do you visit sites anywhere in Delhi?",
+        a: "Yes. South Delhi, farmhouse belts, societies and commercial sites are covered. Share the locality on the quote form to book a free site visit.",
+      },
+      {
+        q: "What does a Delhi landscape project include?",
+        a: "Design, softscape, hardscape, irrigation, outdoor lighting and an optional annual maintenance contract so the garden holds through summer and monsoon.",
+      },
+    ],
+  },
+  {
+    slug: "best-landscaping-company-noida",
+    path: "/best-landscaping-company-noida",
+    eyebrow: "Noida",
+    title: "Best Landscaping Company in Noida",
+    description:
+      "Best landscaping company in Noida — Hind Landscape Co. designs society greens, villa gardens, hardscape and AMC for Noida and Greater Noida. Call +91 99901 16281.",
+    intro:
+      "Searching for the best landscape in Noida? Hind Landscape Co. plans and builds society lawns, villa gardens, podium planting and hardscape for Noida, Greater Noida and Noida Extension — with irrigation that suits expressway dust and a maintenance plan after handover.",
+    bullets: [
+      "Society and RWA common-area landscaping in Noida",
+      "Villa and sector garden design",
+      "Hardscape pathways, plazas and edges",
+      "Podium and terrace planting",
+      "Landscape AMC for Noida and Greater Noida",
+    ],
+    keywords: [
+      "best landscape in Noida",
+      "best landscaping company in Noida",
+      "best landscape company Noida",
+      "landscaping company Noida",
+      "society landscaping Noida",
+      "Hind Landscape Co.",
+      "Hind Landscape Noida",
+    ],
+    relatedServices: ["hardscaping", "softscape-horticulture", "society-landscaping", "landscape-maintenance-amc"],
+    relatedLocations: ["noida", "greater-noida", "noida-extension", "sector-62-noida"],
+    faqs: [
+      {
+        q: "Who is the best landscaping company in Noida?",
+        a: "Hind Landscape Co. delivers society, villa and commercial landscapes in Noida and Greater Noida, from design through annual maintenance.",
+      },
+      {
+        q: "Do you cover Greater Noida and Noida Extension?",
+        a: "Yes. Noida, Greater Noida and Noida Extension are priority service areas for suitable residential and society scopes.",
+      },
+      {
+        q: "Can an RWA hire Hind Landscape Co. in Noida?",
+        a: "Yes. Common-area lawns, hedges, irrigation and AMC are scoped zone-wise so the society can compare the work clearly.",
+      },
+    ],
+  },
   {
     slug: "landscaping-company-india",
     path: "/landscaping-company-india",
@@ -341,6 +466,7 @@ export const intentPages: IntentPage[] = [
     bullets: ["Services and coverage", "Timelines and site visits", "AMC and maintenance", "Quotations"],
     keywords: ["landscaping FAQ India", "Hind Landscape Co. FAQ"],
     faqs: [
+      { q: "Who is Hind Landscape Co.?", a: "Hind Landscape Co. is an independent landscaping studio at D-51, Abul Fazal Enclave, Jamia Nagar, Okhla, New Delhi 110025. Website hindlandscaping.com. Phone +91 99901 16281. It is not Hindgreen Landscape Pvt. Ltd. and not Greentech International Co." },
       { q: "What services does Hind Landscape Co. offer?", a: "Hardscape & civil, softscape & horticulture, irrigation, lighting, landscape maintenance AMC, terrace & podium gardens, vertical gardens, indoor plantation, water features, pools and more." },
       { q: "Is Delhi NCR your main area?", a: "Yes. We also mobilise pan-India for suitable projects including Mumbai, Bengaluru, Hyderabad, Goa, Jaipur, Pune and Chennai." },
       { q: "How do I get a quote?", a: "Use the Get a Free Quote form with locality, photos and rough scope." },

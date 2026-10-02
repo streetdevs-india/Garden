@@ -5,16 +5,20 @@ import { business } from "@/lib/business";
 import { PhoneIcon } from "@/components/Icons";
 import { getClientServices } from "@/lib/site";
 import {
+  allowEmailKey,
   allowNameKey,
   allowPhoneKey,
+  sanitizeEmail,
   sanitizeMessage,
   sanitizeName,
   sanitizePhone,
   validateName,
+  validateOptionalEmail,
   validateOptionalMessage,
   validatePhone,
   validateRequiredSelect,
 } from "@/lib/formValidation";
+import { submitLead } from "@/lib/leads/submitLead";
 
 const SERVICES = getClientServices().map((s) => s.title);
 
@@ -25,9 +29,12 @@ export function ContactModal() {
   const [state, setState] = useState<State>("idle");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
   const [service, setService] = useState("");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const dialogRef = useRef<HTMLDialogElement>(null);
 
   useEffect(() => {
@@ -40,6 +47,7 @@ export function ContactModal() {
       setState("idle");
       setName("");
       setPhone("");
+      setEmail("");
       setService("");
       setMessage("");
       setErrors({});
@@ -70,19 +78,37 @@ export function ContactModal() {
     const nameErr = validateName(name);
     const phoneErr = validatePhone(phone);
     const serviceErr = validateRequiredSelect(service, "service");
+    const emailErr = validateOptionalEmail(email);
     const messageErr = validateOptionalMessage(message);
     if (nameErr) errs.name = nameErr;
     if (phoneErr) errs.phone = phoneErr;
+    if (emailErr) errs.email = emailErr;
     if (serviceErr) errs.service = serviceErr;
     if (messageErr) errs.message = messageErr;
     return errs;
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     const errs = validate();
     if (Object.keys(errs).length) {
       setErrors(errs);
+      return;
+    }
+
+    setSubmitting(true);
+    setSubmitError("");
+    const result = await submitLead({
+      source: "contact-quick",
+      name,
+      phone,
+      email: email.trim() || undefined,
+      service,
+      message,
+    });
+    setSubmitting(false);
+    if (!result.ok) {
+      setSubmitError(result.error);
       return;
     }
     setState("sent");
@@ -121,8 +147,9 @@ export function ContactModal() {
               <div className="contact-modal-success-icon">✓</div>
               <h3>Message received!</h3>
               <p>
-                Thank you, {name}. {business.contactName} will call you at{" "}
+                Thank you, {name}. The studio will call you at{" "}
                 <strong>{phone}</strong> within a few hours.
+                {email.trim() ? " A confirmation email has been sent to you." : ""}
               </p>
               <p className="contact-modal-or">Or call us right now:</p>
               <a href={`tel:${business.phoneTel}`} className="btn btn-green" style={{ width: "100%", justifyContent: "center" }}>
@@ -145,7 +172,7 @@ export function ContactModal() {
                 <div>
                   <h2 className="contact-modal-title">Quick Contact</h2>
                   <p className="contact-modal-sub">
-                    {business.contactName} replies within a few hours.
+                    The studio replies within a few hours.
                   </p>
                 </div>
               </div>
@@ -190,6 +217,27 @@ export function ContactModal() {
                   {errors.phone && <span className="cm-err">{errors.phone}</span>}
                 </div>
 
+                <div className={`cm-field${errors.email ? " has-err" : ""}`}>
+                  <label htmlFor="cm-email">
+                    Email <span className="cm-opt">(optional)</span>
+                  </label>
+                  <input
+                    id="cm-email"
+                    type="email"
+                    placeholder="you@email.com"
+                    value={email}
+                    maxLength={80}
+                    inputMode="email"
+                    autoComplete="email"
+                    onKeyDown={allowEmailKey}
+                    onChange={(e) => {
+                      setEmail(sanitizeEmail(e.target.value));
+                      setErrors((p) => ({ ...p, email: "" }));
+                    }}
+                  />
+                  {errors.email && <span className="cm-err">{errors.email}</span>}
+                </div>
+
                 <div className={`cm-field${errors.service ? " has-err" : ""}`}>
                   <label htmlFor="cm-service">Service Needed</label>
                   <select
@@ -228,8 +276,14 @@ export function ContactModal() {
                   {errors.message && <span className="cm-err">{errors.message}</span>}
                 </div>
 
-                <button type="submit" className="btn btn-green cm-submit">
-                  Send Message
+                {submitError && (
+                  <div className="cm-err cm-err-banner" role="alert">
+                    {submitError}
+                  </div>
+                )}
+
+                <button type="submit" className="btn btn-green cm-submit" disabled={submitting}>
+                  {submitting ? "Sending…" : "Send Message"}
                 </button>
 
                 <p className="cm-footer-note">

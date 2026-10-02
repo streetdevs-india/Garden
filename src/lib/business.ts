@@ -3,12 +3,11 @@ export const business = {
   name: "Hind Landscape Co.",
   shortName: "Hind",
   legalName: "Hind Landscape Co.",
-  tagline: "Landscape Architecture & Urban Design",
-  contactName: "Ajay Kumar",
+  tagline: "Rooted in Nature. Driven by Design.",
   description:
-    "Hind Landscape Co. delivers hardscape, softscape, irrigation, lighting, terrace & podium gardens, vertical gardens and landscape maintenance AMC across Delhi NCR and India. Speak with Ajay Kumar for a free site visit.",
+    "Hind Landscape Co. is India's trusted landscape design and development company — residential and commercial landscaping, rooftop gardens, vertical green walls, water features and maintenance AMC across India. Call +91 99901 16281.",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://hindlandscaping.com",
-  email: "Info@Hindlandscape.com",
+  email: "hindlandscaping@gmail.com",
   phone: "+91 99901 16281",
   phoneTel: "+919990116281",
   whatsapp: "919990116281",
@@ -31,8 +30,8 @@ export const business = {
 } as const;
 
 export const proofStats = [
-  { value: 30, suffix: "+", decimals: 0, label: "Years of Practice" },
-  { value: 500, suffix: "+", decimals: 0, label: "Happy Clients" },
-  { value: 120, suffix: "+", decimals: 0, label: "Projects Delivered" },
-  { value: 4.9, suffix: "", decimals: 1, label: "Average rating" },
+  { value: 150, suffix: "+", decimals: 0, label: "Projects Completed" },
+  { value: 100, suffix: "%", decimals: 0, label: "Satisfied Clients" },
+  { value: 15, suffix: "+", decimals: 0, label: "Years of Excellence" },
+  { value: 1, suffix: "", decimals: 0, label: "Pan-India Presence" },
 ] as const;

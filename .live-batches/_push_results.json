@@ -1,0 +1,7 @@
+[
+  {
+    "batch": 1,
+    "ok": false,
+    "error": "GET /repos/streetdevs-india/Garden/git/ref/heads/main -> 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/git/refs#get-a-reference\",\"status\":\"404\"}"
+  }
+]

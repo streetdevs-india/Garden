@@ -100,9 +100,9 @@ export function HomeHero() {
           <span className="home-hero-rule" aria-hidden />
           <h1 className="home-hero-title split-text is-manual">
             <span className="split-word">Transforming Spaces.</span>
-            {"\u00A0"}
+            {" "}
             <span className="split-word">Nurturing Nature.</span>
-            <br />
+            <span className="home-hero-break" aria-hidden />
             <span className="split-word">Creating Legacies.</span>
           </h1>
           <p className="home-hero-lede">{homeHeroContent.lede}</p>

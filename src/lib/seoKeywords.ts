@@ -17,9 +17,28 @@ export const primaryMoneyKeywords = [
 ] as const;
 
 /** Homepage discovery only — keep short; page-level keywords live on money URLs. */
+export const brandSearchKeywords = [
+  "Hind Landscape Co.",
+  "Hind Landscape Co",
+  "Hind Landscape",
+  "Hind Landscaping",
+  "Hind Landscape Company",
+  "Hindlandscape",
+  "Hind Landscape Delhi",
+  "Hind Landscape Noida",
+  "Hind Landscape Okhla",
+  "hindlandscaping.com",
+] as const;
+
 export const homepageKeywords = [
+  ...brandSearchKeywords,
+  "best landscape in Delhi",
+  "best landscaping company in Delhi",
+  "best landscape in Noida",
+  "best landscaping company in Noida",
   "landscaping company Delhi NCR",
   "landscaping company Delhi",
+  "landscaping company Noida",
   "landscaping company India",
   "landscape contractor Delhi",
   "garden design Delhi NCR",
@@ -29,11 +48,6 @@ export const homepageKeywords = [
   "vertical garden Delhi NCR",
   "landscape maintenance AMC",
   "farmhouse landscaping Delhi",
-  "hardscape landscaping India",
-  "softscape landscaping India",
-  "landscape irrigation services",
-  "Hind Landscape Co.",
-  "hindlandscaping.com",
 ] as const;
 
 export const serviceKeywordMap: Record<string, string[]> = {
@@ -291,7 +305,7 @@ export const competitorKeywords: CompetitorKeywordSet[] = [
 ];
 
 export function locationSearchKeywords(city: string, state: string, h1: string): string[] {
-  return [
+  const phrases = [
     h1,
     `landscaping company ${city}`,
     `landscaping services ${city}`,
@@ -299,10 +313,14 @@ export function locationSearchKeywords(city: string, state: string, h1: string):
     `garden landscaping ${city}`,
     `garden design ${city}`,
     `landscape maintenance ${city}`,
+    `best landscape in ${city}`,
+    `best landscaping company in ${city}`,
     `landscaping services ${state}`,
     "landscaping company India",
     "Hind Landscape Co.",
+    "Hind Landscape",
   ];
+  return phrases;
 }
 
 export function getCompetitorKeywords(slug: string) {

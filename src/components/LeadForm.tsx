@@ -3,14 +3,18 @@
 import { useState } from "react";
 import { Arrow } from "@/components/Icons";
 import {
+  allowEmailKey,
   allowNameKey,
   allowPhoneKey,
+  sanitizeEmail,
   sanitizeName,
   sanitizePhone,
   validateName,
+  validateOptionalEmail,
   validatePhone,
   validateRequiredSelect,
 } from "@/lib/formValidation";
+import { submitLead } from "@/lib/leads/submitLead";
 
 const propertyTypes = [
   "Home / Villa",
@@ -25,12 +29,15 @@ const propertyTypes = [
 export function LeadForm() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
   const [property, setProperty] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const [honeypot, setHoneypot] = useState("");
 
-  function submit(e: React.FormEvent) {
+  async function submit(e: React.FormEvent) {
     e.preventDefault();
     if (honeypot) {
       setSent(true);
@@ -40,12 +47,30 @@ export function LeadForm() {
     const errs: Record<string, string> = {};
     const nameErr = validateName(name);
     const phoneErr = validatePhone(phone);
+    const emailErr = validateOptionalEmail(email);
     const propertyErr = validateRequiredSelect(property, "property type");
     if (nameErr) errs.name = nameErr;
     if (phoneErr) errs.phone = phoneErr;
+    if (emailErr) errs.email = emailErr;
     if (propertyErr) errs.property = propertyErr;
     setErrors(errs);
     if (Object.keys(errs).length) return;
+
+    setSubmitting(true);
+    setSubmitError("");
+    const result = await submitLead({
+      source: "homepage-lead",
+      name,
+      phone,
+      email: email.trim() || undefined,
+      propertyType: property,
+      honeypot,
+    });
+    setSubmitting(false);
+    if (!result.ok) {
+      setSubmitError(result.error);
+      return;
+    }
     setSent(true);
   }
 
@@ -57,6 +82,7 @@ export function LeadForm() {
         <p>
           We&apos;ll call <strong>{name}</strong> at <strong>{phone}</strong> within 4 hours
           to schedule a free site visit.
+          {email.trim() ? " A confirmation email has been sent to you." : ""}
         </p>
       </div>
     );
@@ -105,6 +131,24 @@ export function LeadForm() {
       </div>
 
       <div className="lead-field">
+        <input
+          placeholder="Email (optional)"
+          type="email"
+          inputMode="email"
+          autoComplete="email"
+          maxLength={80}
+          value={email}
+          onKeyDown={allowEmailKey}
+          onChange={(e) => {
+            setEmail(sanitizeEmail(e.target.value));
+            setErrors((p) => ({ ...p, email: "" }));
+          }}
+          className={errors.email ? "has-err" : ""}
+        />
+        {errors.email && <span className="lead-err">{errors.email}</span>}
+      </div>
+
+      <div className="lead-field">
         <select
           value={property}
           onChange={(e) => {
@@ -123,8 +167,14 @@ export function LeadForm() {
         {errors.property && <span className="lead-err">{errors.property}</span>}
       </div>
 
-      <button type="submit" className="btn btn-green lead-submit">
-        Get a Free Site Visit <Arrow />
+      {submitError && (
+        <div className="lead-err lead-err-banner" role="alert">
+          {submitError}
+        </div>
+      )}
+
+      <button type="submit" className="btn btn-green lead-submit" disabled={submitting}>
+        {submitting ? "Sending…" : "Get a Free Site Visit"} {submitting ? null : <Arrow />}
       </button>
     </form>
   );

@@ -1,32 +1,37 @@
 /** Shared copy for conversion / psychology sections — static, no CMS. */
 
 export const trustPoints = [
-  { value: "30+",  label: "Years of landscape practice"      },
-  { value: "500+", label: "Homes, farms & commercial sites"  },
-  { value: "4h",   label: "Typical first reply window"       },
-  { value: "NCR",  label: "Delhi NCR · pan-India scopes"     },
+  { value: "150+", label: "Projects completed" },
+  { value: "100%", label: "Satisfied clients" },
+  { value: "15+", label: "Years of excellence" },
+  { value: "India", label: "Pan-India project presence" },
 ] as const;
 
 export const processSteps = [
   {
     step: "01",
-    title: "Free site visit",
-    text: "We visit, measure, photograph and discuss how you use the space — light, drainage, access and evening habits.",
+    title: "Consultation & Discovery",
+    text: "Every project begins with a conversation. We understand your vision, assess the site, evaluate conditions and align on objectives before a single line is drawn.",
   },
   {
     step: "02",
-    title: "Written design & quote",
-    text: "You receive named plant lists, zone-wise irrigation scope, material options and a clear line-by-line cost. No guessing.",
+    title: "Concept Design & Planning",
+    text: "Our design team translates your vision into concepts, mood boards, plant palettes, materials and layout plans — a clear picture of what your space will become.",
   },
   {
     step: "03",
-    title: "Phased installation",
-    text: "Hardscape first, then softscape — work phased so your property access, neighbours and existing plants stay protected.",
+    title: "Approval & Refinement",
+    text: "We walk you through the design, listen to feedback and refine until every detail is right. Your satisfaction with the plan comes before execution.",
   },
   {
     step: "04",
-    title: "Settled handover + AMC",
-    text: "We walk you through the finished garden, hand over care notes and offer optional maintenance AMC from the first month.",
+    title: "Installation & Execution",
+    text: "Skilled on-ground teams execute with precision — from soil preparation and plant sourcing to hardscape construction and irrigation setup.",
+  },
+  {
+    step: "05",
+    title: "Handover & Maintenance",
+    text: "We provide handover documentation, care guidance and ongoing AMC services so your landscape thrives for years to come.",
   },
 ] as const;
 
@@ -108,19 +113,29 @@ export const audienceCards = [
 
 export const aboutValues = [
   {
-    icon: "leaf" as const,
-    title: "Listen before we sketch",
-    text: "Light, soil, how you move outdoors and what you want evenings to feel like. We design for your reality, not a show garden.",
-  },
-  {
     icon: "clipboard" as const,
-    title: "Materials that last beyond handover",
-    text: "Plant species, hardscape finishes and irrigation components chosen for Indian heat, monsoon and long-term maintenance ease.",
+    title: "Integrity",
+    text: "We say what we mean and deliver what we promise. Our clients trust us completely — and we take that trust seriously in everything we do.",
   },
   {
     icon: "award" as const,
-    title: "Clean site, clean handover",
-    text: "Crews respect your home and neighbours. Handover includes a walkthrough, written care notes and a final snag check.",
+    title: "Excellence",
+    text: "Good is never good enough. We pursue a higher standard in every design decision, installation detail and client interaction.",
+  },
+  {
+    icon: "team" as const,
+    title: "Partnership",
+    text: "We do not work for our clients — we work with them. Your goals become our goals. That collaborative spirit defines every project.",
+  },
+  {
+    icon: "leaf" as const,
+    title: "Sustainability",
+    text: "We design landscapes that are beautiful today and responsible tomorrow. Environmental stewardship is embedded into our practice.",
+  },
+  {
+    icon: "bolt" as const,
+    title: "Innovation",
+    text: "We continuously explore new techniques, materials and design approaches to deliver solutions that are fresh, relevant and future-ready.",
   },
 ] as const;
 

@@ -3,6 +3,8 @@ import { SeoLanding } from "@/components/SeoLanding";
 import type { IntentPage } from "@/lib/intent";
 import { getClientServices, getService } from "@/lib/site";
 import { getLocation, primaryLocations } from "@/lib/locations";
+import { absoluteUrl } from "@/lib/seo";
+import { ORG_ID } from "@/lib/schema";
 
 export function IntentPageView({ page }: { page: IntentPage }) {
   const relatedServiceItems = (page.relatedServices ?? [])
@@ -16,6 +18,17 @@ export function IntentPageView({ page }: { page: IntentPage }) {
       ? relatedServiceItems
       : getClientServices().slice(0, 8);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: page.title,
+    description: page.description,
+    url: absoluteUrl(page.path),
+    provider: { "@id": ORG_ID },
+    areaServed: ["Delhi", "Noida", "Delhi NCR", "India"],
+    brand: { "@id": ORG_ID },
+  };
+
   return (
     <SeoLanding
       eyebrow={page.eyebrow}
@@ -23,6 +36,7 @@ export function IntentPageView({ page }: { page: IntentPage }) {
       lede={page.intro}
       crumbs={[{ name: "Explore", href: "/" }, { name: page.title }]}
       faqs={page.faqs}
+      jsonLd={jsonLd}
     >
       <p>{page.description}</p>
       <h2>What is included</h2>
@@ -61,6 +75,12 @@ export function IntentPageView({ page }: { page: IntentPage }) {
       </p>
       <p>
         Related hubs:{" "}
+        <Link href="/hind-landscape-co">Hind Landscape Co.</Link>
+        {" · "}
+        <Link href="/best-landscaping-company-delhi">Best landscaping company in Delhi</Link>
+        {" · "}
+        <Link href="/best-landscaping-company-noida">Best landscaping company in Noida</Link>
+        {" · "}
         <Link href="/landscaping-services-delhi">Landscaping services Delhi</Link>
         {" · "}
         <Link href="/commercial-landscaping-india">Commercial landscaping India</Link>

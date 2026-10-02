@@ -115,7 +115,12 @@ function buildLocation(seed: CitySeed): LocationPage {
     locality: seed.locality,
     h1,
     title,
-    description: `${h1} — Hind Landscape Co. delivers garden design, hardscape, softscape, irrigation, lighting, terrace gardens and maintenance AMC for homes, hotels and commercial sites in ${region}, India.`,
+    description:
+      seed.slug === "delhi" || seed.slug === "delhi-ncr"
+        ? `Best landscaping company in Delhi — Hind Landscape Co. in Okhla. ${h1}: garden design, hardscape, terrace gardens and AMC across ${region}.`
+        : seed.slug === "noida" || seed.slug === "greater-noida"
+          ? `Best landscaping company in Noida — Hind Landscape Co. ${h1}: society greens, villa gardens, hardscape and AMC in ${region}.`
+          : `${h1} — Hind Landscape Co. delivers garden design, hardscape, softscape, irrigation, lighting, terrace gardens and maintenance AMC for homes, hotels and commercial sites in ${region}, India.`,
     intro: `Searching for a ${h1.toLowerCase()}? Hind Landscape Co. designs, builds and maintains outdoor spaces that handle ${climate}. Named plant lists, clear scopes and optional AMC — so landscapes stay usable long after handover.`,
     highlights: [
       `${h1} for homes, societies and commercial sites`,

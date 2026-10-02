@@ -43,7 +43,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       "@type": "LandscapingBusiness",
       name: "Hind Landscape Co.",
       url: absoluteUrl("/"),
-      email: "Info@Hindlandscape.com",
+      email: "hindlandscaping@gmail.com",
     },
     areaServed: [
       { "@type": "Country", name: "India" },

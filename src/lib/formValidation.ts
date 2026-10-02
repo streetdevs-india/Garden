@@ -50,6 +50,12 @@ export function validateEmail(email: string): string | null {
   return null;
 }
 
+export function validateOptionalEmail(email: string): string | null {
+  const e = email.trim();
+  if (!e) return null;
+  return validateEmail(e);
+}
+
 export function validateRequiredSelect(value: string, label = "option"): string | null {
   if (!value.trim()) return `Please choose a ${label}.`;
   return null;

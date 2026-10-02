@@ -2,19 +2,23 @@ import type { Metadata } from "next";
 import { SiteProvider } from "@/components/SiteChrome";
 import { JsonLd } from "@/components/JsonLd";
 import { business } from "@/lib/business";
-import { teamMembers } from "@/lib/team";
 import { absoluteUrl } from "@/lib/seo";
 import { homepageKeywords } from "@/lib/seoKeywords";
+import { organizationGraph } from "@/lib/schema";
+import { companyMeta } from "@/lib/companyContent";
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(business.siteUrl),
   title: {
-    default: "Landscaping Company in Delhi NCR & India | Hind Landscape Co.",
+    default: "Hind Landscape Co. | Landscape Design and Development Company in India",
     template: "%s | Hind Landscape Co.",
   },
-  description: business.description,
+  description: companyMeta.homeDescription,
   applicationName: business.name,
+  authors: [{ name: business.name, url: absoluteUrl("/about") }],
+  creator: business.name,
+  publisher: business.name,
   /* Discovery only — money keywords live on dedicated service/location/intent pages */
   keywords: [...homepageKeywords],
   /* hreflang added in layout-level alternates below */
@@ -22,16 +26,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     siteName: business.name,
-    title: "Hind Landscape Co. | Landscaping & Gardening",
-    description: business.description,
+    title: "Hind Landscape Co. | Landscape Design and Development Company in India",
+    description: companyMeta.homeDescription,
     url: absoluteUrl("/"),
-    images: [{ url: absoluteUrl("/images/hero.jpg"), width: 1200, height: 630, alt: "Hind Landscape Co. landscaping" }],
+    images: [{ url: absoluteUrl("/images/gallery-modern-lawn.png"), width: 1200, height: 630, alt: "Hind Landscape Co. landscaping in Delhi" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hind Landscape Co. | Landscaping & Gardening",
-    description: business.description,
-    images: [absoluteUrl("/images/hero.jpg")],
+    title: "Hind Landscape Co. | Landscape Design and Development Company in India",
+    description: companyMeta.homeDescription,
+    images: [absoluteUrl("/images/gallery-modern-lawn.png")],
   },
   icons: {
     icon: [
@@ -47,59 +51,7 @@ export const metadata: Metadata = {
   alternates: { canonical: absoluteUrl("/"), languages: { "en-IN": absoluteUrl("/") } },
 };
 
-const orgLd = {
-  "@context": "https://schema.org",
-  "@type": "LandscapingBusiness",
-  name: business.legalName,
-  url: business.siteUrl,
-  email: business.email,
-  telephone: business.phoneTel,
-  founder: {
-    "@type": "Person",
-    name: business.contactName,
-  },
-  image: absoluteUrl("/images/hero.jpg"),
-  description: business.description,
-  priceRange: business.priceRange,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: business.address.street,
-    addressLocality: business.address.locality,
-    addressRegion: business.address.region,
-    postalCode: business.address.postalCode,
-    addressCountry: business.address.country,
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: business.geo.lat,
-    longitude: business.geo.lng,
-  },
-  areaServed: [
-    "Delhi",
-    "Gurugram",
-    "Noida",
-    "Faridabad",
-    "Greater Noida",
-    "Ghaziabad",
-    "Delhi NCR",
-    "Haryana",
-    "Uttar Pradesh",
-    "Rajasthan",
-    "Maharashtra",
-    "Karnataka",
-    "Telangana",
-    "Tamil Nadu",
-    "Gujarat",
-    "West Bengal",
-    "India",
-  ],
-  employee: teamMembers.map((m) => ({
-    "@type": "Person",
-    name: m.name,
-    jobTitle: m.role,
-  })),
-  openingHours: business.hours,
-};
+const orgLd = organizationGraph();
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -113,7 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
-        <JsonLd data={orgLd} />
+        <JsonLd data={orgLd as unknown as Record<string, unknown>} />
         <SiteProvider>{children}</SiteProvider>
       </body>
     </html>

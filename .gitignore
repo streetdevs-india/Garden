@@ -6,3 +6,13 @@ _shots
 .env
 .env.local
 .env*.local
+tsconfig.tsbuildinfo
+
+# Local push/debug artifacts — never commit
+.push-*
+.single-file-push.json
+.mcp-*
+.tmp-*
+.intent-content.txt
+.file-intent.ts.txt
+Hind-Landscape-SEO-Keywords.pdf

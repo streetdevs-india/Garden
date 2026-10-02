@@ -32,11 +32,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   for (const page of intentPages) {
+    const boost =
+      page.slug === "hind-landscape-co" ||
+      page.slug === "best-landscaping-company-delhi" ||
+      page.slug === "best-landscaping-company-noida";
     entries.push({
       url: `${base}${page.path}`,
       lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
+      changeFrequency: boost ? "weekly" : "monthly",
+      priority: boost ? 0.95 : 0.85,
     });
   }
 

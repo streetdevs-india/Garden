@@ -17,6 +17,7 @@ import {
   validatePhone,
   validateRequiredSelect,
 } from "@/lib/formValidation";
+import { submitLead } from "@/lib/leads/submitLead";
 
 type FieldErrors = Partial<Record<"name" | "phone" | "email" | "service" | "message", string>>;
 
@@ -53,6 +54,7 @@ export function QuoteForm() {
   const [touched, setTouched] = useState<Record<string, boolean>>({});
   const [sent, setSent] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const [honeypot, setHoneypot] = useState("");
 
   const hasErrors = useMemo(() => Object.keys(errors).length > 0, [errors]);
@@ -73,7 +75,7 @@ export function QuoteForm() {
     });
   }
 
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (honeypot) {
       setSent(true);
@@ -86,10 +88,22 @@ export function QuoteForm() {
     if (Object.keys(nextErrors).length > 0) return;
 
     setSubmitting(true);
-    window.setTimeout(() => {
-      setSubmitting(false);
-      setSent(true);
-    }, 350);
+    setSubmitError("");
+    const result = await submitLead({
+      source: "quote-form",
+      name: values.name,
+      phone: values.phone,
+      email: values.email,
+      service: values.service,
+      message: values.message,
+      honeypot,
+    });
+    setSubmitting(false);
+    if (!result.ok) {
+      setSubmitError(result.error);
+      return;
+    }
+    setSent(true);
   }
 
   if (sent) {
@@ -97,8 +111,10 @@ export function QuoteForm() {
       <div className="form form-success" role="status" aria-live="polite">
         <h3>Thank you — request received</h3>
         <p>
-          We’ve saved your details for <strong>{values.name}</strong>. Our team will contact you on{" "}
-          <strong>{values.phone}</strong> or <strong>{values.email}</strong> about your garden.
+          Thank you for choosing Hind Landscape Co. We&apos;ve saved your details for{" "}
+          <strong>{values.name}</strong>. Our team will contact you on{" "}
+          <strong>{values.phone}</strong> or <strong>{values.email}</strong>.
+          A confirmation email has been sent to you.
         </p>
         <button
           type="button"
@@ -250,6 +266,12 @@ export function QuoteForm() {
           onChange={(e) => setHoneypot(e.target.value)}
         />
       </label>
+
+      {submitError && (
+        <div className="form-banner" role="alert">
+          {submitError}
+        </div>
+      )}
 
       <button className="btn btn-green" type="submit" disabled={submitting}>
         {submitting ? "Sending…" : "Get a Free Quote"} {submitting ? null : <Arrow />}

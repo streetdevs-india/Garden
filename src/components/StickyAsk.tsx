@@ -33,7 +33,7 @@ export function StickyAsk() {
       </a>
       <a
         className="sticky-ask-btn sticky-ask-wa"
-        href={`https://wa.me/${business.whatsapp}?text=${encodeURIComponent("Hi Ajay, I would like a site visit for my garden.")}`}
+        href={`https://wa.me/${business.whatsapp}?text=${encodeURIComponent("Hi Hind Landscape Co., I would like a site visit for my garden.")}`}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { business } from "@/lib/business";
 
-/** Single brand mark — new green Hind logo everywhere */
-const LOGO_SRC = "/images/logo-mark.png";
+/** Transparent full lockup — icon + wordmark */
+const LOGO_SRC = "/images/logo-hind-full.png";
 
 type BrandLogoProps = {
   variant?: "header" | "footer";
@@ -17,27 +17,16 @@ export function BrandLogo({ variant = "header", linked = true, className = "" }:
       src={LOGO_SRC}
       alt={business.name}
       className={`brand-logo brand-logo-${variant}`}
-      width={variant === "footer" ? 120 : 56}
-      height={variant === "footer" ? 120 : 56}
+      width={variant === "footer" ? 360 : 300}
+      height={variant === "footer" ? 80 : 67}
     />
   );
 
   const content =
     variant === "footer" ? (
-      <span className="brand-logo-footer-wrap">
-        {img}
-        <span className="brand-logo-wordmark">
-          <strong>{business.name}</strong>
-          <em>{business.tagline}</em>
-        </span>
-      </span>
+      <span className="brand-logo-footer-wrap">{img}</span>
     ) : (
-      <span className="brand-logo-header-wrap">
-        {img}
-        <span className="brand-logo-wordmark brand-logo-wordmark-header">
-          <strong>Hind Landscape</strong>
-        </span>
-      </span>
+      <span className="brand-logo-header-wrap">{img}</span>
     );
 
   if (!linked) return content;

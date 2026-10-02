@@ -29,7 +29,7 @@ export function buildMetadata({
   const ogImage = absoluteUrl(image);
 
   return {
-    title: fullTitle,
+    title: { absolute: fullTitle },
     description,
     keywords: keywords?.length ? keywords : undefined,
     alternates: { canonical: url },

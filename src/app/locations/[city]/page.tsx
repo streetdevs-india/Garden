@@ -43,7 +43,7 @@ export default async function LocationPage({ params }: Props) {
       "@type": "LandscapingBusiness",
       name: "Hind Landscape Co.",
       url: absoluteUrl("/"),
-      email: "Info@Hindlandscape.com",
+      email: "hindlandscaping@gmail.com",
     },
     url: absoluteUrl(`/locations/${loc.slug}`),
   };
@@ -127,8 +127,18 @@ export default async function LocationPage({ params }: Props) {
                   </Link>
                 </>
               )}
+              {(loc.slug === "delhi" || loc.slug === "delhi-ncr" || loc.slug === "south-delhi") && (
+                <Link href="/best-landscaping-company-delhi" className="seo-link-card">
+                  <strong>Best landscaping company in Delhi</strong>
+                  <span>Hind Landscape Co. · Okhla</span>
+                </Link>
+              )}
               {(loc.slug === "noida" || loc.slug === "greater-noida" || loc.slug === "noida-extension") && (
                 <>
+                  <Link href="/best-landscaping-company-noida" className="seo-link-card">
+                    <strong>Best landscaping company in Noida</strong>
+                    <span>Societies, villas and AMC</span>
+                  </Link>
                   <Link href="/hardscape-noida" className="seo-link-card">
                     <strong>Hardscape Noida</strong>
                     <span>Pathways and plazas</span>

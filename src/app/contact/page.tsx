@@ -12,7 +12,7 @@ import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   title: `Contact ${business.name} | Free Site Visit Delhi NCR`,
-  description: `Reach ${business.contactName} at ${business.name} — call ${business.phone}, WhatsApp or fill the form. Free site visit for garden design, lawn care and landscaping.`,
+  description: `Reach ${business.name} — call ${business.phone}, WhatsApp or fill the form. Free site visit for garden design, lawn care and landscaping.`,
   path: "/contact",
 });
 
@@ -24,7 +24,7 @@ const trustStrip = [
   { icon: "leaf",      label: "Free site visit",  sub: "No obligation" },
   { icon: "bolt",      label: "4-hour reply",     sub: "Mon – Sat" },
   { icon: "clipboard", label: "Named quotes",     sub: "Plant lists included" },
-  { icon: "award",     label: "30+ yrs practice", sub: "Trusted studio" },
+  { icon: "award",     label: "15+ yrs excellence", sub: "Trusted studio" },
 ];
 
 export default function ContactPage() {
@@ -107,14 +107,14 @@ export default function ContactPage() {
                 {/* Director card */}
                 <div className="contact-director">
                   <img
-                    src="/images/team/ajay-kumar.png"
-                    alt={business.contactName}
-                    className="contact-director-img"
+                    src="/images/logo-hind-full.png"
+                    alt="Hind Landscape Co."
+                    className="contact-studio-logo"
                   />
                   <div>
-                    <strong>{business.contactName}</strong>
-                    <span>Director &amp; Principal Landscape Designer</span>
-                    <span className="contact-director-exp">30+ years of practice</span>
+                    <strong>Studio contact</strong>
+                    <span>Landscape architecture &amp; garden design</span>
+                    <span className="contact-director-exp">15+ years of excellence</span>
                   </div>
                 </div>
 
@@ -132,7 +132,7 @@ export default function ContactPage() {
                     <div className="cdl-copy">
                       <em>WhatsApp</em>
                       <a
-                        href={`https://wa.me/${business.whatsapp}?text=${encodeURIComponent("Hi Ajay, I want to discuss a landscaping project.")}`}
+                        href={`https://wa.me/${business.whatsapp}?text=${encodeURIComponent("Hi Hind Landscape Co., I want to discuss a landscaping project.")}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >

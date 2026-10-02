@@ -1,4 +1,4 @@
-# Greenly SEO Launch Checklist
+# Hind Landscape Co. SEO Launch Checklist
 
 On-site SEO (technical + pages + ~90 blogs) is already in the codebase.
 Complete these off-site steps so rankings can move:

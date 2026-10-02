@@ -13,7 +13,7 @@ export function buildMetadata({
   title,
   description,
   path = "/",
-  image = "/images/hero.jpg",
+  image = "/images/gallery-modern-lawn.png",
   noIndex = false,
   keywords,
 }: {

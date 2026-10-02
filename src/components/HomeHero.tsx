@@ -74,7 +74,7 @@ export function HomeHero() {
         {/* Poster for first paint / reduced-motion fallback */}
         <img
           className="home-hero-poster"
-          src="/images/hero.jpg"
+          src="/images/gallery-modern-lawn.png"
           alt=""
           width={1920}
           height={1080}
@@ -83,7 +83,7 @@ export function HomeHero() {
         <video
           className="home-hero-video"
           src={business.showreelVideo}
-          poster="/images/hero.jpg"
+          poster="/images/gallery-modern-lawn.png"
           autoPlay
           muted
           loop

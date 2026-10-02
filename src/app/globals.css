@@ -3721,7 +3721,7 @@ h1, h2, .page-hero h1, .cta h2 {
 .blog-hero-bg {
   position: absolute;
   inset: 0;
-  background: url('/images/hero.jpg') center/cover no-repeat;
+  background: url('/images/gallery-modern-lawn.png') center/cover no-repeat;
   opacity: 0.12;
   pointer-events: none;
   transform: scale(1);

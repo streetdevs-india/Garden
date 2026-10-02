@@ -29,13 +29,13 @@ export const metadata: Metadata = {
     title: "Hind Landscape Co. | Landscape Design and Development Company in India",
     description: companyMeta.homeDescription,
     url: absoluteUrl("/"),
-    images: [{ url: absoluteUrl("/images/hero.jpg"), width: 1200, height: 630, alt: "Hind Landscape Co. landscaping in Delhi" }],
+    images: [{ url: absoluteUrl("/images/gallery-modern-lawn.png"), width: 1200, height: 630, alt: "Hind Landscape Co. landscaping in Delhi" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Hind Landscape Co. | Landscape Design and Development Company in India",
     description: companyMeta.homeDescription,
-    images: [absoluteUrl("/images/hero.jpg")],
+    images: [absoluteUrl("/images/gallery-modern-lawn.png")],
   },
   icons: {
     icon: [

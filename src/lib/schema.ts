@@ -67,7 +67,7 @@ export function organizationGraph() {
           "@type": "ImageObject",
           url: absoluteUrl("/images/logo-hind-full.png"),
         },
-        image: absoluteUrl("/images/hero.jpg"),
+        image: absoluteUrl("/images/gallery-modern-lawn.png"),
         email: business.email,
         telephone: business.phoneTel,
         priceRange: business.priceRange,
